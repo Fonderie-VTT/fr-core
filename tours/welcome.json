@@ -1,41 +1,10 @@
 {
-  "title": "WELCOME.Title",
-  "description": "WELCOME.Description",
-  "canBeResumed": true,
-  "display": true,
-  "steps": [
-    {
-      "id": "welcome",
-      "selector": "",
-      "title": "WELCOME.WelcomeTitle",
-      "content": "WELCOME.WelcomeContent"
-    },
-    {
-      "id": "help",
-      "selector": "#settings-documentation",
-      "title": "WELCOME.HelpTitle",
-      "content": "WELCOME.HelpContent",
-      "sidebarTab": "settings"
-    },
-    {
-      "id": "tours",
-      "selector": "button[data-action=\"tours\"]",
-      "title": "WELCOME.ToursTitle",
-      "content": "WELCOME.ToursContent",
-      "sidebarTab": "settings"
-    }
-  ],
-  "suggestedNextTours": [
-    "core.uiOverview"
-  ],
-  "localization": {
-    "WELCOME.Title": "Welcome to Foundry Virtual Tabletop",
-    "WELCOME.Description": "This Tour will give you a landing pad for new users to learn the basics of Foundry VTT.",
-    "WELCOME.WelcomeTitle": "Welcome to Foundry Virtual Tabletop",
-    "WELCOME.WelcomeContent": "We hope our software will be an amazing tool for you and your group. Foundry Virtual Tabletop has a large number of features to learn about, but there are tutorials, guides, and other resources that can help you find your way.\nThis is a \"tour\" which helps introduce you to the basic functionality of the software. You can advance or rewind through tour steps using the buttons at the bottom of this window.",
-    "WELCOME.HelpTitle": "Available Resources",
-    "WELCOME.HelpContent": "You are not alone in learning Foundry Virtual Tabletop, there are a wealth of resources available to help you. Some of the best resources include our official <a href='https://foundryvtt.com/kb/' target='_blank'>Knowledge Base</a> and the <a href='https://foundryvtt.wiki/' target='_blank'>Community Wiki</a>. You may also join our official <a href='https://discord.gg/FoundryVTT' target='_blank'>Discord server</a> where we have a welcoming community ready to support you on your journey!",
-    "WELCOME.ToursTitle": "First Steps",
-    "WELCOME.ToursContent": "If you are a new user we suggest that you spend 10 minutes going through the available tours which will help you orient yourself. You can view your progress through available tours, or repeat tours which you previously completed by clicking the Tour Management button in the Settings sidebar tab."
-  }
+  "WELCOME.Title": "Bienvenue sur Foundry Virtual Tabletop",
+  "WELCOME.Description": "Cette présentation permettra aux nouveaux utilisateurs d'apprendre les bases de Foundry VTT.",
+  "WELCOME.WelcomeTitle": "Bienvenue sur Foundry Virtual Tabletop",
+  "WELCOME.WelcomeContent": "Nous espérons que notre logiciel sera un outil formidable pour vous et votre groupe. Foundry Virtual Tabletop comporte un grand nombre de fonctionnalités à découvrir, mais des didacticiels, des guides et d'autres ressources peuvent vous aider à trouver votre chemin.\n Voici une \"présentation\" qui balaye les fonctionnalités de base du logiciel. Vous pouvez avancer ou reculer dans les étapes de la présentation à l'aide des boutons situés en bas de cette fenêtre.",
+  "WELCOME.HelpTitle": "Ressources disponibles",
+  "WELCOME.HelpContent": "Vous n'êtes pas seul à vouloir prendre en main Foundry Virtual Tabletop, il existe une multitude de ressources disponibles pour vous aider. Parmi les meilleures ressources figurent notre <a href='https://foundryvtt.com/kb/' target='_blank'>Base de connaissances</a> officielle (en anglais) et le <a href='https://foundryvtt.wiki/' target='_blank'>Wiki communautaire</a> (en anglais). Vous pouvez également rejoindre notre <a href='https://discord.gg/FoundryVTT' target='_blank'>serveur Discord</a> officiel (en anglais) où nous avons une communauté accueillante prête à vous soutenir dans votre parcours ! Vous trouverez <b>en français</b> un <a href='https://discord.gg/pPSDNJk' target='_blank'>serveur Discord</a> et également la déclinaison française du <a href='https://foundryvtt.wiki/fr/home' target='_blank' >wiki</a> !",
+  "WELCOME.ToursTitle": "Premières étapes",
+  "WELCOME.ToursContent": "Si vous êtes un nouvel utilisateur, nous vous suggérons de passer 10 minutes à parcourir les présentations disponibles, ce qui vous aidera à vous orienter. Vous pouvez visualiser votre progression dans les présentations disponibles ou répéter les présentations que vous avez déjà effectués en cliquant sur le bouton Gestion des présentations dans l'onglet Paramètres de la barre latérale."
 }

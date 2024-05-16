@@ -1,76 +1,20 @@
 {
-  "title": "CREATINGAWORLD.Title",
-  "description": "CREATINGAWORLD.Description",
-  "canBeResumed": false,
-  "display": true,
-  "steps": [
-    {
-      "id": "worldsTab",
-      "selector": "[data-tab=\"worlds\"]",
-      "title": "CREATINGAWORLD.WorldsTabTitle",
-      "content": "CREATINGAWORLD.WorldsTabContent"
-    },
-    {
-      "id": "createWorld",
-      "selector": "[data-action=\"worldCreate\"]",
-      "title": "CREATINGAWORLD.CreateWorldTitle",
-      "content": "CREATINGAWORLD.CreateWorldContent"
-    },
-    {
-      "id": "worldTitle",
-      "selector": "[name=\"title\"]",
-      "title": "CREATINGAWORLD.WorldTitleTitle",
-      "content": "CREATINGAWORLD.WorldTitleContent"
-    },
-    {
-      "id": "worldId",
-      "selector": "[name=\"id\"]",
-      "title": "CREATINGAWORLD.WorldIdTitle",
-      "content": "CREATINGAWORLD.WorldIdContent"
-    },
-    {
-      "id": "worldSystem",
-      "selector": "[name=\"system\"]",
-      "title": "CREATINGAWORLD.WorldSystemTitle",
-      "content": "CREATINGAWORLD.WorldSystemContent"
-    },
-    {
-      "id": "worldDescription",
-      "selector": "#world-config .editor",
-      "title": "CREATINGAWORLD.WorldDescriptionTitle",
-      "content": "CREATINGAWORLD.WorldDescriptionContent"
-    },
-    {
-      "id": "create",
-      "selector": "#world-config [type=\"submit\"]",
-      "title": "CREATINGAWORLD.CreateTitle",
-      "content": "CREATINGAWORLD.CreateContent"
-    },
-    {
-      "id": "launching",
-      "selector": "[data-action=\"worldLaunch\"]",
-      "title": "CREATINGAWORLD.LaunchingTitle",
-      "content": "CREATINGAWORLD.LaunchingContent"
-    }
-  ],
-  "localization": {
-    "CREATINGAWORLD.Title": "Creating a World",
-    "CREATINGAWORLD.Description": "This Tour will guide you through creating your first World",
-    "CREATINGAWORLD.WorldsTabTitle": "The Worlds Tab",
-    "CREATINGAWORLD.WorldsTabContent": "This tab shows you all of your currently created Worlds. You don't have any created currently, so we will guide you through creating one.",
-    "CREATINGAWORLD.CreateWorldTitle": "Creating a World",
-    "CREATINGAWORLD.CreateWorldContent": "The Create World button is in the bottom-right and will open up a configuration window.",
-    "CREATINGAWORLD.WorldTitleTitle": "World Title",
-    "CREATINGAWORLD.WorldTitleContent": "The World Title is the name of your World. It is used to identify your World in the Worlds Tab.",
-    "CREATINGAWORLD.WorldIdTitle": "World ID",
-    "CREATINGAWORLD.WorldIdContent": "The World ID is the unique identifier of your World. A folder of the same ID will be created to store your World data. The ID is automatically set to a machine-friendly version of the Title, but can be overridden.",
-    "CREATINGAWORLD.WorldSystemTitle": "World System",
-    "CREATINGAWORLD.WorldSystemContent": "The System dropdown lets you pick what Game System to make your World for. You can pick any Game System that you have installed on your machine. For now, we'll pick the System you just installed.",
-    "CREATINGAWORLD.WorldDescriptionTitle": "Other fields",
-    "CREATINGAWORLD.WorldDescriptionContent": "Other fields like Description are not required. You can read more about them in our <a href='https://foundryvtt.com/article/game-worlds/' target='_blank'>World</a> documentation.",
-    "CREATINGAWORLD.CreateTitle": "Create World",
-    "CREATINGAWORLD.CreateContent": "When you're done with setup, the Create button will create your World. You can change most World settings later by editing an existing World.",
-    "CREATINGAWORLD.LaunchingTitle": "Launching",
-    "CREATINGAWORLD.LaunchingContent": "You're all set! You can now start playing in your World by clicking the Launch World button."
-  }
+  "CREATINGAWORLD.Title": "Créer un monde",
+  "CREATINGAWORLD.Description": "Cette visite vous guidera dans la création de votre premier Monde",
+  "CREATINGAWORLD.WorldsTabTitle": "L'onglet Mondes",
+  "CREATINGAWORLD.WorldsTabContent": "Cet onglet vous montre tous vos mondes actuellement créés. Vous n'en avez pas encore créé actuellement, nous allons donc vous guider pour en créer un.",
+  "CREATINGAWORLD.CreateWorldTitle": "Créer un monde",
+  "CREATINGAWORLD.CreateWorldContent": "Le bouton Créer un monde se trouve en bas à droite et ouvre une fenêtre de configuration.",
+  "CREATINGAWORLD.WorldTitleTitle": "Titre du Monde",
+  "CREATINGAWORLD.WorldTitleContent": "Le titre du monde est le nom de votre monde. Il est utilisé pour identifier votre monde dans l'onglet Mondes.",
+  "CREATINGAWORLD.WorldIdTitle": "ID du monde",
+  "CREATINGAWORLD.WorldIdContent": "L'ID du monde est l'identifiant unique de votre monde. Un dossier du même ID sera créé pour stocker les données de votre monde. L'ID est automatiquement défini comme une version du titre adaptée pour le code de Foundry (pas d'espaces ...), mais il peut être modifié si vous le souhaitez.",
+  "CREATINGAWORLD.WorldSystemTitle": "Système de jeu",
+  "CREATINGAWORLD.WorldSystemContent": "Le menu déroulant Système vous permet de choisir le système de jeu pour lequel vous souhaitez créer votre monde. Vous pouvez choisir n'importe quel système de jeu que vous avez installé sur votre machine. Pour l'instant, nous allons choisir le système que vous venez d'installer.",
+  "CREATINGAWORLD.WorldDescriptionTitle": "Divers",
+  "CREATINGAWORLD.WorldDescriptionContent": "D'autres champs comme la description ne sont pas obligatoires. Vous pouvez en savoir plus sur eux dans la Documentation en ligne (en anglais) : <a href='https://foundryvtt.com/article/game-worlds/' target='_blank'>Monde</a>.",
+  "CREATINGAWORLD.CreateTitle": "Créer un monde",
+  "CREATINGAWORLD.CreateContent": "Lorsque vous avez terminé la configuration, le bouton \"Créer un monde\" permet d'enregistrer et créer votre monde. Vous pouvez modifier la plupart des paramètres du monde plus tard en éditant un monde existant.",
+  "CREATINGAWORLD.LaunchingTitle": "Lancer",
+  "CREATINGAWORLD.LaunchingContent": "Vous êtes prêt ! Vous pouvez maintenant commencer à jouer dans votre monde en cliquant sur le bouton Lancer le monde."
 }

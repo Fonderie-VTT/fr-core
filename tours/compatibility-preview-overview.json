@@ -1,51 +1,13 @@
 {
-  "title": "TOURS.COMPAT.Title",
-  "description": "TOURS.COMPAT.Description",
-  "canBeResumed": false,
-  "display": true,
-  "closeWindows": false,
-  "steps": [
-    {
-      "id": "intro",
-      "title": "TOURS.COMPAT.Title",
-      "content": "TOURS.COMPAT.Purpose"
-    },
-    {
-      "id": "overview",
-      "title": "TOURS.COMPAT.OverviewT",
-      "content": "TOURS.COMPAT.OverviewC",
-      "selector": "#compatibility-checker ul.summary"
-    },
-    {
-      "id": "filterCompatibility",
-      "title": "TOURS.COMPAT.FilterCompatibilityT",
-      "content": "TOURS.COMPAT.FilterCompatibilityC",
-      "selector": "#compatibility-checker .visibility-toggle"
-    },
-    {
-      "id": "filterPackageType",
-      "title": "TOURS.COMPAT.FilterPackageTypeT",
-      "content": "TOURS.COMPAT.FilterPackageTypeC",
-      "selector": "#compatibility-checker .visibility[data-visibility=\"world\"]"
-    },
-    {
-      "id": "filterCategory",
-      "title": "TOURS.COMPAT.FilterCategoryT",
-      "content": "TOURS.COMPAT.FilterCategoryC",
-      "selector": "#compatibility-checker .categories"
-    }
-  ],
-  "localization": {
-    "TOURS.COMPAT.Title": "Compatibility Preview Overview",
-    "TOURS.COMPAT.Description": "This tour covers a brief overview of the Compatibility Preview tool.",
-    "TOURS.COMPAT.Purpose": "This tour covers a brief overview of the Compatibility Preview tool. The tool's purpose is to check the compatibility of your currently-installed Worlds, Systems, and Modules against the next version of Foundry Virtual Tabletop. It will tell you whether a compatible version of each package exists. That may be the currently-installed version, or some newer version.",
-    "TOURS.COMPAT.OverviewT": "Overall Status",
-    "TOURS.COMPAT.OverviewC": "To see the overall status of your packages in the next version at-a-glance, you can check the bottom-left of of the display.",
-    "TOURS.COMPAT.FilterCompatibilityT": "Individual Packages",
-    "TOURS.COMPAT.FilterCompatibilityC": "You can use this toggle to show only the packages that are compatible, or only the packages that are incompatible with the next version.",
-    "TOURS.COMPAT.FilterPackageTypeT": "Include Worlds",
-    "TOURS.COMPAT.FilterPackageTypeC": "Worlds are not included in the full list of packages since their compatibility is typically tied to that of the game system. If you want to include worlds, you can do so via this toggle.",
-    "TOURS.COMPAT.FilterCategoryT": "Category Filter",
-    "TOURS.COMPAT.FilterCategoryC": "If you only care about one particular category of package, say you only want to check if your worlds are compatible with the next version, you can select that category from the list here."
-  }
+  "TOURS.COMPAT.Title": "Vue d'ensemble de la prévisualisation de la compatibilité ",
+  "TOURS.COMPAT.Description": "Cette présentation donne un bref aperçu de l'outil de prévisualisation de la compatibilité.",
+  "TOURS.COMPAT.Purpose": "Cette présentation donne un bref aperçu de l'outil de prévisualisation de la compatibilité. L'objectif de cet outil est de vérifier la compatibilité de vos mondes, systèmes et modules actuellement installés avec la prochaine version de Foundry Virtual Tabletop. Il vous indiquera si une version compatible de chaque package existe. Il peut s'agir de la version actuellement installée ou d'une version plus récente.",
+  "TOURS.COMPAT.OverviewT": "Situation générale",
+  "TOURS.COMPAT.OverviewC": "Pour connaître d'un coup d'œil l'état général de vos package dans la prochaine version, vous pouvez consulter la partie inférieure gauche de l'écran.",
+  "TOURS.COMPAT.FilterCompatibilityT": "Packages individuels",
+  "TOURS.COMPAT.FilterCompatibilityC": "Vous pouvez utiliser cette option pour n'afficher que les packages compatibles ou les packages incompatibles avec la prochaine version.",
+  "TOURS.COMPAT.FilterPackageTypeT": "Inclure les mondes",
+  "TOURS.COMPAT.FilterPackageTypeC": "Les mondes ne sont pas inclus dans la liste complète des packages car leur compatibilité est généralement liée à celle du système de jeu. Si vous souhaitez inclure les mondes, vous pouvez le faire via cette option.",
+  "TOURS.COMPAT.FilterCategoryT": "Filtre de catégorie",
+  "TOURS.COMPAT.FilterCategoryC": "Si vous ne vous intéressez qu'à une catégorie particulière de packages, par exemple si vous souhaitez uniquement vérifier si vos mondes sont compatibles avec la prochaine version, vous pouvez sélectionner cette catégorie dans la liste ici."
 }
