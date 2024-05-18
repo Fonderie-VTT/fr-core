@@ -100,7 +100,7 @@
     "ADVENTURE.ImportProgress": "En cours d'importation",
     "ADVENTURE.ImportHeaderOverview": "Vue d'ensemble",
     "ADVENTURE.ImportHeaderContents": "Contenus",
-    "ADVENTURE.ImportOverwriteTitle": "Ecraser le contenu existant ?",
+    "ADVENTURE.ImportOverwriteTitle": "Écraser le contenu existant ?",
     "ADVENTURE.ImportOverwriteWarning": "Certains contenus de l'aventure {name} existent déjà dans votre Monde. Si vous importez l'aventure, ce contenu sera écrasé. Voulez-vous continuer ?",
     "ADVENTURE.ImportAll": "Tout importer",
     "ADVENTURE.ImportContent": "Importer {label}",
@@ -156,13 +156,13 @@
           "hint": "Cette source de lumière compte comme une source de vision, révélant des zones supplémentaires de la scène même si elle n'est pas dans la ligne de vue d'un token contrôlé."
         },
         "walls": {
-          "label": "Contraint par les murs",
-          "hint": "Configurer si la zone d'effet de cette source de lumière est contrainte par les murs environnants."
+          "label": "Contrainte par les murs",
+          "hint": "Configure si la zone d'effet de cette source de lumière est contrainte par les murs environnants."
         }
       },
       "LABELS": {
         "radius": "Rayon de lumière",
-        "radiusHint": "Configurer la distance d'émission de lumière de cette source où le rayon de la lumière vive est inclus dans le rayon de la lumière tamisée."
+        "radiusHint": "Configure la distance d'émission de lumière de cette source où le rayon de la lumière vive est inclus dans le rayon de la lumière tamisée."
       },
       "SECTIONS": {
         "BASIC": "Configuration de base",
@@ -198,18 +198,18 @@
         },
         "volume": {
           "label": "Volume maximal",
-          "hint": "Définir le volume maximal du son à son point d'origine (si adoucissement) ou partout dans la zone."
+          "hint": "Définit le volume maximal du son à son point d'origine (si adoucissement) ou partout dans la zone."
         },
         "easing": {
           "label": "Adoucissement du volume",
           "hint": "Ajuste le niveau de volume du son à mesure que les tokens se rapprochent de l'origine."
         },
         "hidden": {
-          "label": "Caché",
-          "hint": "Cochez pour indiquer que cette source sonore est temporairement désactivée."
+          "label": "Cachée",
+          "hint": "Indique si cette source sonore est temporairement désactivée."
         },
         "walls": {
-          "label": "Contraint par les murs",
+          "label": "Contrainte par les murs",
           "hint": "Configure si la zone d'effet de cette source audio est contrainte par les murs environnants."
         },
         "darkness": {
@@ -481,7 +481,7 @@
     "CONTROLS.NavLabel": "Palette des contrôles de la scène",
     "CONTROLS.Instructions": "Décrit les commandes courantes du clavier et de la souris. Certaines commandes surlignées en violet clair ne sont accessibles qu'à un utilisateur ayant les droits de niveau 'Maître du Jeu'.",
     "CONTROLS.GroupToken": "Outils de token",
-    "CONTROLS.CommonForceSnap": "Forcer l'accrochage aux sommets de la grille",
+    "CONTROLS.CommonForceSnap": "Forcer l’alignement aux sommets de la grille",
     "CONTROLS.BasicSelect": "Sélection de tokens",
     "CONTROLS.BasicSelectP": "Sélectionnez les tokens que vous possédez pour voir leur ligne de vue. Si aucun token n'est sélectionné, vous verrez ce que tous les tokens que vous possédez peuvent voir.",
     "CONTROLS.TargetSelect": "Sélection de cibles",
@@ -572,8 +572,8 @@
     "CONTROLS.RegionEllipse": "Dessiner une ellipse",
     "CONTROLS.RegionPolygon": "Dessiner un polygone",
     "CONTROLS.RegionHole": "Créer des trous",
-    "CONTROLS.RegionHoleP": "Lorsqu'il est actif, toute forme que vous dessinez sur une région avec l'un des outils de forme créera un trou où les comportements de la région ne s'appliqueront pas.",
-    "CONTROLS.RegionSnap": "Lorsqu'il est actif, toute forme que vous dessinez sur une région avec l'un des outils de forme sera alignée sur la grille.",
+    "CONTROLS.RegionHoleP": "Si actif, toute forme que vous dessinez sur une région avec l'un des outils de forme créera un trou où les comportements de la région ne s'appliqueront pas.",
+    "CONTROLS.RegionSnap": "Si actif, toute forme que vous dessinez sur une région avec l'un des outils de forme sera alignée sur la grille.",
     "CONTROLS.RegionClear": "Effacer les régions",
     "CONTROLS.RegionPerformance": "<em>Remarque sur les performances :</em> Chaque dessin est sa propre forme. Faites attention à ne pas placer plusieurs formes entièrement les unes dans les autres. Plutôt que de combiner des formes simples pour créer une forme complexe, envisagez d'utiliser l'outil de polygone de région.",
     "CONTROLS.ClearAll": "Supprimer tous les objets",
@@ -701,7 +701,7 @@
     "CONTROLS.DeletedObjects": "{count} objet(s) {type} supprimé(s).",
     "CONTROLS.UndoCreateObjects": "Création de {count} objet(s) {type} annulée.",
     "CONTROLS.UndoDeleteObjects": "Suppression de {count} objet(s) {type} annulée.",
-    "CONTROLS.EmptyUndoHistory": "Aucun historique suivi pour les objets {type} à annuler !",
+    "CONTROLS.EmptyUndoHistory": "Il n'y a plus d'historique suivi pour les objets {type} à annuler !",
     "CONTROLS.ObjectIsLocked": "Vous ne pouvez pas effectuer cette action tant que l'objet {type} est verrouillé.",
     "CONTROLS.ObjectConfigured": "Vous ne pouvez pas effectuer cette action pendant la configuration d'un autre objet.",
      
@@ -1209,7 +1209,7 @@
     "LIGHT.FIELDS": {
       "alpha": {
         "label": "Intensité de la couleur",
-        "hint": "Modifiez l'intensité de la couleur émise par cette source de lumière."
+        "hint": "Modifie l'intensité de la couleur émise par cette source de lumière."
       },
       "animation": {
         "label": "Animation de la lumière",
@@ -1230,7 +1230,7 @@
       },
       "angle": {
         "label": "Angle d'émission",
-        "hint": "Limitez l'angle d'émission de cette source de lumière et configurez sa rotation."
+        "hint": "Limite l'angle d'émission de cette source de lumière et configure sa rotation."
       },
       "attenuation": {
         "label": "Atténuation",
@@ -1238,7 +1238,7 @@
       },
       "color": {
         "label": "Couleur de la lumière",
-        "hint": "Appliquez une coloration à cette source de lumière et configurez son intensité."
+        "hint": "Applique une coloration à cette source de lumière et configure son intensité."
       },
       "coloration": {
         "label": "Technique de coloration",
@@ -1246,7 +1246,7 @@
       },
       "contrast": {
         "label": "Contraste",
-        "hint": "Ajustez le contraste des surfaces éclairées par cette source de lumière. La valeur par défaut pour une source de lumière standard est de 0."
+        "hint": "Ajuste le contraste des surfaces éclairées par cette source de lumière. La valeur par défaut pour une source de lumière standard est de 0."
       },
       "dim": {
         "label": "Tamisé"
@@ -1256,7 +1256,7 @@
       },
       "luminosity": {
         "label": "Luminosité",
-        "hint": "Ajustez la luminosité de cette source de lumière. Les lumières plus lumineuses sont moins diminuées par l'obscurité. La valeur par défaut pour une source de lumière standard est de 0,5."
+        "hint": "Ajuste la luminosité de cette source de lumière. Les lumières plus lumineuses sont moins diminuées par l'obscurité. La valeur par défaut pour une source de lumière standard est de 0,5."
       },
       "negative": {
         "label": "Source de l'obscurité",
@@ -1264,11 +1264,11 @@
       },
       "saturation": {
         "label": "Saturation",
-        "hint": "Ajustez la saturation des surfaces éclairées par cette source de lumière. La valeur par défaut pour une source de lumière standard est de 0."
+        "hint": "Ajuste la saturation des surfaces éclairées par cette source de lumière. La valeur par défaut pour une source de lumière standard est de 0."
       },
       "shadows": {
         "label": "Ombres",
-        "hint": "Améliorez ou intensifiez les couleurs sombres éclairées par cette source de lumière. La valeur par défaut pour une source de lumière standard est de 0."
+        "hint": "Améliore l’intensité des couleurs sombres éclairées par cette source de lumière. La valeur par défaut pour une source de lumière standard est de 0."
       },
       "darkness": {
         "label": "Plage d'activation dans l'obscurité",
@@ -1504,7 +1504,7 @@
     "SCENES.GlobalLightThresholdHint": "Désactive automatiquement l'Illumination Globale lorsque le niveau d'obscurité dépasse une certaine valeur de seuil.",
     "SCENES.GridColor": "Couleur de la grille",
     "SCENES.GridConfigTool": "Outils de configuration de la grille",
-    "SCENES.GridConfigToolHint": "Configurez la position de la grille et de l'image de fond à l'aide de la molette de la souris et des touches fléchées, ou en définissant manuellement les champs suivants.",
+    "SCENES.GridConfigToolHint": "Configure la position de la grille et de l'image de fond à l'aide de la molette de la souris et des touches fléchées, ou en définissant manuellement les champs suivants.",
     "SCENES.GridOpacity": "Opacité de la grille",
     "SCENES.GridType": "Type de grille",
     "SCENES.GridGridless": "Sans grille",
@@ -1650,7 +1650,7 @@
     "SETTINGS.DefaultSheetsH": "Configurer les fiches (de PJ/PNJ etc ...) utilisées par défaut pour tous les types de documents disponibles dans le monde",
     "SETTINGS.FontConfigN": "Polices supplémentaires",
     "SETTINGS.FontConfigL": "Configurer des polices supplémentaires",
-    "SETTINGS.FontConfigH": "Configurez les polices supplémentaires qui seront disponibles pour être utilisées dans ce monde.",
+    "SETTINGS.FontConfigH": "Configure les polices supplémentaires qui seront disponibles pour être utilisées dans ce monde.",
     "SETTINGS.FontSizeN": "Taille de la police",
     "SETTINGS.FontSizeL": "Agrandir ou réduire la taille de la police utilisée dans l'application.",
     "SETTINGS.PhotosensitiveModeN": "Mode de photosensibilité",
@@ -1694,8 +1694,8 @@
     "SETTINGS.GridDiagonalsAlternating2": "Alterné (2/1/2)",
     "SETTINGS.GridDiagonalsIllegal": "Illégal (∞)",
     "SETTINGS.ColorSchemeN": "Schéma de couleurs préféré",
-    "SETTINGS.ColorSchemeH": "Spécifiez si vous préférez que les éléments de l'interface utilisateur soient rendus en utilisant un thème clair ou un thème sombre. Tous les éléments de l'interface ne prennent pas en charge cette préférence.",
-    "SETTINGS.ColorSchemeDefault": "Défaut du navigateur",
+    "SETTINGS.ColorSchemeH": "Indique si vous préférez que les éléments de l'interface utilisateur soient rendus en utilisant un thème clair ou un thème sombre. Tous les éléments de l'interface ne prennent pas en charge cette préférence.",
+    "SETTINGS.ColorSchemeDefault": "Valeur par défaut du navigateur",
     "SETTINGS.ColorSchemeDark": "Sombre",
     "SETTINGS.ColorSchemeLight": "Clair",    
   
@@ -2156,11 +2156,11 @@
     "JOIN": {
       "CurrentPlayers": "Joueurs présents",
       "HeaderJoin": "Rejoindre la partie",
-      "HeaderDetails": "Détails de la Session",
+      "HeaderDetails": "Détails de la session",
       "HeaderWorld": "Description du monde",
       "NextSession": "Prochaine partie",
       "SelectUser": "Sélectionner un utilisateur",
-      "UserKey": "Mot de Passe",
+      "UserKey": "Mot de passe",
       "AuthAdmin": "Vous êtes authentifié en tant qu'administrateur du serveur.",
       "ErrorMustSelectUser": "Vous devez sélectionner un utilisateur pour vous connecter.",
       "ErrorUserDoesNotExist": "Le joueur demandé, \"{user}\", n'existe pas !",
@@ -2224,7 +2224,7 @@
     "FOLDER.ExceededMaxDepth": "Vous ne pouvez pas imbriquer les dossiers à plus de {profondeur} niveaux.",
     
     "FOLDER.DocumentSort": "Ordre de tri",
-    "FOLDER.DocumentSortHint": "Configurez l'ordre de tri de ce dossier par rapport aux autres dossier. Les numéros les plus petits seront en premier (ordre croissant).",
+    "FOLDER.DocumentSortHint": "Configure l'ordre de tri de ce dossier par rapport aux autres dossier. Les numéros les plus petits seront en premier (ordre croissant).",
     
     "OWNERSHIP.Title": "Configuration des droits",
     "OWNERSHIP.NONE": "Aucun",
@@ -2235,8 +2235,8 @@
     "OWNERSHIP.NOCHANGE": "Aucun changement",
     "OWNERSHIP.INHERIT": "Hériter de",
     "OWNERSHIP.AllPlayers": "Tous les joueurs",
-    "OWNERSHIP.HintFolder": "Configurer l'accès pour tous les documents contenus dans ce dossier. Les modifications seront appliquées à tous les documents contenus, à l'exclusion du contenu des sous-dossiers.",
-    "OWNERSHIP.HintDocument": "Configurez l'accès à ce document spécifique, en permettant à chaque utilisateur de se voir attribuer un niveau de visibilité différent.",
+    "OWNERSHIP.HintFolder": "Configure l'accès pour tous les documents contenus dans ce dossier. Les modifications seront appliquées à tous les documents contenus, à l'exclusion du contenu des sous-dossiers.",
+    "OWNERSHIP.HintDocument": "Configure l'accès à ce document spécifique, en permettant à chaque utilisateur de se voir attribuer un niveau de visibilité différent.",
     "OWNERSHIP.Configure": "Configurer les droits",
     "OWNERSHIP.ShowGM": "Afficher les utilisateurs MJ",
     
@@ -2244,7 +2244,7 @@
     "PERMISSION.Configure": "Configurer les droits",
     "PERMISSION.ConfigureLabel": "Ouvrir la Configuration des droits",
     "PERMISSION.ConfigureHint": "Ajuster les actions permises aux utilisateurs pour chaque rôle.",
-    "PERMISSION.Instructions": "Configurez quel rôle d'utilisateur a la permission d'effectuer quelle action. Notez que certaines actions ne peuvent pas être désactivées pour les utilisateurs maîtres de jeu. Certains changements peuvent ne pas prendre effet avant que le jeu ne soit rechargé.",
+    "PERMISSION.Instructions": "Configure quelles actions a le droit d’effectuer chaque rôle utilisateur. Notez que certaines actions ne peuvent pas être désactivées pour les utilisateurs maîtres de jeu. Certains changements peuvent ne pas prendre effet avant que le jeu ne soit rechargé.",
     "PERMISSION.Permission": "Permission",
     "PERMISSION.Permissions": "Permissions des rôles utilisateur",
     "PERMISSION.Reset": "Réinitialiser par défaut",
@@ -2438,7 +2438,7 @@
       "FIELDS": {
         "disabled": {
           "label": "Désactivé",
-          "hint": "Cochez pour indiquer si ce comportement est temporairement désactivé."
+          "hint": "Indique si ce comportement est temporairement désactivé."
         }
       },
       "ACTIONS": {
@@ -2750,8 +2750,8 @@
     
     "TOKEN.HEXAGONAL_SHAPE_ELLIPSE_1": "Ellipse (Variante 1)",
     "TOKEN.HEXAGONAL_SHAPE_ELLIPSE_2": "Ellipse (Variante 2)",
-    "TOKEN.HEXAGONAL_SHAPE_TRAPEZOID_1": "Trapezoid (Variante 1)",
-    "TOKEN.HEXAGONAL_SHAPE_TRAPEZOID_2": "Trapezoid (Variante 2)",
+    "TOKEN.HEXAGONAL_SHAPE_TRAPEZOID_1": "Trapèze (Variante 1)",
+    "TOKEN.HEXAGONAL_SHAPE_TRAPEZOID_2": "Trapèze (Variante 2)",
     "TOKEN.HEXAGONAL_SHAPE_RECTANGLE_1": "Rectangle (Variante 1)",
     "TOKEN.HEXAGONAL_SHAPE_RECTANGLE_2": "Rectangle (Variante 2)",
     
@@ -2888,7 +2888,7 @@
           },
           "texture": {
             "label": "Texture du sujet",
-            "hint": "Spécifiez explicitement un chemin pour l'illustration placée sur l'anneau dynamique de token. Si non fourni, le sujet de l'anneau est le même que la texture standard du token."
+            "hint": "Indique explicitement un chemin pour l'illustration placée sur l'anneau dynamique de token. Si non fourni, le sujet de l'anneau est le même que la texture standard du token."
           }
         }
       }
@@ -2916,8 +2916,8 @@
     "TYPES.Macro.chat": "Tchat",
     "TYPES.Macro.script": "Script",
     "TYPES.RegionBehavior.adjustDarknessLevel": "Ajuster le niveau d'obscurité",
-    "TYPES.RegionBehavior.executeMacro": "Exécuter la macro",
-    "TYPES.RegionBehavior.executeScript": "Exécuter le script",
+    "TYPES.RegionBehavior.executeMacro": "Exécuter une macro",
+    "TYPES.RegionBehavior.executeScript": "Exécuter un script",
     "TYPES.RegionBehavior.pauseGame": "Mettre le jeu en pause",
     "TYPES.RegionBehavior.suppressWeather": "Supprimer les effets météo",
     "TYPES.RegionBehavior.teleportToken": "Téléporter le token",
