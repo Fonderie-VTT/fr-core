@@ -7,3 +7,6 @@ EN :
 		This module adds the option to select the French (Français) language from the FoundryVTT settings menu. 
 		
 
+# Glossaire (en/fr)
+- token : token est conservé
+- chat : tchat
