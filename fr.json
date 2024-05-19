@@ -712,14 +712,14 @@
     "DICE.SubmitRollPl": "Soumettre les jets",
     "DICE.WarnMissingData": "Le paramètre {match} n’était pas dans la liste des données fournies.",
     "DICE.CONFIG": {
-      "Hint": "Configure how dice rolling is performed.",
-      "Label": "Configure Dice",
-      "Title": "Dice Configuration"
+      "Hint": "Configure la façon dont les lancers de dés sont effectués.",
+      "Label": "Configurer les dés",
+      "Title": "Configuration des dés"
     },
     "DICE.FULFILLMENT": {
-      "Default": "Foundry VTT Digital Roll",
-      "Mersenne": "Digital Roll (Mersenne Twister)",
-      "Manual": "Manual Input"
+      "Default": "Lancer numérique (Foundry VTT)",
+      "Mersenne": "Lancer numérique (Mersenne Twister)",
+      "Manual": "Saisie manuelle"
     },
 
     "DOCUMENT.Create": "Créer {type}",
