@@ -1695,7 +1695,7 @@
     "SETTINGS.GridDiagonalsIllegal": "Illégal (∞)",
     "SETTINGS.ColorSchemeN": "Schéma de couleurs préféré",
     "SETTINGS.ColorSchemeH": "Indique si vous préférez que les éléments de l'interface utilisateur soient rendus en utilisant un thème clair ou un thème sombre. Tous les éléments de l'interface ne prennent pas en charge cette préférence.",
-    "SETTINGS.ColorSchemeDefault": "Valeur par défaut du navigateur",
+    "SETTINGS.ColorSchemeDefault": "Défaut du navigateur",
     "SETTINGS.ColorSchemeDark": "Sombre",
     "SETTINGS.ColorSchemeLight": "Clair",    
   
@@ -2505,7 +2505,7 @@
           "FIELDS": {
             "once": {
               "label": "Une fois",
-              "hint": "Désactiver le comportement une fois qu'un token contrôlé par un joueur entre dans la région."
+              "hint": "Désactive le comportement une fois qu'un token contrôlé par un joueur entre dans la région."
             }
           }
         },
@@ -2520,11 +2520,11 @@
         "toggleBehavior": {
           "FIELDS": {
             "enable": {
-              "label": "Activer les comportements",
+              "label": "Activer des comportements",
               "hint": "Les comportements qui sont activés lorsque l'un des événements se produit."
             },
             "disable": {
-              "label": "Désactiver les comportements",
+              "label": "Désactiver des comportements",
               "hint": "Les comportements qui sont désactivés lorsque l'un des événements se produit."
             }
           }
@@ -2623,8 +2623,8 @@
     "TEMPLATE.FillTexture": "Texture de remplissage",
     "TEMPLATE.SubmitCreate": "Créer un modèle de mesure",
     "TEMPLATE.SubmitUpdate": "Mettre à jour un modèle de mesure",
-    "TEMPLATE.GridTemplatesSetting": "Formes de modèles basés sur la grille",
-    "TEMPLATE.GridTemplatesSettingHint": "Configurez si la zone d'effet des modèles doit être basée sur la grille plutôt que sur l'Euclidien.",    
+    "TEMPLATE.GridTemplatesSetting": "Formes de modèles basés sur une grille",
+    "TEMPLATE.GridTemplatesSettingHint": "Configurez si la zone d'effet des modèles doit être basée sur la grille au lieu d'être euclidienne.",    
     
     
     "TILE.ConfigTitle": "Configuration de la tuile",
