@@ -154,7 +154,7 @@
         },
         "vision": {
           "label": "Fournit une vision",
-          "hint": "Cette source de lumière compte comme une source de vision, révélant des zones supplémentaires de la scène même si elle n’est pas dans la ligne de vue d’un token contrôlé."
+          "hint": "Une source lumineuse avec cette option activée sert de point de vision supplémentaire pour les jetons. Activez cette option pour permettre aux jetons de toujours voir la zone qu'elle éclaire, même si cette zone se trouve derrière un mur ou en dehors du champ de vision du jeton."
         },
         "walls": {
           "label": "Contrainte par les murs",
@@ -477,6 +477,20 @@
     "COMPENDIUM.CannotViewWarning": "Vous ne disposez pas d’autorisations suffisantes pour consulter ce compendium.",
     "COMPENDIUM.OwnershipInheritBelow": "Héritage de l’origine",
     "COMPENDIUM.OwnershipReset": "Rétablissement des valeurs par défaut",
+    "COMPENDIUM.ART": {
+      "CONFIG": {
+        "Hint": "Utilisez les flèches pour ajuster la priorité des sources d'art. Lorsqu'un seul acteur a des illustrations fournies par plusieurs sources, c'est celle qui a la priorité la plus élevée qui sera utilisée",
+        "Portraits": "Portraits",
+        "PriorityDecrease": "Diminuer la priorité",
+        "PriorityIncrease": "Augmenter la priorité",
+        "Tokens": "Tokens"
+      },
+      "SETTING": {
+        "Hint": "Configure quel art fourni par le système et le module doit être utilisé",
+        "Label": "Configure Art",
+        "Title": "Compendium Art"
+      }
+    },
 
     "CONTROLS.Title": "Liste des raccourcis",
     "CONTROLS.NavLabel": "Palette des contrôles de la scène",
@@ -842,6 +856,8 @@
     "DRAWING.RoleHint": "Un dessin qui représente un « Objet » est rendu dans le groupe de calque principal et est affecté par l’éclairage et l’exploration du brouillard de guerre. Un dessin qui transmet une « Information » est rendu dans le groupe d’interface et est visible par tous les joueurs sauf s’il est caché.",
     "DRAWING.Object": "Objet",
     "DRAWING.Information": "Information",
+    "DRAWING.JointValidationError": "Les dessins doivent avoir un texte visible, un remplissage visible ou une ligne visible.",
+    "DRAWING.JointValidationErrorUI": "Les dessins doivent avoir un texte visible, un remplissage visible ou une ligne visible. Veuillez vérifier les paramètres de configuration par défaut des dessins.",
 
     "EFFECT.MODE_CUSTOM": "Personnalisation",
     "EFFECT.MODE_MULTIPLY": "Multiplier",
@@ -1102,6 +1118,8 @@
     "HUD.TilePlay": "Jouer la vidéo",
     "HUD.TilePause": "Mettre en pause la vidéo",
     "HUD.WarningEffectNoActor": "You cannot assign status effects to a Token which has no associated Actor.",
+
+    "HTMLDocumentTagsElement.PLACEHOLDER": "Saisir UUID ou Déposer {type}",
 
     "JOURNAL.ModeText": "Texte",
     "JOURNAL.ModeImage": "Image",
@@ -1482,6 +1500,7 @@
     "SCENES.ForegroundElevationHint": "Fixe la hauteur de l’image du premier plan et des tuiles de plafond (dans l’unité définie).",
     "SCENES.BackgroundScale": "Échelle de l’image d’arrière-plan",
     "SCENES.BackgroundScaleHint": "Utilisez SHIFT+Molette de la souris ou SHIFT+Flèche vers le haut et SHIFT+Flèche vers le bas pour régler la taille de l’image d’arrière-plan.",
+    "SCENES.CaptureInitialViewPosition": "Position du canvas capturée en tant que vue initiale dans le formulaire de configuration de la scène.",
     "SCENES.Configure": "Configurer",
     "SCENES.ConfigTitle": "Configuration de la scène",
     "SCENES.Darkness": "Niveau d’obscurité",
@@ -1567,24 +1586,24 @@
     "SCENES.FogUnexploredColorHint": "Une couleur unie appliquée à toutes les zones inexplorées de la scène.",
 
     "SCENES.ENVIRONMENT": {
-      "HeaderLabel": "Environment Lighting",
-      "Luminosity": "Luminosity",
-      "LuminosityHint": "Control how bright the scene appears. Higher luminosity makes the scene bright like a sunny day, while lower luminosity makes it appear darker and gloomier.",
-      "Saturation": "Saturation",
-      "SaturationHint": "Adjust the purity of colors in the scene. Settings above 0 make the colors more saturated (intense and vibrant) while negative settings dull and mute the colors.",
-      "Shadows": "Shadows",
-      "ShadowsHint": "Raising this slider causes the shadows and darker elements of the scene to be darker and deeper.",
-      "Hue": "Hue",
-      "HueHint": "Choose a hue (color) to blend into the entire scene. To activate the color slider, you must have an intensity greater than 0.",
-      "Intensity": "Hue Intensity",
-      "IntensityHint": "Adjust how intensly the chosen hue is blended into the scene. A high hue intensity saturates the scene with the color, possibly overhelming existing colors. A lower hue intensity blends in the chosen color more subtly.",
-      "ResetEnvironment": "Reset to Default Options",
-      "EnableCycling": "Activer le cycle",
-      "EnableCyclingHint": "Lorsque cette option est décochée, seule l’ambiance de base est appliquée, sans mélanger les valeurs entre la base et l’obscurité selon le niveau d’obscurité.",
-      "BaseAmbience": "Ambiance de base",
+      "HeaderLabel":"Éclairage de l'environnement",
+      "Luminosity":"Luminosité",
+      "LuminosityHint":"Contrôlez la luminosité de la scène. Une luminosité plus élevée rend la scène lumineuse comme un jour ensoleillé, tandis qu'une luminosité plus faible la rend plus sombre et plus morose,",
+      "Saturation":"Saturation",
+      "SaturationHint":"Ajuste la pureté des couleurs de la scène. Les réglages supérieurs à 0 rendent les couleurs plus saturées (intenses et vibrantes), tandis que les réglages négatifs ternissent et atténuent les couleurs.",
+      "Shadows":"Ombres",
+      "ShadowsHint":"En augmentant ce curseur, les ombres et les éléments plus sombres de la scène sont plus foncés et plus profonds.",
+      "Hue":"Teinte",
+      "HueHint":"Choisissez une teinte (couleur) pour l'intégrer à l'ensemble de la scène. Pour activer le curseur de couleur, vous devez avoir une intensité supérieure à 0",
+      "Intensité" : "Intensité de la teinte.",
+      "IntensityHint":"Permet de régler l'intensité avec laquelle la teinte choisie se fond dans la scène. Une intensité de teinte élevée sature la scène avec la couleur, ce qui risque d'écraser les couleurs existantes. Une intensité de teinte plus faible permet d'intégrer la couleur choisie de manière plus subtile.",
+      "ResetEnvironment":"Réinitialiser les options par défaut",
+      "BlendAmbience": "Mélanger l'ambiance",
+      "BlendAmbienceHint": "Lorsque cette option est cochée, les valeurs d'ambiance de base sont fusionnées avec les valeurs d'ambiance d'obscurité en fonction du niveau d'obscurité.",
+      "BaseAmbience": "Ambience de base",
       "DarkAmbience": "Ambiance sombre",
-      "DarknessLock": "Verrouillage du niveau d’obscurité",
-      "DarknessLockHint": "Lorsque cette option est cochée, le niveau d’obscurité ne peut pas être modifié."
+      "DarknessLock": "Verrouillage du niveau d'obscurité",
+      "DarknessLockHint": "Lorsque cette option est cochée, le niveau d'obscurité ne peut être modifié."
     },
 
     "GRID.STYLES": {
@@ -1736,7 +1755,7 @@
     "SETUP.UpdateChannel": "Canal de mise à jour de FVTT",
     "SETUP.UpdateChannelHint": "Vous pouvez choisir un canal de mise à jour en fonction du type de mises à jour que vous souhaitez recevoir pour Foundry Virtual Tabletop. Si vous n’avez pas de raison particulière de changer cela, il est recommandé de rester sur le canal de mise à jour « Stable ».",
     "SETUP.UpdateCheck": "Vérifier MàJ",
-    "SETUP.UpdateCheckFor": "Vérifier la mise à jour",
+    "SETUP.UpdateCheckFor": "Effectuer la mise à jour si elle est disponible",
     "SETUP.UpdateHint": "Vous pouvez mettre à jour votre logiciel Foundry Virtual Tabletop vers une nouvelle version en vérifiant les mises à jour du canal sélectionné.",
     "SETUP.UpdatePrototype": "Prototype",
     "SETUP.UpdatePrototypeHint": "Prototype : Versions permettant de prévisualiser la conception de fonctionnalités expérimentales qui ne sont pas encore totalement développées.",
@@ -1949,7 +1968,7 @@
     "SETUP.Telemetry": "Partager les données d’utilisation",
     "SETUP.TelemetryHint": "Autoriser le partage des données d’utilisation avec nous pour nous aider à améliorer Foundry Virtual Tabletop. Les données collectées si cette option est activée sont documentées dans notre <a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Privacy Policy</a> et ne contiennent aucune information d’identification personnelle et ne sont pas partagées avec des tiers. Le partage des données d’utilisation nous aide à répondre à des questions telles que « quelles versions du logiciel Foundry Virtual Tabletop sont les plus utilisées », « quels systèmes de jeu sont les plus joués » et « quelles versions de modules sont fréquemment installées ». Nous utilisons ces données pour améliorer la compatibilité des logiciels, fournir une meilleure assistance à la clientèle et partager des informations globales avec notre communauté. Si cette option est désactivée, aucune donnée ne sera partagée.",
     "SETUP.TelemetryRequestTitle": "Autoriser le partage des données d’utilisation ?",
-    "SETUP.TelemetryRequest1": "La version 11 de Foundry Virtual Tabletop nous permet de collecter, uniquement avec votre autorisation, des données d’utilisation anonymes qui nous aident à améliorer la plateforme.",
+    "SETUP.TelemetryRequest1": "Si vous donnez l'autorisation, Foundry Virtual Tabletop partagera une petite quantité de données d'utilisation anonymes avec le site Web foundryvtt.com, ce qui permettra à notre équipe de mieux comprendre comment Foundry VTT est utilisé et nous aidera à améliorer le logiciel.",
     "SETUP.TelemetryRequest2": "Vous pouvez modifier vos préférences concernant le partage des données d’utilisation à tout moment dans le menu Configuration de l’application en cliquant sur l’icône <i class=\"fas fa-cogs\"></i> en haut à droite de cet écran.",
     "SETUP.TelemetryAllow": "Autoriser le partage",
     "SETUP.TelemetryDecline": "Refus du partage",
@@ -2268,8 +2287,10 @@
     "PERMISSION.FilesUploadHint": "Permettre aux joueurs ayant ce rôle de télécharger du contenu SUR le serveur à l’aide de l’explorateur de fichiers.",
     "PERMISSION.JournalCreate": "Créer des entrées de journal",
     "PERMISSION.JournalCreateHint": "Permettre aux joueurs ayant ce rôle de créer de nouvelles entrées de journal dans la barre latérale du journal.",
-    "PERMISSION.MacroScript": "Autoriser les Macros scriptée",
+    "PERMISSION.MacroScript": "Autoriser les Macros scriptées",
     "PERMISSION.MacroScriptHint": "Permettre aux joueurs ayant ce rôle d’utiliser des macros JavaScript qui accèdent à l’API.",
+    "PERMISSION.ManualRolls": "Faire des jets manuels Manual Rolls",
+    "PERMISSION.ManualRollsHint": "Permettre aux joueurs ayant ce rôle de faire des jets manuels.",
     "PERMISSION.MessageWhisper": "Chuchoter des messages privés",
     "PERMISSION.MessageWhisperHint": "Permettre aux joueurs ayant ce rôle de chuchoter des messages privés que le maître de jeu ne peut pas voir.",
     "PERMISSION.NoteCreate": "Créer des notes sur les scènes",
@@ -2448,17 +2469,21 @@
         "delete": "Supprimer le comportement de région"
       },
       "TYPES": {
-        "base": {
-          "SECTIONS": {
-            "events": "Événements abonnés"
-          },
-          "FIELDS": {
-            "events": {
-              "label": "Événements",
-              "hint": "Les événements auxquels ce comportement s’abonne."
-            }
-          }
+    "base": {
+        "SECTIONS": {
+          "events": "Événements souscrits"
         },
+        "FIELDS": {
+          "events": {
+            "label": "Événements",
+            "hint": "Les événements auxquels ce comportement est abonné."
+          },
+          "once": {
+            "label": "Une fois",
+            "hint": "Désactiver le comportement après son premier déclenchement"
+          }
+        }
+      },
         "adjustDarknessLevel": {
           "FIELDS": {
             "mode": {
@@ -2486,12 +2511,43 @@
             }
           }
         },
+        "displayScrollingText": {
+          "FIELDS": {
+            "color": {
+              "label": "Couleur",
+              "hint": "La couleur du texte défilant."
+            },
+            "text": {
+              "label": "Texte",
+              "hint": "Le texte qui s'affiche lorsque le comportement est déclenché."
+            },
+            "visibility": {
+              "label": "Visibilité",
+              "hint": "Configurer les utilisateurs qui verront le texte défilant en fonction de leur niveau d'autorisation."
+            }
+          },
+          "VISIBILITY_MODES": {
+            "GAMEMASTER": {
+              "label": "Maître du Jeu"
+            },
+            "OBSERVER": {
+              "label": "Observateur"
+            },
+            "ANYONE": {
+              "label": "Tout le monde"
+            }
+          }
+        },
         "executeMacro": {
           "FIELDS": {
             "uuid": {
               "label": "Macro",
               "hint": "La macro qui est exécutée lorsque l’un des événements se produit."
-            }
+            },
+            "everyone": {
+            "label": "Tout le monde",
+            "hint": "Permet de déterminer si la macro est exécutée par tous les utilisateurs connectés plutôt que par un seul utilisateur disposant des autorisations suffisantes."
+        } 
           }
         },
         "executeScript": {
@@ -2502,21 +2558,19 @@
             }
           }
         },
-        "pauseGame": {
-          "FIELDS": {
-            "once": {
-              "label": "Une fois",
-              "hint": "Désactive le comportement une fois qu’un token contrôlé par un joueur entre dans la région."
-            }
-          }
-        },
         "teleportToken": {
           "FIELDS": {
             "destination": {
               "label": "Destination",
               "hint": "La région de destination vers laquelle le token est téléporté une fois qu’il entre dans la région."
+            },
+            "choice": {
+              "label": "Autoriser le choix",
+              "hint": "Permettre à l'utilisateur qui a déplacé le Token de choisir de le téléporter ou non."
             }
-          }
+          },
+          "Confirm": "Voulez-vous téléporter {token} ?",
+          "ConfirmGM": "Voulez-vous téléporter {token} dans {région} dans {scène} ?"
         },
         "toggleBehavior": {
           "FIELDS": {
@@ -2721,7 +2775,7 @@
     "TOKEN.TintColor": "Teinte",
     "TOKEN.Update": "Mettre à jour le token",
     "TOKEN.VisionEnabled": "Vision activée",
-    "TOKEN.VisionEnabledHint": "Une source lumineuse avec cette option activée sert de point de vision supplémentaire pour les tokens. Activez cette option pour permettre aux jetons de toujours voir la zone qu’elle éclaire, même si cette zone se trouve derrière un mur ou en dehors du champ de vision du token.",
+    "TOKEN.VisionEnabledHint": "Permet au token de voir les espaces éclairés dans sa ligne de mire",
     "TOKEN.VisionRange": "Distance de vision",
     "TOKEN.VisionRangeHint": "La distance à laquelle un token peut voir sans aucune lumière.",
     "TOKEN.VisionAngle": "Angle de vision",
@@ -2888,7 +2942,8 @@
         },
         "subject": {
           "scale": {
-            "label": "Correction de l’échelle du sujet"
+            "label": "Correction de l’échelle du sujet",
+            "hint": "Ajuste la taille relative de la texture du sujet par rapport à l'anneau. L'augmentation de cette valeur rendra la texture du sujet plus grande par rapport à l'anneau. Utilisez des valeurs plus faibles pour réduire la taille de la texture du sujet si elle semble trop dominante."
           },
           "texture": {
             "label": "Texture du sujet",
@@ -2900,12 +2955,18 @@
 
     "TOKEN.RING": {
       "EFFECTS": {
-        "BACKGROUND_WAVE": "Vague de fond",
-        "RING_GRADIENT": "Dégradé de l’anneau",
-        "RING_PULSE": "Impulsion de l’anneau"
+        "BKG_WAVE": "Vague de fond",
+        "RING_GRADIENT": "Dégradé de l'anneau",
+        "RING_PULSE": "Impulsion de l'anneau",
+        "INVISIBILITY": "Impulsion spectrale"
       },
       "SHEET": {
         "legend": "Anneau dynamique du token"
+      },
+      "SETTINGS": {
+        "label": "Anneaux dynamiques de tokens",
+        "hint": "Choisissez une visualisation d'anneau à jeton dynamique disponible. Une modification nécessite un rechargement.",
+        "defaultConfigLabel": "Anneau par défaut de Foundry VTT"
       }
     },
 
@@ -2919,7 +2980,8 @@
     "TYPES.JournalEntryPage.video": "Vidéo",
     "TYPES.Macro.chat": "Tchat",
     "TYPES.Macro.script": "Script",
-    "TYPES.RegionBehavior.adjustDarknessLevel": "Ajuster le niveau d’obscurité",
+    "TYPES.RegionBehavior.adjustDarknessLevel": "Afficher le texte défilant",
+    "TYPES.RegionBehavior.displayScrollingText": "Display Scrolling Text",    
     "TYPES.RegionBehavior.executeMacro": "Exécuter une macro",
     "TYPES.RegionBehavior.executeScript": "Exécuter un script",
     "TYPES.RegionBehavior.pauseGame": "Mettre le jeu en pause",
