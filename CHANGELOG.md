@@ -1,3 +1,8 @@
+12.331.5
+- Modification des titres et boutons dans la sidebar (ie. Créer Acteur => Créer un acteur)
+- Modification des titres et boutons des fenêtres de dialogue
+- Les modifications ne s'exécutent que si la langue sélectionnée dans Foundry VTT est le français.
+
 12.331.4
 - Release technique
 
