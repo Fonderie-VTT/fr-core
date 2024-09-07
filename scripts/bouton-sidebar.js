@@ -1,11 +1,10 @@
-//\\ Hook quand la sidebar est affichée //\\
-Hooks.on("renderSidebarTab", () => {
-  //\\ Vérifie si la langue dans les configurations est le français //\\
-    if (game.settings.get("core", "language") !== "fr") return;
-    
+  //\\ Enregistrer les hooks //\\
+function registerHooks() {
+  //\\ Hook quand la sidebar est affichée //\\
+  Hooks.on("renderSidebarTab", () => {
     function remplacerTexte(element) {
       let text = element.innerText;
-  
+
       const remplacements = {
         "Créer Acteur": "Créer un acteur",
         "Créer Scène": "Créer une scène",
@@ -16,7 +15,7 @@ Hooks.on("renderSidebarTab", () => {
         "Créer Playlist": "Créer une playlist",
         "Créer Compendium": "Créer un compendium"
       };
-  
+
       for (const [cle, valeur] of Object.entries(remplacements)) {
         if (text.includes(cle)) {
           element.innerText = text.replace(cle, valeur);
@@ -27,13 +26,12 @@ Hooks.on("renderSidebarTab", () => {
     const buttons = document.querySelectorAll('.create-document.create-entry, .create-entry');
     buttons.forEach(remplacerTexte);
   });
-  
-  
+
   //\\ Hook pour l'ouverture d'un Dialog //\\
   Hooks.on("renderApplication", (app, html) => {
     function remplacerTexte(element) {
       let text = element.innerText;
-  
+
       const remplacements = {
         "Supprimer Acteur:": "Supprimer l'acteur :",
         "Supprimer Scène:": "Supprimer la scène :",
@@ -50,19 +48,27 @@ Hooks.on("renderSidebarTab", () => {
         "Créer Ensemble de carte": "Créer un ensemble de carte",
         "Créer Playlist": "Créer une playlist"
       };
-  
+
       for (const [cle, valeur] of Object.entries(remplacements)) {
         if (text.includes(cle)) {
           element.innerText = text.replace(cle, valeur);
         }
       }
     }
-  
+
     //\\ Cible les en-têtes des Dialog //\\
     const headers = html[0].querySelectorAll('.window-header .window-title');
     headers.forEach(remplacerTexte);
-  
+
     //\\ Cible les boutons de validation des fenêtres de dialogue //\\
     const buttons = html[0].querySelectorAll('.dialog .dialog-buttons button.default');
     buttons.forEach(remplacerTexte);
   });
+}
+
+//\\ Hook pour quand Foundry est chargé //\\
+Hooks.once("ready", () => {
+  if (game.settings.get("core", "language") === "fr") {
+    registerHooks();
+  }
+});
