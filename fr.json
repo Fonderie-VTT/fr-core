@@ -119,10 +119,10 @@
     "ExportPrimaryDocumentsOnly": "Vous ne pouvez ajouter que des documents primaires qui existent dans le monde.",
     "CreateSuccess": "L’aventure « {name} » a été créée avec succès !",
     "UpdateSuccess": "L’aventure « {name} » a été mise à jour avec succès !",
-    "DocumentUpdate": "Ce document sera mis à jour au fur et à mesure de la construction de l’Aventure",
-    "DocumentAdd": "Ce document sera ajouté lors de la construction de l’Aventure",
-    "DocumentMissing": "Ce document est absent du Monde et ne sera pas mis à jour lorsque l’Aventure sera construite",
-    "DocumentRemove": "Ce document sera supprimé une fois l’Aventure générée",
+    "DocumentUpdate": "Ce document sera mis à jour au fur et à mesure de la construction de l’Aventure.",
+    "DocumentAdd": "Ce document sera ajouté lors de la construction de l’Aventure.",
+    "DocumentMissing": "Ce document est absent du Monde et ne sera pas mis à jour lorsque l’Aventure sera construite.",
+    "DocumentRemove": "Ce document sera supprimé une fois l’Aventure générée.",
     "FIELDS": {
       "name": {
         "label": "Nom de l'aventure",
@@ -328,7 +328,7 @@
     "PassTitle": "Passer des cartes",
     "PassHint": "Passer des cartes à une autre main ou défausse.",
     "PassWarnNoTargets": "Il n’y a ni main ni défausse disponible à laquelle passer.",
-    "ResetConfirm": "Êtes-vous sûr de vouloir réinitialiser {name}? Toutes les cartes distribuées seront rappelées.",
+    "ResetConfirm": "Êtes-vous sûr de vouloir réinitialiser {name} ? Toutes les cartes distribuées seront rappelées.",
     "ReturnConfirm": "Êtes-vous sûr ? Toutes les cartes de {name} seront retournées dans leur pioche d'origine.",
     "NotifyShuffle": "Mélange de : {link}",
     "NotifyPass": "{number} carte(s) passée(s) vers : {link}",
@@ -407,7 +407,7 @@
   "CHAT.FlushTitle": "Supprimer le contenu du tchat",
   "CHAT.FlushWarning": "Tous les messages contenus dans le tchat seront définitivement supprimés.",
   "CHAT.InvalidCommand": "{command} n’est pas une commande valide.",
-  "CHAT.Title": "Tchat",
+  "CHAT.Title": "Historique du tchat",
   "CHAT.To": "À",
   "CHAT.PopoutMessage": "Ouvrir le message en fenêtre",
   "CHAT.RevealMessage": "Révéler à tous",
@@ -444,7 +444,7 @@
   "COMBAT.PanToCombatant": "Centrer sur le combattant",
   "COMBAT.PingCombatant": "Pointer (ping) le Combattant",
   "COMBAT.WarnNonVisibleToken": "Ce combattant n’est pas visible pour vous.",
-  "COMBAT.Round": "Round",
+  "COMBAT.Round": "Round {round}",
   "COMBAT.Rounds": "Rounds",
   "COMBAT.RoundPrev": "Round précédent",
   "COMBAT.RoundNext": "Prochain round",
@@ -568,14 +568,14 @@
   "COMPENDIUM.OwnershipReset": "Rétablissement des valeurs par défaut",
   "COMPENDIUM.ART": {
     "CONFIG": {
-      "Hint": "Utilisez les flèches pour ajuster la priorité des sources d'art. Lorsqu'un seul acteur a des illustrations fournies par plusieurs sources, c'est celle qui a la priorité la plus élevée qui sera utilisée",
+      "Hint": "Utilisez les flèches pour ajuster la priorité des sources d'art. Lorsqu'un seul acteur a des illustrations fournies par plusieurs sources, c'est celle qui a la priorité la plus élevée qui sera utilisée.",
       "Portraits": "Portraits",
       "PriorityDecrease": "Diminuer la priorité",
       "PriorityIncrease": "Augmenter la priorité",
       "Tokens": "Tokens"
     },
     "SETTING": {
-      "Hint": "Configure quel art fourni par le système et le module doit être utilisé",
+      "Hint": "Configure quel art fourni par le système et le module doit être utilisé.",
       "Label": "Configurer les arts",
       "Title": "Art du compendium"
     }
@@ -749,7 +749,7 @@
   "CONTROLS.KeyCopy": "Copier les éléments de la scène",
   "CONTROLS.KeyPaste": "Coller les éléments de la scène",
   "CONTROLS.KeyUndo": "Annuler la dernière opération sur la scène",
-  "CONTROLS.KeyHotbar": "Raccourcis de la barre d'accès rapide",
+  "CONTROLS.KeyHotbar": "Raccourcis de la barre de raccourcis",
   "CONTROLS.RulerTitle": "Affichage des distances",
   "CONTROLS.RulerMeasure": "Afficher la distance avec une règle",
   "CONTROLS.RulerWaypoint": "Placer un point intermédiaire de mesure",
@@ -806,7 +806,7 @@
   "CONTROLS.DeletedObjects": "{count} objet(s) {type} supprimé(s).",
   "CONTROLS.UndoCreateObjects": "Création de {count} objet(s) {type} annulée.",
   "CONTROLS.UndoDeleteObjects": "Suppression de {count} objet(s) {type} annulée.",
-  "CONTROLS.EmptyUndoHistory": "Il n’y a plus d’historique suivi pour les objets {type} à annuler !",
+  "CONTROLS.EmptyUndoHistory": "Il n’y a plus d’historique suivi pour les objets {type} à annuler.",
   "CONTROLS.ObjectIsLocked": "Vous ne pouvez pas effectuer cette action tant que l’objet {type} est verrouillé.",
   "CONTROLS.ObjectConfigured": "Vous ne pouvez pas effectuer cette action pendant la configuration d’un autre objet.",
   "DICE.ErrorNonNumeric": "La formule du lancer de dés {formula} n’a pas produit de résultat numérique.",
@@ -894,7 +894,7 @@
   "DOCUMENT.RollTable": "Table aléatoire",
   "DOCUMENT.RollTables": "Tables aléatoires",
   "DOCUMENT.Region": "Region",
-  "DOCUMENT.Regions": "Regions",
+  "DOCUMENT.Regions": "Régions",
   "DOCUMENT.RegionBehavior": "Comportement de région",
   "DOCUMENT.RegionBehaviors": "Comportements de région",
   "DOCUMENT.TableResult": "Résultat de la table",
@@ -903,8 +903,8 @@
   "DOCUMENT.Tiles": "Tuiles",
   "DOCUMENT.Token": "Token",
   "DOCUMENT.Tokens": "Tokens",
-  "DOCUMENT.User": "Joueur",
-  "DOCUMENT.Users": "Joueurs",
+  "DOCUMENT.User": "Utilisateur",
+  "DOCUMENT.Users": "Utilisateurs",
   "DOCUMENT.Wall": "Mur",
   "DOCUMENT.Walls": "Murs",
   "DOCUMENT.TypePageFormat": "{type} {page}",
@@ -976,7 +976,7 @@
   "EFFECT.StartTurns": "Tour de départ de l’effet",
   "EFFECT.ChangeKey": "Clé d’attribut",
   "EFFECT.ChangeMode": "Changer le mode",
-  "EFFECT.ChangeValue": "Valeur de l’effet",
+  "EFFECT.ChangeValue": "Valeur",
   "EFFECT.ChangePriority": "Priorité",
   "EFFECT.Submit": "Appliquer les changements",
   "EFFECT.FIELDS": {
@@ -1161,7 +1161,7 @@
     "RemoveFavorite": "Retirer le dossier des favoris",
     "DirectoryPathLabel": "Chemin d'accès",
     "FilterLabel": "Filtrer",
-    "S3Label": "Compartiment S3 (S3 Bucket)",
+    "S3Label": "Compartiment S3",
     "Selected": "Sélection",
     "SelectFile": "Sélectionner le fichier",
     "SelectFolder": "Sélectionner le répertoire",
@@ -1220,16 +1220,16 @@
   "INVITATIONS.DiscoveryFailed": "Notre service de détection d’IP n’a pas réussi à identifier correctement votre adresse IP, vous utilisez IPv6 ou vous n’êtes pas connecté à l’internet.",
   "ITEM.ViewArt": "Voir l’image de l’objet",
   "HOTBAR": {
-    "LABEL": "Barre d'action",
+    "LABEL": "Barre de raccourcis",
     "MUTE": "Couper le son",
     "UNMUTE": "Réactiver le son",
     "MENU": "Menu principal",
-    "LOCK": "Verrouiller la barre d'accès rapide",
-    "UNLOCK": "Déverrouiller la barre d'accès rapide",
+    "LOCK": "Verrouiller la barre de raccourcis",
+    "UNLOCK": "Déverrouiller la barre de raccourcis",
     "PAGE_NEXT": "Page suivante",
     "PAGE_PREV": "Page précédente",
-    "CLEAR": "Vider la barre d'accès rapide",
-    "CLEAR_CONFIRM": "Effacer toutes les Macros assignées de votre barre d'accès rapide ?"
+    "CLEAR": "Vider la barre de raccourcis",
+    "CLEAR_CONFIRM": "Effacer toutes les macros assignées de votre barre de raccourcis ?"
   },
   "HUD.Elevation": "Elévation",
   "HUD.OpenConfig": "Ouvrir la configuration",
@@ -1329,7 +1329,7 @@
   "KEYBINDINGS.HowToEdit": "Utilisez {icon} ou le double-clic pour modifier la valeur.",
   "KEYBINDINGS.CycleView": "Parcourir la vue Canvas",
   "KEYBINDINGS.Dismiss": "Désactiver toutes les fenêtres",
-  "KEYBINDINGS.Pause": "Pause",
+  "KEYBINDINGS.Pause": "Mettre le jeu en pause",
   "KEYBINDINGS.Delete": "Supprimer",
   "KEYBINDINGS.Highlight": "Mettre en évidence",
   "KEYBINDINGS.SelectAll": "Sélectionner tout",
@@ -1351,11 +1351,11 @@
   "KEYBINDINGS.PanUpRight": "Déplacer en diagonal haut-droite",
   "KEYBINDINGS.PanDownLeft": "Déplacer en diagonal bas-gauche",
   "KEYBINDINGS.PanDownRight": "Déplacer en diagonal bas-droite",
-  "KEYBINDINGS.ZoomIn": "Zoom avant",
-  "KEYBINDINGS.ZoomOut": "Zoom arrière",
+  "KEYBINDINGS.ZoomIn": "Ascension verticale ou zoom dans le canevas",
+  "KEYBINDINGS.ZoomOut": "Descendre verticalement ou faire un zoom arrière sur le canevas",
   "KEYBINDINGS.RulerWaypoint": "Point de passage de la règle",
-  "KEYBINDINGS.ExecuteMacro": "Exécuter l'emplacement {number} de la barre d'accès rapide",
-  "KEYBINDINGS.SwapMacroPage": "Passer à la page {page} de la barre d'accès rapide",
+  "KEYBINDINGS.ExecuteMacro": "Exécuter l'emplacement {number} de la barre de raccourcis",
+  "KEYBINDINGS.SwapMacroPage": "Passer à la page {page} de la barre de raccourcis",
   "KEYBINDINGS.MustBeArray": "Doit être passer dans un tableau de valeurs",
   "KEYBINDINGS.ErrorProtectedKey": "Impossible de « binder » (associer à une touche) la clé protégée « {key} »",
   "KEYBINDINGS.ErrorIllegalModifier": "La clé demandée « {key} » n’est pas une valeur valide pour KeyboardManager.MODIFIER_KEYS",
@@ -1484,15 +1484,15 @@
   "MACRO.Execute": "Exécuter la Macro",
   "MACRO.Remove": "Enlever la Macro",
   "MACRO.Save": "Sauvegarder la Macro",
-  "MACRO.CollapseHotbar": "Réduire la barre d'accès rapide des macros",
+  "MACRO.CollapseHotbar": "Réduire la barre de raccourcis",
   "MACRO.Directory": "Parcourir le répertoire des macros",
-  "MACRO.PageUp": "Barre d'accès rapide suivante",
-  "MACRO.PageDown": "Barre d'accès rapide précédente",
-  "MACRO.NavLabel": "Barre d'accès rapide des macros",
-  "MACRO.LockBar": "Verrouiller la barre d'accès rapide",
-  "MACRO.UnlockBar": "Déverrouiller la barre d'accès rapide",
+  "MACRO.PageUp": "Barre de raccourcis suivante",
+  "MACRO.PageDown": "Barre de raccourcis précédente",
+  "MACRO.NavLabel": "Barre de raccourcis",
+  "MACRO.LockBar": "Verrouiller la barre de raccourcis",
+  "MACRO.UnlockBar": "Déverrouiller la barre de raccourcis",
   "MACRO.EmptySlot": "Emplacement vide {slot}",
-  "MACRO.CannotOverwrite": "Impossible d’écraser cette macro car la barre d'accès rapide est verrouillée.",
+  "MACRO.CannotOverwrite": "Impossible d’écraser cette macro car la barre de raccourcis est verrouillée.",
   "MACRO.SCOPES": {
     "actor": "Acteur",
     "actors": "Acteurs",
@@ -1531,7 +1531,7 @@
   "MODMANAGE.SystemCompatibilityIssueMaximum": "Ce module nécessite une version maximale du système de {maximum} mais votre version est {version}.",
   "MODMANAGE.NavLabel": "Navigation et Organisation des modules",
   "MODMANAGE.UpstreamPackages": "Il y a {number} packages qui nécessitent que ce package soit actif. La désactivation de ce package entraînera également la désactivation de ces package.",
-  "MODMANAGE.UnavailableDocuments": "Documents rendus indisponibles",
+  "MODMANAGE.UnavailableDocuments": "Les documents suivants seront rendus indisponibles si vous désactivez ces modules.",
   "NOTE.Create": "Créer une note sur la scène",
   "NOTE.CreateJournal": "Créer le journal correspondant ?",
   "NOTE.Custom": "Personnalisé",
@@ -1558,7 +1558,7 @@
     },
     "texture": {
       "src.label": "Image",
-      "tint.label": "Teinte"
+      "tint.label": "Teinte de l’icône"
     },
     "iconSize.label": "Taille",
     "fontFamily.label": "Police d'écriture",
@@ -1572,7 +1572,7 @@
   "NUE.FirstLaunchInvite": "Inviter vos joueurs",
   "NUE.FirstLaunchInviteBody": "Lorsque tout est configuré et que vous êtes prêt à inviter vos joueurs, vous pouvez leur envoyer un lien vers votre monde depuis le <a class=\"nue-action\" data-action=\"invite\">Liens d’invitation</a>.",
   "NUE.FirstLaunchKB": "N’oubliez pas d’explorer tous les onglets disponibles dans cette barre latérale, et pour plus d’informations, vous pouvez consulter la série <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\">Gamemaster Tutorial</a> (en Anglais) dans la <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\">Base de connaissances</a>.",
-  "NUE.FirstLaunchTroubleshooting": "Si la boîte de dialogue Liens d’invitation indique que votre connexion est fermée, vous devrez peut-être configurer la redirection de port. Vous trouverez des instructions à ce sujet sur le site officiel : <a href=\"https://foundryvtt.com/article/port-forwarding/\" target=\"_blank\">Port Forwarding Guide</a> (en Anglais) ou sur le wiki en Français : <a href=\"https://foundryvtt.wiki/fr/pour-commencer/pbcnx/\" target=\"_blank\">Impossible de se connecter à distance</a>. Si vous avez toujours besoin d’aide, vous êtes invité à rejoindre soit le Discord officiel <b>Anglais</b> et à poster un message dans <a href=\"https://discord.com/channels/170995199584108546/689889940590690323\" target=\"_blank\">#install-and-connection</a> pour les problèmes d’invitation, <a href=\"https://discord.com/channels/170995199584108546/486930822465716249\" target=\"_blank\">#troubleshooting</a> pour les problèmes généraux avec le logiciel, ou <a href=\"https://discord.com/channels/170995199584108546/713259405667205193\" target=\"_blank\">#core-how-to</a> pour une aide plus générique sur Foundry VTT. Soit également trouver de l’aide sur le discord <b>francophone</b> de FoundryVTT : <a href=\"https://discord.gg/pPSDNJk\" target=\"_blank\">La Fonderie</a>.",
+  "NUE.FirstLaunchTroubleshooting": "Si la boîte de dialogue « Liens d’invitation » indique que votre connexion est fermée, vous devrez peut-être configurer la redirection de port. Vous trouverez des instructions à ce sujet sur le site officiel : <a href=\"https://foundryvtt.com/article/port-forwarding/\" target=\"_blank\">Port Forwarding Guide</a> (en Anglais) ou sur le wiki en Français : <a href=\"https://foundryvtt.wiki/fr/pour-commencer/pbcnx/\" target=\"_blank\">Impossible de se connecter à distance</a>. Si vous avez toujours besoin d’aide, vous pouvez également chercher du support : Sur le Discord officiel <b>Anglais</b> : postez un message dans <a href=\"https://discord.com/channels/170995199584108546/689889940590690323\" target=\"_blank\">#install-and-connection</a> pour les problèmes d’invitation, <a href=\"https://discord.com/channels/170995199584108546/486930822465716249\" target=\"_blank\">#troubleshooting</a> pour les problèmes généraux avec le logiciel, ou <a href=\"https://discord.com/channels/170995199584108546/713259405667205193\" target=\"_blank\">#core-how-to</a> pour une aide plus générique sur Foundry VTT. Sur le serveur Discord <b>Francophone</b> de FoundryVTT : <a href=\"https://discord.gg/pPSDNJk\" target=\"_blank\">La Fonderie</a>.",
   "PLAYERS": {
     "Title": "Joueurs",
     "List": "Liste de joueurs",
@@ -1584,7 +1584,7 @@
     "PlayerAvatar": "Avatar du joueur",
     "PlayerPronouns": "Pronoms du joueur",
     "PullToScene": "Amener à la scène",
-    "ViewAvatar": "Avatar du joueur",
+    "ViewAvatar": "Afficher l'avatar du joueur",
     "Kick": "Ejecter le joueur",
     "Ban": "Bannir le joueur",
     "UnBan": "Enlever le bannissement du joueur",
@@ -1939,13 +1939,13 @@
       }
     }
   },
-  "SETTINGS.CombatConfigN": "Rencontre de combat",
+  "SETTINGS.CombatConfigN": "Traqueur de combat",
   "SETTINGS.CombatConfigL": "Configurer le suivi de combat",
   "SETTINGS.CombatConfigH": "Paramètres relatifs au combat et au suivi.",
   "SETTINGS.CombatThemeN": "Thème du combat",
   "SETTINGS.CombatThemeL": "L’ensemble des sons qui seront joués lorsque le combat commence, lorsque votre tour sera le prochain, et pendant votre tour.",
   "SETTINGS.Issues": "Problèmes/Questions",
-  "SETTINGS.Title": "Configuration des options de la partie",
+  "SETTINGS.Title": "Paramètres de la partie",
   "SETTINGS.Update": "Mettre à jour le logiciel",
   "SETTINGS.Reset": "Réinitialiser",
   "SETTINGS.ResetInfo": "Réinitialisez tous les paramètres aux valeurs par défaut. Cliquez sur « Sauvegarder » pour confirmer.",
@@ -2028,8 +2028,8 @@
   "SETTINGS.EnableHighlightDocumentMatchesH": "Activer les correspondances de liens de contenu lors du surlignage de texte dans l’éditeur ProseMirror. Lorsque cette option est activée, le texte surligné sera vérifié pour les documents correspondants dans le monde ou dans les packs du compendium et proposé comme liens de remplacement.",
   "SETTINGS.ReloadPromptTitle": "Recharger l’application ?",
   "SETTINGS.ReloadPromptBody": "Certains des paramètres modifiés nécessitent un rechargement de l’application pour prendre effet. Voulez-vous recharger l’application maintenant ?",
-  "SETTINGS.GridDiagonalsN": "Diagonales de la grille carrée",
-  "SETTINGS.GridDiagonalsL": "Configurer comment la distance diagonale est mesurée sur les grilles carrées. Le nombre entre parenthèses définit la longueur des diagonales en unités d’espaces de grille selon chaque option.",
+  "SETTINGS.GridDiagonalsN": "Diagonales de la grille",
+  "SETTINGS.GridDiagonalsL": "Configurer comment la distance diagonale est mesurée sur les grilles carrées et hexagonales. Le nombre entre parenthèses définit la longueur des diagonales en unités d’espaces de grille selon chaque option.",
   "SETTINGS.GridDiagonalsEquidistant": "Équidistant (1)",
   "SETTINGS.GridDiagonalsExact": "Exact (√2)",
   "SETTINGS.GridDiagonalsApproximate": "Approximatif (1,5)",
@@ -2107,7 +2107,7 @@
     "NoSystemsMessage": "Afin de créer votre premier Monde, vous devez d’abord installer un <a class=\"system-install\" data-query=\"\" title=\"Game System\">Système de Jeu</a>. Prenez le temps de parcourir les systèmes disponibles afin d’en choisir un et l’installer. Si vous ne savez pas quel système vous voulez, ou si votre système préféré n’est pas disponible, nous vous recommandons dans un premier temps d’installer le système <a class=\"system-install\" data-query=\"Simple Worldbuilding\" title=\"Simple Worldbuilding\">Simple Worldbuilding</a>. ",
     "NoWorldsMessage": "Maintenant que vous avez un système de jeu qui vous fournit des règles pour jouer, vous allez devoir créer un Monde. Les mondes sont des espaces qui contiennent tous les personnages, feuilles, journaux et cartes utilisés pour jouer à un jeu, qu’il s’agisse d’un one-shot ou d’une campagne complète.",
     "NueWorldDescription": "<p>Pour plus d’infos sur la configuration de Mondes, consultez la documentation (en Anglais) <a href=\"https://foundryvtt.com/article/game-worlds/\" target=\"_blank\">World</a>.</p>",
-    "SeeTutorial": "Pour un guide plus approfondi sur la prise en main de Foundry Virtual Tabletop, vous pouvez consulter la série (en anglais) <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\" title=\"Gamemaster Tutorial\">Gamemaster Tutorial</a> dans notre <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\" title=\"Knowledge Base\">Knowledge Base</a> ( et pour vous orienter dans vos premiers pas en français : <a href=\"https://discord.gg/pPSDNJk\" target=\"_blank\" title=\"le discord fr\">le discord FR</a> et <a href=\"https://foundryvtt.wiki/fr/home\" target=\"_blank\" title=\"le wiki fr\">le wiki FR</a> ).",
+    "SeeTutorial": "Pour un guide plus approfondi sur la prise en main de Foundry Virtual Tabletop, vous pouvez consulter la série <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\" title=\"Gamemaster Tutorial\">Gamemaster Tutorial</a> (en anglais) dans notre <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\" title=\"Knowledge Base\">Knowledge Base</a>. Pour vous orienter dans vos premiers pas en français, vous pouvez également consulter <a href=\"https://foundryvtt.wiki/fr/home\" target=\"_blank\" title=\"le wiki fr\">le wiki FR</a> et <a href=\"https://discord.gg/pPSDNJk\" target=\"_blank\" title=\"le discord fr\">le discord FR</a> (<a href=\"https://discord.gg/pPSDNJk\" target=\"_blank\" title=\"La Fonderie\">La Fonderie</a>).",
     "Title": "Configuration et Paramètres",
     "Update": "Mise à jour",
     "UpdateNewGeneration": "Installation manuelle requise",
@@ -2228,9 +2228,9 @@
     "PackageDependenciesCouldInstallPlural": "{number} dépendances peuvent être installées automatiquement.",
     "PackageDependenciesDecline": "Vous avez choisi de ne pas installer les dépendances requises par {title}, vous devrez les installer manuellement pour pouvoir l’utiliser.",
     "PackageDependenciesSuccess": "Installation de {title} et de {number} dépendances réussie.",
-    "PackageUpdateCoreUpdateNeeded": "Une mise à jour est disponible pour {id} mais ne peut être installée car elle nécessite la version de base du logiciel {vmin} et vous utilisez actuellement la version {version}.",
-    "PackageUpdateCoreUnstable": "Une mise à jour est disponible pour {id} mais elle ne peut être installée car elle nécessite une version du logiciel de base {vmin} qui n’est pas encore stable.",
-    "PackageUpdateCoreInsufficient": "Une mise à jour est disponible, mais elle nécessite une version plus ancienne {vmax} du logiciel pour fonctionner.",
+    "PackageUpdateCoreUpdateNeeded": "Une mise à jour est disponible pour {title} mais ne peut être installée car elle nécessite la version de base du logiciel {vmin} et vous utilisez actuellement la version {vcur}.",
+    "PackageUpdateCoreUnstable": "Une mise à jour est disponible pour {title} mais elle ne peut être installée car elle nécessite une version du logiciel de base {vmin} qui n’est pas encore stable.",
+    "PackageUpdateCoreInsufficient": "Une mise à jour pour {title} est disponible mais elle nécessite une version plus ancienne du logiciel de base {vmax} pour fonctionner. Vous utilisez actuellement la version {vcur}.",
     "PackageDeleteTitle": "Suppression du {type} : {title}",
     "PackageDeleteConfirm": "Êtes-vous sûr de vouloir supprimer le {type} : <strong>{title}</strong> ?",
     "WorldDeleteConfirmCode": "Tapez ce code exact dans la case ci-dessous pour continuer : ",
@@ -2278,7 +2278,7 @@
     "UpdateWebsiteSlowWarning": "https://foundryvtt.com semble être très sollicité en ce moment, nous vous recommandons de réessayer plus tard.",
     "UpdateWarningWillDisable": "Cette mise à jour est une nouvelle version majeure de Foundry Virtual Tabletop. Son installation nécessitera la désactivation de certains modules potentiellement incompatible sans mise à jour de ceux-ci.",
     "UpdateButtonDownload": "Télécharger la mise à jour {version}",
-    "UpdateInfoAvailable": "Une mise à jour de Foundry Virtual Tabletop vers la version {version} est disponible !",
+    "UpdateInfoAvailable": "Une mise à jour de Foundry Virtual Tabletop {display} est disponible !",
     "UpdateNoUpdateMode": "Vous n’êtes pas autorisé à mettre à jour cette instance de Foundry Virtual Tabletop car elle a été lancée en mode --noupdate.",
     "UpdateNotAvailable": "Aucune mise à jour du logiciel n’est actuellement disponible sur le canal de mise à jour demandé.",
     "UpdateNoArchive": "Il n’existe aucune mise à jour à installer",
@@ -2300,7 +2300,7 @@
     "AdminPasswordForgot": "Si vous avez oublié votre mot de passe, vous pouvez le réinitialiser en <a href=\"https://foundryvtt.com/article/reset-admin-password/\" target=\"_blank\">suivant ces instructions</a>.",
     "AdminLogIn": "Connexion",
     "AdminLogout": "Déconnexion (Admin)",
-    "UPNPLabel": "Activer UPnP ?",
+    "UPNPLabel": "Activer l'UPnP",
     "News": "Actualités",
     "FeaturedContent": "Contenu à l’honneur",
     "NoFeaturedContent": "Aucune recommandation de contenu n’a été reçue du serveur web de foundryvtt.com.",
@@ -2492,7 +2492,7 @@
     "LaunchLocked": "Vous ne pouvez pas lancer le monde « {id} » car il est verrouillé.",
     "AlreadyUpdated": "{name} est déjà à jour.",
     "AllUpdated": "Tous les {type} sont à jour !",
-    "UpdateAllInProgress": "Un processus de « tout mettre à jour  » est déjà en cours. Vous devez attendre qu’il se termine avant de mettre à jour d’autres types de package.",
+    "UpdateAllInProgress": "Un processus de « tout mettre à jour » est déjà en cours. Vous devez attendre qu’il se termine avant de mettre à jour d’autres types de package.",
     "ModuleCreate": "Créer un module",
     "ModuleCreateHint": "Vous pouvez utiliser ce formulaire pour créer un module qui peut être partagé entre plusieurs mondes ou « packagé » pour être distribué à d’autres utilisateurs. Ce formulaire prend en charge un sous-ensemble de configurations possibles pour les packages. Vous pourrez gérer et éditer votre package après l’avoir créé en modifiant son fichier manifeste JSON.",
     "ModuleCreateSuccess": "Création du nouveau module « {id} », il est maintenant disponible !",
@@ -2549,7 +2549,7 @@
     "LoginSuccess": "Connexion réussie en tant que {user}, chargement du monde !"
   },
   "SHEETS.ConfigureSheet": "Configurer la fiche",
-  "SHEETS.ConfigureTitle": "{prefix}: Configuration de la feuille",
+  "SHEETS.ConfigureTitle": "{prefix} : Configuration de la feuille",
   "SHEETS.ThisSheet": "Cette fiche",
   "SHEETS.Defaults": "Défaut",
   "SHEETS.DefaultSheet": "Feuille par défaut",
@@ -2590,9 +2590,9 @@
   "FOLDER.ExportHint": "Vous pouvez exporter les entités contenues dans ce dossier vers un compendium débloqué du type approprié.",
   "FOLDER.ExportOptions": "Options d’export",
   "FOLDER.ExportDestination": "Compendium de destination",
-  "FOLDER.ExportKeepId": "Garder l’ID des documents ?",
-  "FOLDER.ExportMerge": "Fusionner par le nom ?",
-  "FOLDER.ExportKeepFolders": "Conserver la structure des dossiers ?",
+  "FOLDER.ExportKeepId": "Garder l’ID des documents",
+  "FOLDER.ExportMerge": "Fusionner par le nom",
+  "FOLDER.ExportKeepFolders": "Conserver la structure des dossiers",
   "FOLDER.ExportWarningNone": "Il n’y a pas de compendium débloqués disponibles pour les entités {type} vers lesquelles vous voulez exporter.",
   "FOLDER.ExportExistingFolder": "Dossier existant",
   "FOLDER.ExportNewFolder": "Nouveau dossier",
@@ -2611,7 +2611,7 @@
     "sorting.label": "Mode de tri"
   },
   "OWNERSHIP": {
-    "Title": "Configuration des droits",
+    "Title": "Configuration des droits : {object}",
     "NONE": "Aucun",
     "LIMITED": "Limité",
     "OBSERVER": "Observateur",
@@ -2636,50 +2636,50 @@
   "PERMISSION.Permissions": "Permissions des rôles utilisateur",
   "PERMISSION.Reset": "Réinitialiser par défaut",
   "PERMISSION.Submit": "Sauvegarder la configuration",
-  "PERMISSION.BroadcastAudio": "Autoriser la diffusion audio",
+  "PERMISSION.BroadcastAudio": "Diffusion audio",
   "PERMISSION.BroadcastAudioHint": "Permettre aux joueurs ayant ce rôle de diffuser de l’audio lorsqu’ils utilisent l’intégration du tchat A/V.",
-  "PERMISSION.BroadcastVideo": "Autoriser la diffusion vidéo",
+  "PERMISSION.BroadcastVideo": "Diffusion vidéo",
   "PERMISSION.BroadcastVideoHint": "Permettre aux joueurs ayant ce rôle de diffuser de la vidéo lorsqu’ils utilisent l’intégration du tchat A/V..",
-  "PERMISSION.ActorCreate": "Créer de nouveaux acteurs",
+  "PERMISSION.ActorCreate": "Créer des acteurs",
   "PERMISSION.ActorCreateHint": "Permettre aux joueurs ayant ce rôle de créer de nouveaux acteurs dans le monde.",
   "PERMISSION.CardsCreate": "Créer des cartes",
   "PERMISSION.CardsCreateHint": "Autoriser les utilisateurs ayant ce rôle à créer de nouvelles cartes dans le monde.",
   "PERMISSION.DrawingCreate": "Utiliser les outils de dessin",
   "PERMISSION.DrawingCreateHint": "Permettre aux joueurs ayant ce rôle de créer des dessins en utilisant les outils de dessin.",
-  "PERMISSION.ItemCreate": "Créer de nouveaux objets",
+  "PERMISSION.ItemCreate": "Créer des objets",
   "PERMISSION.ItemCreateHint": "Permettre aux joueurs ayant ce rôle de créer de nouveaux objets dans le monde.",
   "PERMISSION.FilesBrowse": "Parcourir l’explorateur de fichiers",
   "PERMISSION.FilesBrowseHint": "Permettre aux joueurs ayant ce rôle de parcourir les fichiers disponibles dans l’explorateur de fichiers.",
-  "PERMISSION.FilesUpload": "Télécharger de nouveaux fichiers",
+  "PERMISSION.FilesUpload": "Télécharger des fichiers",
   "PERMISSION.FilesUploadHint": "Permettre aux joueurs ayant ce rôle de télécharger du contenu SUR le serveur à l’aide de l’explorateur de fichiers.",
   "PERMISSION.JournalCreate": "Créer des entrées de journal",
   "PERMISSION.JournalCreateHint": "Permettre aux joueurs ayant ce rôle de créer de nouvelles entrées de journal dans la barre latérale du journal.",
-  "PERMISSION.MacroScript": "Autoriser les Macros scriptées",
-  "PERMISSION.MacroScriptHint": "Permettre aux joueurs ayant ce rôle d’utiliser des macros JavaScript qui accèdent à l’API.",
+  "PERMISSION.MacroScript": "Modifier les macros de script et exécuter les comportements des régions scriptées",
+  "PERMISSION.MacroScriptHint": "Ce rôle permet aux utilisateurs d'utiliser des macros JavaScript qui accèdent à l'API Foundry et d'exécuter des comportements scriptés dans les régions de la scène.",
   "PERMISSION.ManualRolls": "Faire des jets manuels",
   "PERMISSION.ManualRollsHint": "Permettre aux joueurs ayant ce rôle de faire des jets manuels.",
   "PERMISSION.MessageWhisper": "Chuchoter des messages privés",
-  "PERMISSION.MessageWhisperHint": "Permettre aux joueurs ayant ce rôle de chuchoter des messages privés que le maître de jeu ne peut pas voir.",
+  "PERMISSION.MessageWhisperHint": "Permet aux utilisateurs ayant ce rôle d'utiliser la commande /whisper pour envoyer des messages privés.",
   "PERMISSION.NoteCreate": "Créer des notes sur les scènes",
   "PERMISSION.NoteCreateHint": "Permettre aux joueurs ayant ce rôle de créer des notes à partir d’entrée de journal dont ils sont propriétaires.",
   "PERMISSION.PingCanvas": "Pings sur la scène",
   "PERMISSION.PingCanvasHint": "Permettre aux joueurs ayant ce rôle d’attirer l’attention sur un point de la scène avec une animation de type « ping ».",
-  "PERMISSION.PlaylistCreate": "Créer des playlists",
-  "PERMISSION.PlaylistCreateHint": "Autoriser les utilisateurs avec ce rôle à créer de nouvelles playlists dans le monde.",
+  "PERMISSION.PlaylistCreate": "Créer et contrôler des playlists",
+  "PERMISSION.PlaylistCreateHint": "Ce rôle permet aux utilisateurs de créer de nouvelles playlists et de contrôler les playlists qu'ils possèdent.",
   "PERMISSION.SettingsModify": "Modifier les paramètres de configuration",
   "PERMISSION.SettingsModifyHint": "Permettre aux joueurs ayant ce rôle de modifier les paramètres du jeu et d’activer ou de désactiver des modules.",
   "PERMISSION.ShowCursor": "Afficher le curseur de la souris",
-  "PERMISSION.ShowCursorHint": "Afficher la position du curseur de la souris du joueur quand celui-ci est sur la scène active.",
+  "PERMISSION.ShowCursorHint": "Affiche la position du curseur de la souris du joueur à tous les autres utilisateurs connectés.",
   "PERMISSION.ShowRuler": "Afficher la règle de mesure des distances",
-  "PERMISSION.ShowRulerHint": "Afficher pour les autres joueurs connectés les mesures de distances à l’aide de la règle .",
+  "PERMISSION.ShowRulerHint": "Afficher les mesures de distance faites avec les tokens et l'outil de mesure aux autres utilisateurs connectés.",
   "PERMISSION.TemplateCreate": "Créer de nouveaux gabarits",
   "PERMISSION.TemplateCreateHint": "Permettre aux joueurs ayant ce rôle de créer des gabarits pour mesurer les zones d’effets.",
-  "PERMISSION.TokenCreate": "Créer de nouveaux tokens",
+  "PERMISSION.TokenCreate": "Créer des tokens",
   "PERMISSION.TokenCreateHint": "Permettre aux joueurs ayant ce rôle de placer des tokens pour les acteurs qu’ils possèdent sur la scène.",
   "PERMISSION.TokenDelete": "Supprimer les Tokens",
   "PERMISSION.TokenDeleteHint": "Permet aux utilisateurs ayant ce rôle de supprimer les tokens des acteurs qu’ils possèdent sur la scène.",
   "PERMISSION.TokenConfigure": "Configurer les paramètres du token",
-  "PERMISSION.TokenConfigureHint": "Permettre aux joueurs ayant ce rôle de configurer les paramètres des tokens qu’ils possèdent.",
+  "PERMISSION.TokenConfigureHint": "Permettre aux utilisateurs ayant ce rôle de configurer les paramètres des tokens qu'ils possèdent.",
   "PERMISSION.WallDoors": "Ouvrir et fermer les portes",
   "PERMISSION.WallDoorsHint": "Permettre aux joueurs ayant ce rôle d’interagir avec les portes (définies sur le calque des murs).",
   "PERMISSION.QueryUser": "Interroger les utilisateurs",
@@ -2752,7 +2752,7 @@
     },
     "EVENTS": {
       "regionBoundary": {
-        "label": "Limite de région modifiée"
+        "label": "Limite de la région modifiée"
       },
       "behaviorActivated": {
         "label": "Comportement activé"
@@ -2770,16 +2770,16 @@
         "label": "Entrée de token"
       },
       "tokenExit": {
-        "label": "Sortie du token"
+        "label": "Sortie de token"
       },
       "tokenMoveIn": {
-        "label": "Token se déplace vers l'intérieur"
+        "label": "Le token se déplace vers l'intérieur"
       },
       "tokenMoveOut": {
-        "label": "Token se déplace vers l'extérieur"
+        "label": "Le token se déplace vers l'extérieur"
       },
       "tokenMoveWithin": {
-        "label": "Token se déplace à l'intérieur"
+        "label": "Le token se déplace à l'intérieur"
       },
       "tokenAnimateIn": {
         "label": "Animation d'entrée du token"
@@ -2859,7 +2859,7 @@
           },
           "once": {
             "label": "Une fois",
-            "hint": "Désactiver le comportement après son premier déclenchement"
+            "hint": "Désactiver le comportement après son premier déclenchement."
           }
         }
       },
@@ -2867,7 +2867,7 @@
         "FIELDS": {
           "mode": {
             "label": "Mode",
-            "hint": "Comment le niveau d’obscurité est modifié dans cette région. Ce comportement respecte le seuil d’illumination globale de la scène. Si le niveau d’obscurité totale d’une zone dépasse la valeur seuil, l’illumination globale est empêchée dans cette zone."
+            "hint": "Comment le niveau d’obscurité est modifié dans cette Région. Ce comportement respecte le seuil d’illumination globale de la scène. Si le niveau d’obscurité totale d’une zone dépasse la valeur seuil, l’illumination globale est empêchée dans cette zone."
           },
           "modifier": {
             "label": "Modificateur",
@@ -3001,7 +3001,7 @@
   "SIDEBAR.Documentation": "Documentation Foundry VTT (anglais)",
   "SIDEBAR.Wiki": "Wiki Communautaire Foundry VTT (multilingue)",
   "SIDEBAR.COMPENDIUM.LABELS": {
-    "Ownership": "Non-default ownership",
+    "Ownership": "Propriété non par défaut",
     "Locked": "Verrouillé"
   },
   "SIDEBAR.SETTINGS": {
@@ -3031,8 +3031,8 @@
   },
   "SUPPORT.Title": "Détails du support",
   "SUPPORT.Places": "Où trouver de l’aide",
-  "SUPPORT.Discord": "Pour rejoindre d’autres utilisateurs de Foundry VTT, ou pour bénéficier de l’aide de nos merveilleux assistants communautaires, rejoignez nous sur le Discord FR https://discord.gg/pPSDNJk ou sur le discord officiel anglais :",
-  "SUPPORT.BugReporting": "Si vous souhaitez signaler un bug, veuillez utiliser la catégorie « Report Bug » disponible sur la page « Contact-us » : ",
+  "SUPPORT.Discord": "Pour rejoindre d'autres utilisateurs de Foundry VTT, ou pour obtenir de l'aide de nos formidables assistants communautaires, rejoignez-nous sur <a href=\"https://discord.gg/pPSDNJk\" target=\"_blank\" rel=\"nofollow\">Discord</a>.",
+  "SUPPORT.BugReporting": "Si vous souhaitez signaler un bug, veuillez utiliser la catégorie « Bug Report » disponible sur notre <a href=\"https://foundryvtt.com/contact-us?category=bug\" target=\"_blank\" rel=\"nofollow\">page Contact Us</a>.",
   "SUPPORT.ReportPrelude": "Lorsque vous demandez de l’aide sur le Discord ou Github, il est utile que nous sachions ce qui se passe dans votre monde. Vous trouverez ci-dessous un rapport à copier-coller que nous vous demandons d’inclure.",
   "SUPPORT.CopyReport": "Copier le rapport dans le presse-papiers",
   "SUPPORT.ReportCopied": "Rapport copié",
@@ -3064,7 +3064,7 @@
     "modules": "Problèmes de module"
   },
   "TABLE": {
-    "AnimateSetting": "Animation des tables aléatoires ?",
+    "AnimateSetting": "Animation des tables aléatoires",
     "AnimateSettingHint": "Un lancer sur une table aléatoire affiche une animation de style « roulette ».",
     "DrawFlavor": "Obtient un résultat sur la table {name}",
     "DrawFlavorPlural": "Obtient {number} résultats sur la table {name}",
@@ -3243,7 +3243,7 @@
   "TOKEN.TitlePrototype": "Prototype du token",
   "TOKEN.Update": "Mettre à jour le token",
   "TOKEN.WarningNoActor": "Ce Token référence un acteur qui n’existe plus dans ce Monde.",
-  "TOKEN.WarningNoVision": "Vous ne possédez aucun Token avec de la « vision » sur cette scène",
+  "TOKEN.WarningNoVision": "Vous ne possédez aucun token avec de la « vision » sur cette scène.",
   "TOKEN.TABS": {
     "identity": "Identité",
     "appearance": "Apparence",
@@ -3439,7 +3439,7 @@
   "TOKEN.Adjectives.guilty": "Coupable",
   "TOKEN.Adjectives.happy": "Heureux",
   "TOKEN.Adjectives.helpless": "Impuissant",
-  "TOKEN.Adjectives.hopeful": "Optimiste",
+  "TOKEN.Adjectives.hopeful": "Plein d'espoir",
   "TOKEN.Adjectives.humble": "Humble",
   "TOKEN.Adjectives.hungry": "Affamé",
   "TOKEN.Adjectives.hurt": "Blessé",
@@ -3641,7 +3641,7 @@
   },
   "USERS.AccessKey": "Code d’accès",
   "USERS.Role": "Rôle du joueur",
-  "USERS.UserName": "Nom du joueur",
+  "USERS.UserName": "Nom de l'utilisateur",
   "USERS.KeyShow": "Voir le code d’accès",
   "USERS.Create": "Ajouter un joueur",
   "USERS.Delete": "Supprimer le joueur",
