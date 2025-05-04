@@ -790,8 +790,6 @@
     "Drop": "Déposer",
     "KeyHighlight": "Identifier les objets",
     "KeyPan": "Déplacer la scène",
-    "ZoomIn": "Ascension verticale ou zoom dans le canevas",
-    "ZoomOut": "Descendre verticalement ou faire un zoom arrière sur le canevas",
     "KeyCycle": "Ràz Vue ou aller au token (cycle)",
     "KeyMove": "Déplacer au clavier (tokens ou tuiles)",
     "KeyMoveDiag": "Déplacement en diagonal",
