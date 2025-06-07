@@ -2131,7 +2131,7 @@
   "SETTINGS.MaxFPSN": "Framerate maximum",
   "SETTINGS.MaxFPSL": "Limiter le Framerate maximum auquel Foundry Virtual Tabletop rafraichit les scènes. L’abaissement de cette valeur peut améliorer les performances pour les petites configurations.",
   "SETTINGS.DefaultSheetsN": "Feuilles par défaut",
-  "SETTINGS.DefaultSheetsL": "Configuration des fiches par défaut",
+  "SETTINGS.DefaultSheetsL": "Configuration des feuilles par défaut",
   "SETTINGS.DefaultSheetsH": "Configurer les feuilles utilisées par défaut pour tous les types de documents disponibles dans le monde",
   "SETTINGS.FontConfigN": "Polices supplémentaires",
   "SETTINGS.FontConfigL": "Configurer des polices supplémentaires",
