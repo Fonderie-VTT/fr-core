@@ -2133,7 +2133,7 @@
   "SETTINGS.MaxFPSN": "Framerate maximum",
   "SETTINGS.MaxFPSL": "Limiter le Framerate maximum auquel Foundry Virtual Tabletop rafraichit les scènes. L’abaissement de cette valeur peut améliorer les performances pour les petites configurations.",
   "SETTINGS.DefaultSheetsN": "Feuilles par défaut",
-  "SETTINGS.DefaultSheetsL": "Configuration des fiches par défaut",
+  "SETTINGS.DefaultSheetsL": "Configuration des feuilles par défaut",
   "SETTINGS.DefaultSheetsH": "Configurer les feuilles utilisées par défaut pour tous les types de documents disponibles dans le monde",
   "SETTINGS.FontConfigN": "Polices supplémentaires",
   "SETTINGS.FontConfigL": "Configurer des polices supplémentaires",
@@ -2382,7 +2382,7 @@
     "PackageDependenciesTitle": "Installer les dépendances du package",
     "PackageInstallDependencies": "Vous ne serez peut-être pas en mesure d’utiliser ce package si ces dépendances ne sont pas présentes. Souhaitez-vous les installer automatiquement ?",
     "PackageDependenciesAutomaticSingular": "Installer la dépendance automatiquement",
-    "PackageDependenciesAutomaticPlural": "Installer {number} dépendances automatiquement",
+    "PackageDependenciesAutomaticPlural": "Installer automatiquement les dépendances sélectionnées",
     "PackageDependenciesManualSingular": "Installer la dépendance manuellement",
     "PackageDependenciesManualPlural": "Installer toutes les dépendances manuellement",
     "PackageDependenciesCouldNotInstallSingular": "Une dépendance doit être installée manuellement.",
@@ -3068,12 +3068,12 @@
     "TYPES": {
       "base": {
         "SECTIONS": {
-          "events": "Événements souscrits"
+          "events": "Déclencheurs actifs"
         },
         "FIELDS": {
           "events": {
-            "label": "Événements",
-            "hint": "Les événements auxquels ce comportement est abonné."
+            "label": "Déclencheurs",
+            "hint": "Déclencheurs écoutés par ce comportement"
           },
           "once": {
             "label": "Une fois",
@@ -3139,7 +3139,7 @@
         "FIELDS": {
           "uuid": {
             "label": "Macro",
-            "hint": "La macro qui est exécutée lorsque l’un des événements se produit."
+            "hint": "La macro qui est exécutée lorsque l’un des déclencheurs se produit."
           },
           "everyone": {
             "label": "Tout le monde",
@@ -3151,7 +3151,7 @@
         "FIELDS": {
           "source": {
             "label": "Script",
-            "hint": "Le script qui est exécuté lorsque l’un des événements se produit."
+            "hint": "Le script qui est exécuté lorsque l’un des déclencheurs se produit."
           }
         }
       },
@@ -3180,11 +3180,11 @@
         "FIELDS": {
           "enable": {
             "label": "Activer des comportements",
-            "hint": "Les comportements qui sont activés lorsque l’un des événements se produit."
+            "hint": "Les comportements qui sont activés lorsque l’un des déclencheurs se produit."
           },
           "disable": {
             "label": "Désactiver des comportements",
-            "hint": "Les comportements qui sont désactivés lorsque l’un des événements se produit."
+            "hint": "Les comportements qui sont désactivés lorsque l’un des déclencheurs se produit."
           }
         }
       }
