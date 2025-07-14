@@ -2380,7 +2380,7 @@
     "PackageDependenciesTitle": "Installer les dépendances du package",
     "PackageInstallDependencies": "Vous ne serez peut-être pas en mesure d’utiliser ce package si ces dépendances ne sont pas présentes. Souhaitez-vous les installer automatiquement ?",
     "PackageDependenciesAutomaticSingular": "Installer la dépendance automatiquement",
-    "PackageDependenciesAutomaticPlural": "Installer {number} dépendances automatiquement",
+    "PackageDependenciesAutomaticPlural": "Installer automatiquement les dépendances sélectionnées",
     "PackageDependenciesManualSingular": "Installer la dépendance manuellement",
     "PackageDependenciesManualPlural": "Installer toutes les dépendances manuellement",
     "PackageDependenciesCouldNotInstallSingular": "Une dépendance doit être installée manuellement.",
