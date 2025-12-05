@@ -3055,10 +3055,10 @@
       "title": "Configurer la région"
     },
     "NOTIFICATIONS": {
-      "ControlWalls": "Contrôlez un groupe de murs qui définissent les limites de la forme souhaitée.",
+      "ControlWalls": "Sélectionnez un groupe de murs qui définissent les limites de la forme souhaitée.",
       "DrawingMultipleRegionsControlled": "Vous devez contrôler une seule ou aucune région lorsque vous dessinez une forme !",
-      "EmptyEnclosedArea": "La zone délimitée par les murs contrôlés est vide ! Assurez-vous que les murs extérieurs forment une boucle fermée et sont connectés de point en point.",
-      "NoControlledWalls": "Vous ne contrôlez aucun mur !"
+      "EmptyEnclosedArea": "La zone délimitée par les murs sélectionnés est vide ! Assurez-vous que les murs extérieurs forment une boucle fermée et sont connectés de point en point.",
+      "NoControlledWalls": "Aucun mir sélectionné !"
     }
   },
 
