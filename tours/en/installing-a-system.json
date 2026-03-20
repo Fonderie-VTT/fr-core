@@ -18,13 +18,13 @@
     },
     {
       "id": "searching",
-      "selector": "[name=\"filter\"]",
+      "selector": "input[type=search]",
       "title": "INSTALLINGASYSTEM.SearchingTitle",
       "content": "INSTALLINGASYSTEM.SearchingContent"
     },
     {
       "id": "install",
-      "selector": "[data-package-id=\"worldbuilding\"] .install",
+      "selector": ".package[data-package-id=worldbuilding] button[data-action=installPackage]",
       "title": "INSTALLINGASYSTEM.InstallTitle",
       "content": "INSTALLINGASYSTEM.InstallContent"
     }
