@@ -487,118 +487,147 @@
   "CHAT.JumpToBottom": "Aller en bas de la page",
   "CHAT.PrivateRollContent": "{user} a effectué un lancer de dés de type privé",
   "CHAT.UnknownUser": "Utilisateur inconnu",
-  "COMBAT.NavLabel": "Navigation des rencontres de combat",
-  "COMBAT.Begin": "Commencer le combat",
 
-  "COMBAT.Create": "Créer une rencontre",
-  "COMBAT.Delete": "Supprimer la rencontre",
-  "COMBAT.Encounter": "Rencontre",
-  "COMBAT.EncounterPrevious": "Activer la rencontre précédente",
-  "COMBAT.EncounterNext": "Activer la rencontre suivante",
-  "COMBAT.End": "Terminer le Combat",
-  "COMBAT.InitiativeRoll": "Jet d’initiative",
-  "COMBAT.InitiativeReset": "Réinitialiser l’initiative",
-  "COMBAT.ClearMovementHistories": "Effacer l’historique des déplacements",
-  "COMBAT.InitiativeScore": "Score d’initiative",
-  "COMBAT.EndTitle": "Rencontre terminée ?",
-  "COMBAT.EndConfirmation": "Mettre fin à cette rencontre et abandonner le suivi des tours ?",
-  "COMBAT.Linked": "Lié à la scène, cliquez pour délier",
-  "COMBAT.None": "Aucune rencontre",
-  "COMBAT.NoneActive": "Il n’y a aucune rencontre dans la scène que vous regardez actuellement.",
-  "COMBAT.NoneRemaining": "Il ne reste aucun combattant dans cette rencontre qui ne soit pas vaincu.",
-  "COMBAT.NotStarted": "Combat non commencé",
-  "COMBAT.PanToCombatant": "Centrer sur le combattant",
-  "COMBAT.PingCombatant": "Pointer (ping) le Combattant",
-  "COMBAT.WarnNonVisibleToken": "Ce combattant n’est pas visible pour vous.",
-  "COMBAT.Round": "Round {round}",
-  "COMBAT.Rounds": "Rounds",
-  "COMBAT.RoundPrev": "Round précédent",
-  "COMBAT.RoundNext": "Prochain round",
-  "COMBAT.RollNPC": "Lancer pour tous les PNJ",
-  "COMBAT.RollAll": "Lancer pour tous",
-  "COMBAT.RollsInitiative": "{name} lance l’initiative !",
-  "COMBAT.Settings": "Paramètres du Combat Tracker",
-  "COMBAT.SettingsSave": "Sauvegarder les paramètres du Combat Tracker",
-  "COMBAT.SidebarTitle": "Traqueur de combat",
-  "COMBAT.Sounds.Epic": "Épique",
-  "COMBAT.Sounds.MC": "Commentateur de combat",
-  "COMBAT.ToggleVis": "Basculer le mode de visibilité",
-  "COMBAT.ToggleDead": "Marquer comme vaincu",
-  "COMBAT.Turn": "Tour",
-  "COMBAT.Turns": "Tours",
-  "COMBAT.TurnEnd": "Fin du tour",
-  "COMBAT.TurnNext": "Tour suivant",
-  "COMBAT.TurnPrev": "Tour précédent",
-  "COMBAT.UnknownCombatant": "Combattant inconnu",
-  "COMBAT.Unlinked": "Combat non lié, cliquez pour lier à la scène",
-  "COMBAT.CannotLinkToScene": "Vous ne pouvez pas lier le combat à une scène qui ne contient pas tous ses combattants.",
-  
-  "COMBAT.CombatantActor": "Acteur représenté",
-  "COMBAT.CombatantCreate": "Créer un combattant",
-  "COMBAT.CombatantDefeated": "Vaincu",
-  "COMBAT.CombatantHidden": "Caché",
-  "COMBAT.CombatantImage": "Vignette",
-  "COMBAT.CombatantInitiative": "Valeur d’initiative",
-  "COMBAT.CombatantStatus": "Statut",
-  "COMBAT.CombatantUpdate": "Mettre à jour le combattant",
-  "COMBAT.CombatantUpdateNamed": "Mise à jour du combattant : {name}",
-  "COMBAT.CombatantName": "Nom affiché",
-  "COMBAT.CombatantRemove": "Enlever le combattant",
-  "COMBAT.CombatantClear": "Réinitialiser l’initiative",
-  "COMBAT.CombatantReroll": "Relancer l’initiative",
-  "COMBAT.CombatantClearMovementHistory": "Effacer l’historique des déplacements",
-  "COMBAT.CombatantMovementHistoryCleared": "L’historique des déplacements pour le token \"{name}\" a été effacé.",
-  "COMBAT.CombatantToken": "Token lié",
-  "COMBAT.CombatantScene": "Scène du combattant",
-  "COMBAT.CombatantNotInScene": "Le combattant {name} n’est pas présent sur la scène active que vous affichez",
-  
-  "COMBAT.FIELDS": {
-    "round.label": "Round",
-    "turn.label": "Tour"
-  },
-  
-  "COMBAT.TURN_MARKERS": {
-    "ANIMATIONS": {
-      "SPIN": "Rotation",
-      "SPIN_PULSE": "Rotation / Pulsation",
-      "PULSE": "Pulsation"
-    }
-  },
-  "COMBAT.CONFIG": {
-    "SHEET": {
-      "TURN_MARKERS": "Marqueurs de tour de token"
+  "COMBAT": {
+    "NavLabel": "Navigation des rencontres de combat",
+    "Begin": "Commencer la rencontre",
+    "Create": "Créer une rencontre",
+    "Delete": "Supprimer la rencontre",
+    "Encounter": "Rencontre",
+    "EncounterPrevious": "Activer la rencontre précédente",
+    "EncounterNext": "Activer la rencontre suivante",
+    "End": "Terminer la rencontre",
+    "InitiativeRoll": "Jet d'initiative",
+    "InitiativeReset": "Réinitialiser l'initiative",
+    "ClearMovementHistories": "Effacer l'historique des déplacements",
+    "InitiativeScore": "Score d'initiative",
+    "EndTitle": "Terminer la rencontre ?",
+    "EndConfirmation": "Mettre fin à cette rencontre et abandonner le suivi des tours ?",
+    "None": "Aucune rencontre",
+    "NoneActive": "Il n’y a aucune rencontre dans la scène que vous regardez actuellement.",
+    "NoneRemaining": "Il n'y a aucun participant restant dans cette rencontre qui n'est pas vaincu.",
+    "NotStarted": "Rencontre non commencée",
+    "PanToCombatant": "Centrer sur le participant",
+    "PingCombatant": "Pointer le token",
+    "WarnNonVisibleToken": "Ce participant n'est pas visible pour vous.",
+    "Round": "Round {round}",
+    "Rounds": "Rounds",
+    "RoundPrev": "Round précédent",
+    "RoundNext": "Round suivant",
+    "RollNPC": "Lancer pour tous les PNJ",
+    "RollAll": "Lancer pour tous",
+    "RollsInitiative": "{name} lance l'initiative !",
+    "Settings": "Paramètres du suivi des rencontres",
+    "SettingsSave": "Enregistrer les paramètres du suivi",
+    "SidebarTitle": "Suivi des rencontres",
+    "Sounds": {
+      "Epic": "Épique",
+      "MC": "Commentateur de combat"
+    },
+    "ToggleVis": "Basculer le mode de visibilité",
+    "ToggleDead": "Marquer comme vaincu",
+    "Turn": "Tour",
+    "Turns": "Tours",
+    "TurnEnd": "Terminer le tour",
+    "TurnNext": "Tour suivant",
+    "TurnPrev": "Tour précédent",
+    "UnknownCombatant": "Participant inconnu",
+    "CannotLinkToScene": "Vous ne pouvez pas lier le combat à une scène qui ne contient pas tous ses participants.",
+    "CombatantActor": "Acteur représenté",
+    "CombatantCreate": "Créer un combattant",
+    "CombatantDefeated": "Vaincu",
+    "CombatantHidden": "Caché",
+    "CombatantImage": "Vignette",
+    "CombatantInitiative": "Valeur d'initiative",
+    "CombatantStatus": "Statut du participant",
+    "CombatantUpdate": "Mettre à jour le participant",
+    "CombatantUpdateNamed": "Mettre à jour le participant : {name}",
+    "CombatantName": "Nom affiché",
+    "CombatantRemove": "Supprimer le participant",
+    "CombatantClear": "Effacer l'initiative",
+    "CombatantReroll": "Relancer l'initiative",
+    "CombatantClearMovementHistory": "Effacer l'historique des déplacements",
+    "CombatantMovementHistoryCleared": "L’historique des déplacements pour le token \"{name}\" a été effacé.",
+    "CombatantToken": "Token lié",
+    "CombatantScene": "Scène du participant",
+    "CombatantNotInScene": "Le participant {name} n’est pas présent sur la scène active que vous affichez.",
+    "ACTIONS": {
+      "LinkToScene": "Lier à la scène affichée",
+      "UnlinkFromScene": "Délier de la scène"
+    },
+    "DURATION": {
+      "ROUNDS": {
+        "one": "Round",
+        "two": "Rounds",
+        "few": "Rounds",
+        "many": "Rounds",
+        "other": "Rounds"
+      },
+      "TURNS": {
+        "one": "Tour",
+        "two": "Tours",
+        "few": "Tours",
+        "many": "Tours",
+        "other": "Tours"
+      },
+      "None": "Aucun"
     },
     "FIELDS": {
-      "core.combatTrackerConfig": {
-        "skipDefeated": {
-          "label": "Sauter vaincu",
-          "hint": "Ignorer automatiquement les combattants marqués comme vaincus."
-        },
-        "resource": {
-          "label": "Ressource suivie",
-          "hint": "Choisissez un attribut à suivre pour chaque combattant."
-        },
-        "turnMarker": {
-          "enabled": {
-            "label": "Activer les marqueurs",
-            "hint": "Activer les marqueurs de tour de combat par défaut pour tous les tokens."
+      "round": {
+        "label": "Round"
+      },
+      "turn": {
+        "label": "Tour"
+      }
+    },
+    "TURN_MARKERS": {
+      "ANIMATIONS": {
+        "SPIN": "Rotation",
+        "SPIN_PULSE": "Rotation Pulsation",
+        "PULSE": "Pulsation"
+      }
+    },
+    "CONFIG": {
+      "SHEET": {
+        "TURN_MARKERS": "Marqueurs de tour de token"
+      },
+      "FIELDS": {
+        "core.combatTrackerConfig": {
+          "skipDefeated": {
+            "label": "Sauter vaincu",
+            "hint": "Ignorer automatiquement les combattants marqués comme vaincus."
           },
-          "src": {
-            "label": "Source du média",
-            "hint": "Un fichier image ou vidéo à utiliser par défaut comme marqueur de tour du token."
+          "resource": {
+            "label": "Ressource suivie",
+            "hint": "Choisissez un attribut à suivre pour chaque combattant."
           },
-          "animation": {
-            "label": "Animation",
-            "hint": "Le type d’animation à utiliser par défaut pour chaque marqueur de tour de token."
-          },
-          "disposition": {
-            "label": "Teinte de disposition",
-            "hint": "Appliquez une teinte au marqueur de tour en fonction de la disposition du token."
+          "turnMarker": {
+            "enabled": {
+              "label": "Activer les marqueurs",
+              "hint": "Activer les marqueurs de tour de combat par défaut pour tous les tokens."
+            },
+            "src": {
+              "label": "Source du média",
+              "hint": "Un fichier image ou vidéo à utiliser par défaut comme marqueur de tour du token."
+            },
+            "animation": {
+              "label": "Animation",
+              "hint": "Le type d’animation à utiliser par défaut pour chaque marqueur de tour de token."
+            },
+            "disposition": {
+              "label": "Teinte de disposition",
+              "hint": "Appliquez une teinte au marqueur de tour en fonction de la disposition du token."
+            }
           }
         }
       }
-    }
-  },
+    },
+    "PingInvisibleToken": "You can't see this participant's token.",
+    "ResourceHint": "Choisissez un attribut à suivre pour chaque participant.",
+    "SkipDefeatedHint": "Ignorer automatiquement les participants marqués comme vaincus ?",
+    "TargetedBy": "Ciblé par {list}",
+    "ToggleTargeting": "Basculer le ciblage"
+    },
 
   "COMPENDIUM.Name": "Nom du compendium",
   "COMPENDIUM.Create": "Créer un compendium",
@@ -629,6 +658,10 @@
   },
   "COMPENDIUM.ImportEntry": "Importer l’entité",
   "COMPENDIUM.Locked": "{title} [Verrouillé]",
+  "COMPENDIUM.Migration": {
+    "Begin": "Début de la migration du pack de compendium {collection}, veuillez patienter.",
+    "Complete": "Migration du pack de compendium {collection} réussie."
+  },  
   "COMPENDIUM.SidebarTitle": "Compendium",
   "COMPENDIUM.Type": "Type d’entité",
   "COMPENDIUM.TypeHint": "Chaque compendium ne porte qu’un type spécifique d’entité.",
@@ -872,7 +905,7 @@
     "CommonSelect": "Sélectionner",
     "CommonSelectMultiple": "Sélection multiple",
     "CommonOpenSheet": "Ouvrir la fiche",
-    "DisableToolclips": "Désactivez les clips d’outils dans les paramètres",
+    "DisableToolclips": "Vous pouvez désactiver ces clips d’outils dans les paramètres",
     "CutObjects": "{count} objet(s) {type} coupé(s).",
     "CopiedObjects": "{count} objet(s) {type} copié(s).",
     "PastedObjects": "{count} objet(s) {type} collé(s).",
@@ -1354,6 +1387,7 @@
     "UNLOCK": "Déverrouiller la barre de raccourcis",
     "PAGE_NEXT": "Page suivante",
     "PAGE_PREV": "Page précédente",
+    "EMPTY": "Emplacement vide",
     "CLEAR": "Vider la barre de raccourcis",
     "CLEAR_CONFIRM": "Effacer toutes les macros assignées de votre barre de raccourcis ?"
   },
@@ -1470,6 +1504,7 @@
     "Paste": "Coller",
     "Target": "Cible",
     "Ruler": "Basculer la Règle de la Distance",
+    "UnconstrainedMovement": "Basculer le mouvement non contraint",
     "SendToBack": "Envoyer des objets derrière",
     "BringToFront": "Amener des objets devant",
     "ToggleCharacterSheet": "Basculer sur la feuille de personnage",
