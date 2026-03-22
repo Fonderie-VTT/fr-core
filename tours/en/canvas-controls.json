@@ -18,13 +18,6 @@
       "layer": "tokens"
     },
     {
-      "id": "measure",
-      "selector": "#scene-controls [data-control=\"templates\"]",
-      "title": "CANVASCONTROLS.MeasureTitle",
-      "content": "CANVASCONTROLS.MeasureContent",
-      "layer": "templates"
-    },
-    {
       "id": "tile",
       "selector": "#scene-controls [data-control=\"tiles\"]",
       "title": "CANVASCONTROLS.TileTitle",
@@ -89,8 +82,6 @@
     "CANVASCONTROLS.OverviewContent": "When a Scene is active this set of controls allow you to activate and modify various layers of the Scene. Gamemaster users have access to more tools than Player users.",
     "CANVASCONTROLS.TokensTitle": "Token Controls",
     "CANVASCONTROLS.TokensContent": "This is the Tokens layer from which you can control or target Tokens on a Scene or measure distances between points.",
-    "CANVASCONTROLS.MeasureTitle": "Measurement Controls",
-    "CANVASCONTROLS.MeasureContent": "This is the Measured Templates layer which allows you to draw areas of effect such as cones, rays, or circles. The different tools in this layer allow you to create different types of template shapes.",
     "CANVASCONTROLS.TileTitle": "Tile Controls",
     "CANVASCONTROLS.TileContent": "Tiles are images that augment the background image for a Scene by adding individual objects or props into the environment. Tiles are great for setting up traps, treasure, trees, obstacle, and much more!\nTiles can also be overhead, appearing as a canopy above Tokens to represent roofs, tree-tops, or bridges.",
     "CANVASCONTROLS.DrawingsTitle": "Drawing Tools",

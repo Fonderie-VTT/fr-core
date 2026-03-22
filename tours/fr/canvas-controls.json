@@ -5,8 +5,6 @@
   "CANVASCONTROLS.OverviewContent": "Lorsqu'une scène est active, cet ensemble de commandes vous permet d'activer et de modifier diverses couches de la scène. Les utilisateurs définis en tant que Maître du Jeu (Game Master) ont accès à plus d'outils que les utilisateurs définis en tant que joueur (Player).",
   "CANVASCONTROLS.TokensTitle": "Contrôles des tokens",
   "CANVASCONTROLS.TokensContent": "Il s'agit du calque (couche) Tokens à partir de laquelle vous pouvez contrôler ou cibler des Tokens sur une scène ou mesurer des distances entre des points.",
-  "CANVASCONTROLS.MeasureTitle": "Outils de gabarits",
-  "CANVASCONTROLS.MeasureContent": "Il s'agit du calque qui vous permet de dessiner des zones d'effet telles que des cônes, des rayons ou des cercles. Les différents outils de ce calque vous permettent de créer différents types de formes de gabarits.",
   "CANVASCONTROLS.TileTitle": "Outils de tuile",
   "CANVASCONTROLS.TileContent": "Les tuiles sont des images (ou vidéos) qui enrichissent l'image de fond d'une scène en ajoutant des objets individuels ou des accessoires dans l'environnement. Les tuiles sont idéales pour mettre en place des pièges, des trésors, des arbres, des obstacles et bien d'autres choses encore ! \nLes tuiles peuvent également être aériennes, apparaissant comme un auvent au-dessus des tokens pour représenter des toits, des cimes d'arbres ou des ponts.",
   "CANVASCONTROLS.DrawingsTitle": "Outils de dessin",
