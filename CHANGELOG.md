@@ -1,3 +1,8 @@
+13.351.1
+- Mise à jour pour la version 13.351
+- Renommage de Créer Compendium en Créer un compendium : [#25](https://github.com/Fonderie-VTT/fr-core/pull/25)
+- Pour les notifications, contrôlé remplacé par sélectionné : [#26](https://github.com/Fonderie-VTT/fr-core/pull/26)
+
 13.346.1
 - Mise à jour pour la version 13.346
 - Correction de PackageDependenciesAutomaticPlural (merci Rectulo)

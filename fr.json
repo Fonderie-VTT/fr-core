@@ -2992,7 +2992,7 @@
       "create": "Créer une région",
       "update": "Mettre à jour la région",
       "delete": "Supprimer la région",
-      "shapeCreateFromWalls": "Créer des formes à partir des murs contrôlés",
+      "shapeCreateFromWalls": "Créer des formes à partir des murs sélectionnés",
       "shapeMakeHole": "Faire un trou",
       "shapeFillHole": "Remplir le trou",
       "shapeMoveUp": "Déplacer la forme vers le haut",
@@ -3090,10 +3090,10 @@
       "title": "Configurer la région"
     },
     "NOTIFICATIONS": {
-      "ControlWalls": "Contrôlez un groupe de murs qui définissent les limites de la forme souhaitée.",
+      "ControlWalls": "Sélectionnez un groupe de murs qui définissent les limites de la forme souhaitée.",
       "DrawingMultipleRegionsControlled": "Vous devez contrôler une seule ou aucune région lorsque vous dessinez une forme !",
-      "EmptyEnclosedArea": "La zone délimitée par les murs contrôlés est vide ! Assurez-vous que les murs extérieurs forment une boucle fermée et sont connectés de point en point.",
-      "NoControlledWalls": "Vous ne contrôlez aucun mur !"
+      "EmptyEnclosedArea": "La zone délimitée par les murs sélectionnés est vide ! Assurez-vous que les murs extérieurs forment une boucle fermée et sont connectés de point en point.",
+      "NoControlledWalls": "Aucun mur sélectionné !"
     }
   },
 
@@ -3273,7 +3273,7 @@
     "Actor": "Créer un acteur",
     "Adventure": "Créer une aventure",
     "Cards": "Créer des cartes",
-    "Compendium": "Créer Compendium",
+    "Compendium": "Créer un compendium",
     "Folder": "Créer un dossier",
     "Item": "Créer un objet",
     "JournalEntry": "Créer un journal",
