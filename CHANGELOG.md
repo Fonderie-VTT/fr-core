@@ -1,3 +1,9 @@
+14.357.1
+- Mise à jour pour la version 14.357
+
+13.351.2
+- Terminer la rencontre => Finir la rencontre
+
 13.351.1
 - Mise à jour pour la version 13.351
 - Renommage de Créer Compendium en Créer un compendium : [#25](https://github.com/Fonderie-VTT/fr-core/pull/25)
