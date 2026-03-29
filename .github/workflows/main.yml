@@ -145,4 +145,4 @@ jobs:
           contentType: 'application/json'
           customHeaders: '{"Authorization": "${{ secrets.FVTT_PACKAGE_RELEASE_TOKEN }}"}'
           preventFailureOnNoResponse: 'true'
-          data: '{"id": "fr-core","dry-run":false,"release":{"version":"${{github.event.release.tag_name}}","manifest":"https://github.com/Fonderie-VTT/fr-core/releases/download/${{github.event.release.tag_name}}/module.json","notes":"https://github.com/Fonderie-VTT/fr-core/blob/main/CHANGELOG.md","compatibility":{"minimum":"13","verified":"13","maximum":"13"}}}'
+          data: '{"id": "fr-core","dry-run":false,"release":{"version":"${{github.event.release.tag_name}}","manifest":"https://github.com/Fonderie-VTT/fr-core/releases/download/${{github.event.release.tag_name}}/module.json","notes":"https://github.com/Fonderie-VTT/fr-core/blob/${{github.event.release.tag_name}}/CHANGELOG.md","compatibility":{"minimum":"13","verified":"13","maximum":"13"}}}'
