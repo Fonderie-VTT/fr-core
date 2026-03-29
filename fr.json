@@ -702,9 +702,9 @@
   "ClearAll": "Supprimer tous les objets",
   "ClearAllHint": "Supprimer définitivement tous les objets de type {type} de la scène ?",
   "HeaderGame": "Raccourcis - Général",
-  "HeaderGameNotes": "Raccourcis s’appliquant aux fonctionnalités de FVTT.",
+  "HeaderGameNotes": "Raccourcis s'appliquant en général à tous les aspects de Foundry",
   "HeaderCanvas": "Raccourcis - Scènes",
-  "HeaderCanvasNotes": "Raccourcis s’appliquant aux interactions avec les différents objets/calques (layer) de la scène.",
+  "HeaderCanvasNotes": "Raccourcis s’appliquant aux interactions avec un calque spécifique de la scène.",
   "HeaderObjects": "Outils de positionnement",
   "HeaderObjectsNotes": "Raccourcis s’appliquant aux objets placés sur la scène.",
   "HeaderSpecial": "Raccourcis spécifiques",
@@ -792,7 +792,7 @@
   "TokenPlaceHiddenCreate": "lors de la création d’un token.",
   "TooltipDismiss": "Enlever le verrouillage de l’info-bulle",
   "TooltipLock": "Verrouiller l’info-bulle",
-  "WallHeader": "Contrôles de la couche des murs",
+  "WallHeader": "Contrôles du calque des murs",
   "WallSelectChain": "Sélectionner des murs contigus",
   "DrawingHeader": "Contrôles des outils de dessin",
   "DrawingTextConfirm": "Confirmer le texte du dessin saisis",
@@ -3329,10 +3329,10 @@
   },
   "VISIBILITY": {
     "LAYER_UNLOCKED": {
-      "label": "Uniquement sur la couche de région déverrouillée"
+      "label": "Uniquement sur le calque de région déverrouillée"
     },
     "LAYER": {
-      "label": "Uniquement sur la couche de région"
+      "label": "Uniquement sur le calque de région"
     },
     "GAMEMASTER": {
       "label": "Toujours pour le maître du jeu"
