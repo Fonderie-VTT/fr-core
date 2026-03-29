@@ -685,6 +685,7 @@
   "RegionSelect": "Sélection de régions",
   "RegionSelectP": "Sélectionnez une ou plusieurs régions dans la scène. Une région sélectionnée est en couleur unie et les régions non sélectionnées sont en rayures.",
   "RegionTemplateMode": "Mode de modèle mesuré",
+  "RegionTemplateModeP": "Lorsque ce mode est activé, la palette est ignorée et chaque forme que vous dessinez crée une nouvelle région. Les formes ne peuvent pas être ajoutées aux régions existantes.",
   "RegionRectangle": "Dessiner un rectangle",
   "RegionCircle": "Dessiner un cercle",
   "RegionEllipse": "Dessiner une ellipse",
@@ -792,7 +793,6 @@
   "TooltipDismiss": "Enlever le verrouillage de l’info-bulle",
   "TooltipLock": "Verrouiller l’info-bulle",
   "WallHeader": "Contrôles de la couche des murs",
-  "WallChain": "Ajouter des murs contigus",
   "WallSelectChain": "Sélectionner des murs contigus",
   "DrawingHeader": "Contrôles des outils de dessin",
   "DrawingTextConfirm": "Confirmer le texte du dessin saisis",
@@ -1973,8 +1973,8 @@
 "SCENE.AccessibilityAll" : "Tous les joueurs",
 "SCENE.Activate": "Activer",
 "SCENE.Audio": "Audio",
-"SCENE.BackgroundScale": "Échelle de l’image d’arrière-plan",
-"SCENE.BackgroundScaleHint": "Utilisez Maj + Molette de souris ou Maj + Flèche vers le haut et Maj + Flèche vers le bas pour ajuster la taille de l’image d’arrière-plan.",
+"SCENE.BackgroundScale": "Échelle de la scène",
+"SCENE.BackgroundScaleHint": "Utilisez Maj + Molette de souris ou Maj + Flèche vers le haut et Maj + Flèche vers le bas pour ajuster la taille de la scène.",
 "SCENE.CaptureInitialViewPosition": "Position du canvas capturée en tant que vue initiale dans le formulaire de configuration de la scène.",
 "SCENE.Configure": "Configurer",
 "SCENE.CurrentLevel": "Niveau actuel",
@@ -1985,6 +1985,7 @@
 "SCENE.DimensionChangeTitle": "Changer les dimensions de la scène ?",
 "SCENE.DimensionChangeWarning": "Vous modifiez les dimensions sous-jacentes de cette scène, Si vous avez déjà placé des objets dans cette scène, cette opération peut entraîner le déplacement de la position de ces objets par rapport à l’image de fond.",
 "SCENE.DimensionLinked": "Les dimensions de la scène sont actuellement liées : changer l’une changera l’autre pour maintenir le rapport d’aspect. Cliquez pour délier.",
+"SCENE.DeterminingDimensions": "Détermination des dimensions de la scène.",
 "SCENE.DimensionUnlinked": "Les dimensions de la scène sont actuellement dissociées, changer l’une ne changera pas l’autre. Cliquez pour lier.",
 "SCENE.DistortedDimensionsTitle": "Dimensions de la scène déformée",
 "SCENE.DistortedDimensionsWarning": "Vous avez choisi de nouvelles dimensions dont le rapport d’aspect est différent de celui de l’original. Souhaitez-vous repositionner automatiquement les objets placés, tels que les tokens ? Le résultat risque d’apparaître déformé.",
@@ -2002,7 +2003,7 @@
 "SCENE.GridAppearance": "Apparence",
 "SCENE.GridAppearanceHint": "Configurez l'apparence des lignes de la grille.",
 "SCENE.GridConfigTool": "Outil de configuration de la grille",
-"SCENE.GridConfigToolHint": "Configurez la position de la grille et de l’image de fond à l’aide de la molette de la souris et des touches fléchées, ou en définissant manuellement les champs suivants.",
+"SCENE.GridConfigToolHint": "Configurez la position de la grille et de la scène à l’aide de la molette de la souris et des touches fléchées, ou en définissant manuellement les champs suivants.",
 "SCENE.GridGridless": "Sans grille",
 "SCENE.GridSquare": "Carrée",
 "SCENE.GridHexOddR": "Lignes hexagonales - impaires",
@@ -2013,8 +2014,8 @@
 "SCENE.GridMechanics": "Mécaniques",
 "SCENE.GridSizeError": "Ce redimensionnement réduirait la taille de la grille en dessous du minimum de 50px. Si vous souhaitez réduire la taille de votre grille à cette valeur, passez d’abord à la version sans grille et réinstallez une nouvelle grille après le redimensionnement.",
 "SCENE.GridResizeHint" : "Utilisez ALT + molette de la souris ou ALT + Flèche vers le haut et ALT + Flèche vers le bas pour ajuster la taille de la grille.",
-"SCENE.GridPosition": "Décalage de l’image d’arrière-plan",
-"SCENE.GridPositionHint": "Utilisez les touches fléchées pour déplacer le décalage de l’image d’arrière-plan.",
+"SCENE.GridPosition": "Décalage de la scène",
+"SCENE.GridPositionHint": "Utilisez les touches fléchées pour ajuster le décalage de la scène.",
 "SCENE.GridReset": "Annuler les modifications",
 "SCENE.InheritedField": "La valeur de ce champ est héritée du niveau '{level}'. Cliquez ici pour le modifier directement.",
 "SCENE.InitialLevel": "Niveau initial",
@@ -2060,7 +2061,7 @@
   "transition": {
     "type": {
       "label": "Type de transition",
-      "hint": "Le type d'animation de transition qui est joué lorsque la scène est chargée."
+      "hint": "Le type d'animation de transition qui est joué lorsque la scène est vue."
     },
     "duration": {
       "label": "Durée",
@@ -2605,6 +2606,8 @@
   "WorldCreating": "Création du monde...",
   "WorldCreateCancel": "Annuler la création du monde",
   "WorldCreateDependencyFail": "Le monde n'a pas pu être créé car les dépendances requises n'ont pas été installées.",
+  "WorldCreateNoSystem": "Vous devez sélectionner un système de jeu pour le monde avant de continuer.",
+  "WorldCreateNoTitle": "Vous devez fournir un titre pour le monde avant de continuer.",
   "WorldCreateSuccess": "Création réussie, lancement...",
   "WorldDelete": "Supprimer",
   "WorldEdit": "Éditer le monde",
@@ -3264,7 +3267,8 @@
   "FIELDS": {
     "color": {
       "label": "Couleur",
-      "hint": "La couleur appliquée à la visualisation de la région."
+      "hint": "La couleur appliquée à la visualisation de la région.",
+      "placeholder": "Couleur aléatoire"
     },
     "shapes": {
       "label": "Formes",
@@ -3725,7 +3729,8 @@
     "Visible": "Visible"
   },
   "Categories": {
-    "NoAuthor": "Pas d'auteur"
+    "NoAuthor": "Pas d'auteur",
+    "NoLevel": "Pas de niveau"
   },
   "Meta": {
     "empty": "Vide",
@@ -4048,6 +4053,7 @@
   "width.label": "Taille X",
   "height.label": "Taille Y",
   "depth.label": "Taille Z",
+  "level.label": "Niveau",
   "movementAction.label": "Type de déplacement",
   "actorId.label": "Acteur représenté",
   "actorLink.label": "Lié à l’acteur",
@@ -4865,7 +4871,7 @@
     "removeAll": "Supprimer toutes les formes"
   },
   "NOTIFICATIONS": {
-    "DrawingMultipleObjectsControlled": "Vous devez contrôler un seul {type} ou aucun lorsque vous dessinez une forme !",
+    "DrawingMultipleObjectsControlled": "Vous devez contrôler ou configurer un seul {type} ou aucun lorsque vous dessinez une forme !",
     "ControlWalls": "Sélectionnez un ensemble de murs qui délimitent la forme souhaitée.",
     "EmptyEnclosedArea": "La zone délimitée par les murs contrôlés est vide ! Assurez-vous que les murs extérieurs forment une boucle fermée et sont connectés point par point.",
     "NoControlledWalls": "Vous ne contrôlez aucun mur !"
