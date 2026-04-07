@@ -3928,8 +3928,8 @@
       "label": "Nom"
     },
     "occlusion": {
-      "modes.label": "Occlusion Modes",
-      "alpha.label": "Occlusion alpha"
+      "modes.label": "Modes d'occlusion",
+      "alpha.label": "Alpha d'occlusion"
     },
     "OCCLUSION_MODES": {
       "FADE.label": "Fondu",

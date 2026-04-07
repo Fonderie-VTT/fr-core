@@ -1,3 +1,6 @@
+14.359.3
+- Traduction manquante pour modes d'occlusion et alpha d'occlusion
+
 14.359.2
 - Uniformisation : Monde remplacé par monde
 
