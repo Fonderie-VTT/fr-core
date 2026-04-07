@@ -1,3 +1,6 @@
+14.359.2
+- Uniformisation : Monde remplacé par monde
+
 14.359.1
 - Mise à jour pour la version 14.359 : première version 14 stable
 
