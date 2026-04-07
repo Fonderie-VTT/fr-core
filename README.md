@@ -13,3 +13,6 @@ Il est maintenu par la communauté La Fonderie.
 
 - `token` : `token` est conservé
 - `chat` : `tchat`
+- `layer` : `calque`
+- `Game Master` : `Maître de Jeu`
+
