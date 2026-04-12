@@ -1614,17 +1614,17 @@
   "MoveDownRight": "Déplacer en diagonal bas-droite",
   "Ascend": "Monter verticalement",
   "Descend": "Descendre verticalement",
-  "PanUp": "Déplacer vers le haut",
-  "PanLeft": "Déplacer vers la gauche",
-  "PanDown": "Déplacer vers le bas",
-  "PanRight": "Déplacer vers la droite",
-  "PanUpLeft": "Déplacer en diagonal haut-gauche",
-  "PanUpRight": "Déplacer en diagonal haut-droite",
-  "PanDownLeft": "Déplacer en diagonal bas-gauche",
-  "PanDownRight": "Déplacer en diagonal bas-droite",
-  "ZoomIn": "Ascension verticale ou zoom dans le canevas",
-  "ZoomOut": "Descendre verticalement ou faire un zoom arrière sur le canevas",
-  "RulerWaypoint": "Point de passage de la règle",
+  "PanUp": "Déplacer la vue vers le haut",
+  "PanLeft": "Déplacer la vue vers la gauche",
+  "PanDown": "Déplacer la vue vers le bas",
+  "PanRight": "Déplacer la vue vers la droite",
+  "PanUpLeft": "Déplacer la vue en diagonal haut-gauche",
+  "PanUpRight": "Déplacer la vue en diagonal haut-droite",
+  "PanDownLeft": "Déplacer la vue en diagonal bas-gauche",
+  "PanDownRight": "Déplacer la vue en diagonal bas-droite",
+  "ZoomIn": "Zoom avant",
+  "ZoomOut": "Zoom arrière",
+  "RulerWaypoint": "Placer un point de passage de la règle",
   "ExecuteMacro": "Exécuter l’emplacement {number} de la barre de raccourcis",
   "SwapMacroPage": "Passer à la page {page} de la barre de raccourcis",
   "MustBeArray": "Doit être passer dans un tableau de valeurs",
@@ -4878,5 +4878,14 @@
       "EmptyEnclosedArea": "La zone délimitée par les murs contrôlés est vide ! Assurez-vous que les murs extérieurs forment une boucle fermée et sont connectés point par point.",
       "NoControlledWalls": "Vous ne contrôlez aucun mur !"
   }
+  },
+
+  "FRCORE": {
+    "Settings": {
+      "AzertySupport": {
+        "Name": "Support clavier Azerty",
+        "Hint": "Ajoute des alias Azerty pour certains raccourcis core non modifiables (Ctrl+Q pour Tout sélectionner, Ctrl+W pour Annuler) tout en conservant les raccourcis d'origine."
+      }
+    }
 }
 }

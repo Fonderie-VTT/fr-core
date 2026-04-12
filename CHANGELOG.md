@@ -1,3 +1,7 @@
+14.360.2
+- Correction des PanX en Déplacer la vue en X
+- Correction Zoom In, Zoom Out
+
 14.360.1
 - Mise à jour pour la version 14.360
 - Traduction manquante pour modes d'occlusion et alpha d'occlusion
