@@ -700,7 +700,10 @@
   "RegionClear": "Effacer les régions",
   "RegionPerformance": "<em>Remarque sur les performances :</em> Chaque dessin est sa propre forme. Faites attention à ne pas placer plusieurs formes entièrement les unes dans les autres. Plutôt que de combiner des formes simples pour créer une forme complexe, envisagez d’utiliser l’outil de polygone de région.",
   "ClearAll": "Supprimer tous les objets",
+  "ClearAllOwned": "Supprimer tous les objets possédés",
   "ClearAllHint": "Supprimer définitivement tous les objets de type {type} de la scène ?",
+  "ClearAllOwnedHint": "Supprimer définitivement tous les objets de type {type} que vous possédez ?",
+  "DeleteLockedObjects": "Supprimer les objets verrouillés",  
   "HeaderGame": "Commandes générales du jeu",
   "HeaderGameNotes": "Ces contrôles s'appliquent généralement à l'ensemble des fonctionnalités de Foundry.",
   "HeaderCanvas": "Contrôles des calques du canevas",
@@ -2087,14 +2090,6 @@
       "offsetY.label": "Vertical"
     },
     "backgroundColor.label": "Couleur de fond",
-    "foreground": {
-      "label": "Image de premier plan",
-      "hint": "Une image optionnelle de premier plan qui est dessinée au-dessus des autres objets de la scène."
-    },
-    "foregroundElevation": {
-      "label": "Élévation de premier plan",
-      "hint": "Une élévation dans les unités de distance qui configure la hauteur de l’image de premier plan et des tuiles de plafond."
-    },
     "initial.scale.label": "Zoom",
     "grid": {
       "type.label": "Type de grille",
@@ -2242,7 +2237,10 @@
         "src.label": "Texture",
         "color.label": "Couleur",
         "tint.label": "Teinte",
-        "alphaThreshold.label": "Seuil alpha"
+        "alphaThreshold": {
+          "label": "Seuil alpha",
+          "hint": "Les pixels de la texture d'arrière-plan avec des valeurs alpha inférieures à ce seuil ne restreignent pas la lumière ou la météo."
+        }
       },
       "elevation": {
         "label": "Plage d'élévation",
@@ -3439,7 +3437,7 @@
     },
     "TOOLTIPS": {
       "CannotChangeLevelsIfAttached": "La région doit être sur le même niveau que le token auquel elle est attachée.",
-      "CannotSelectMultipleLevelsIfRestricted": "Cette région ne peut pas être incluse dans plusieurs régions lorsqu'elle est restreinte.",
+      "CannotSelectMultipleLevelsIfRestricted": "Cette région ne peut pas être incluse dans plusieurs niveaux lorsqu'elle est restreinte.",
     "CannotEnableRestriction": "Cette région ne peut pas être restreinte car elle est incluse dans plus d'un niveau."
   }
 },
@@ -3527,7 +3525,7 @@
           "sound.label": "Restreint le son",
           "occlusion": {
             "label": "Occlusion",
-            "hint": "Lorsqu'un token occultable se trouve sous la surface, les tuiles avec le mode d'occlusion défini sur SURFACE, ainsi que toutes les textures de niveau avant ou arrière à la même élévation ou plus haut, seront occultées."
+            "hint": "Lorsqu'un token occultable se trouve sous la surface, les tuiles avec le mode d'occlusion défini sur Surface, ainsi que toutes les textures de niveau avant ou arrière à la même élévation ou plus haut, seront occultées."
           },
           "exposure": {
             "label": "Révéler la surface élevée",
@@ -3920,7 +3918,11 @@
       "src.label": "Image ou vidéo",
       "scaleX.label": "Horizontal",
       "scaleY.label": "Vertical",
-      "tint.label": "Couleur de teinte"
+      "tint.label": "Couleur de teinte",
+      "alphaThreshold": {
+        "label": "Seuil alpha",
+        "hint": "Les pixels de l'image de la tuile avec des valeurs alpha inférieures à ce seuil ne restreignent pas la lumière ou la météo et ne déclenchent pas le fondu au survol."
+      }
     },
     "alpha.label": "Opacité des tuiles",
     "name": {
@@ -4767,7 +4769,7 @@
           "hole.label": "Est un trou",
           "gridBased": {
             "label": "Basé sur une grille",
-            "hint": "Une forme basée sur une grille est conforme à la métrique de la grille."
+            "hint": "Une forme basée sur une grille suit les règles de distance de la grille, telles que définies par le paramètre de jeu Diagonales de la grille."
           },
           "x.label": "Origine X",
           "y.label": "Origine Y",

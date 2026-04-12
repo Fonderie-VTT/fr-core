@@ -1,4 +1,5 @@
-14.359.3
+14.360.1
+- Mise à jour pour la version 14.360
 - Traduction manquante pour modes d'occlusion et alpha d'occlusion
 
 14.359.2
