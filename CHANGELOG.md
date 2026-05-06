@@ -1,3 +1,6 @@
+14.361.1
+- Mise à jour pour la version 14.361
+
 14.360.2
 - Correction des PanX en Déplacer la vue en X
 - Correction Zoom In, Zoom Out

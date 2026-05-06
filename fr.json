@@ -402,106 +402,112 @@
 
 "COMBAT": {
   "NavLabel": "Navigation des rencontres de combat",
-  "Begin": "Commencer la rencontre",
-    "Create": "Créer une rencontre",
-    "Delete": "Supprimer la rencontre",
-    "Encounter": "Rencontre",
-    "EncounterPrevious": "Activer la rencontre précédente",
-    "EncounterNext": "Activer la rencontre suivante",
-    "End": "Finir la rencontre",
-    "InitiativeRoll": "Jet d'initiative",
-    "InitiativeReset": "Réinitialiser l'initiative",
-    "ClearMovementHistories": "Effacer l'historique des déplacements",
-    "EndTitle": "Finir la rencontre ?",
-    "EndConfirmation": "Mettre fin à cette rencontre et abandonner le suivi des tours ?",
-    "None": "Aucune rencontre",
-    "NoneActive": "Il n’y a aucune rencontre dans la scène que vous regardez actuellement.",
-    "NoneRemaining": "Il n'y a aucun participant restant dans cette rencontre qui n'est pas vaincu.",
-    "NotStarted": "Rencontre non commencée",
-    "Round": "Round {round}",
-    "Rounds": "Rounds",
-    "RoundPrev": "Round précédent",
-    "RoundNext": "Round suivant",
-    "RollNPC": "Lancer pour tous les PNJ",
-    "RollAll": "Lancer pour tous",
-    "RollsInitiative": "{name} lance l'initiative !",
-    "Settings": "Paramètres du suivi des rencontres",
-    "SettingsSave": "Enregistrer les paramètres du suivi",
-    "SidebarTitle": "Suivi des rencontres",
-    "Sounds": {
-      "Epic": "Épique",
-      "MC": "Commentateur de combat"
+  "Begin": "Commencer le combat",
+  "Create": "Créer un combat",
+  "EncounterPrevious": "Activer le combat précédent",
+  "EncounterNext": "Activer le combat suivant",
+  "End": "Finir le combat",
+  "InitiativeRoll": "Jet d'initiative",
+  "InitiativeReset": "Réinitialiser l'initiative",
+  "ClearMovementHistories": "Effacer l'historique des déplacements",
+  "EndTitle": "Finir le combat",
+  "EndConfirmation": "Mettre fin à ce combat et abandonner le suivi des tours ?",
+  "None": "Aucun combat",
+  "NoneActive": "Il n’y a aucune rencontre de combat active dans la scène que vous regardez actuellement.",
+  "NoneRemaining": "Il n'y a aucun combattant restant dans cette rencontre de combat qui n'est pas vaincu.",
+  "NotStarted": "Rencontre non commencée",
+  "Round": "Round {round}",
+  "Rounds": "Rounds",
+  "RoundPrev": "Round précédent",
+  "RoundNext": "Round suivant",
+  "RollNPC": "Lancer pour tous les PNJ",
+  "RollAll": "Lancer pour tous",
+  "RollsInitiative": "{name} lance l'initiative !",
+  "Settings": "Paramètres du suivi des combats",
+  "SettingsSave": "Enregistrer les paramètres du suivi",
+  "SidebarTitle": "Suivi des combats",
+  "Sounds": {
+    "Epic": "Épique",
+    "MC": "Commentateur de combat"
+  },
+  "Turn": "Tour",
+  "Turns": "Tours",
+  "TurnEnd": "Terminer le tour",
+  "TurnNext": "Tour suivant",
+  "TurnPrev": "Tour précédent",
+  "CannotLinkToScene": "Vous ne pouvez pas lier une rencontre de combat à une scène qui ne contient pas tous ses combattants.",
+  "ACTIONS": {
+    "EditName": "Modifier le nom",
+    "EditNameTitle": "Modifier le nom de la rencontre de combat",    
+    "LinkToScene": "Lier à la scène affichée",
+    "UnlinkFromScene": "Délier de la scène"
+  },
+  "FIELDS": {
+    "name": {
+      "label": "Nom du combat",
+      "hint": "Fournissez un nom court pour cette rencontre de combat afin de l'identifier."
+    },    
+    "round": {
+      "label": "Round"
     },
-    "Turn": "Tour",
-    "Turns": "Tours",
-    "TurnEnd": "Terminer le tour",
-    "TurnNext": "Tour suivant",
-    "TurnPrev": "Tour précédent",
-    "CannotLinkToScene": "Vous ne pouvez pas lier le combat à une scène qui ne contient pas tous ses participants.",
-    "ACTIONS": {
-      "LinkToScene": "Lier à la scène affichée",
-      "UnlinkFromScene": "Délier de la scène"
+    "turn": {
+      "label": "Tour"
+    }
+  },
+  "TURN_MARKERS": {
+    "ANIMATIONS": {
+      "SPIN": "Rotation",
+      "SPIN_PULSE": "Rotation Pulsation",
+      "PULSE": "Pulsation"
+    }
+  },
+  "CONFIG": {
+    "SHEET": {
+      "TURN_MARKERS": "Marqueurs de tour du token"
     },
     "FIELDS": {
-      "round": {
-        "label": "Round"
-      },
-      "turn": {
-        "label": "Tour"
-      }
-    },
-    "TURN_MARKERS": {
-      "ANIMATIONS": {
-        "SPIN": "Rotation",
-        "SPIN_PULSE": "Rotation Pulsation",
-        "PULSE": "Pulsation"
-      }
-    },
-    "CONFIG": {
-      "SHEET": {
-        "TURN_MARKERS": "Marqueurs de tour du token"
-      },
-      "FIELDS": {
-        "core.combatTrackerConfig": {
-          "skipDefeated": {
-            "label": "Sauter vaincu",
-            "hint": "Ignorer automatiquement les combattants marqués comme vaincus."
+      "core.combatTrackerConfig": {
+        "skipDefeated": {
+          "label": "Sauter vaincu",
+          "hint": "Ignorer automatiquement les combattants marqués comme vaincus."
+        },
+        "resource": {
+          "label": "Ressource suivie",
+          "hint": "Choisissez un attribut à suivre pour chaque combattant."
+        },
+        "turnMarker": {
+          "enabled": {
+            "label": "Activer les marqueurs",
+            "hint": "Activer les marqueurs de tour de combat par défaut pour tous les tokens."
           },
-          "resource": {
-            "label": "Ressource suivie",
-            "hint": "Choisissez un attribut à suivre pour chaque combattant."
+          "src": {
+            "label": "Source du média",
+            "hint": "Un fichier image ou vidéo à utiliser par défaut comme marqueur de tour du token."
           },
-          "turnMarker": {
-            "enabled": {
-              "label": "Activer les marqueurs",
-              "hint": "Activer les marqueurs de tour de combat par défaut pour tous les tokens."
-            },
-            "src": {
-              "label": "Source du média",
-              "hint": "Un fichier image ou vidéo à utiliser par défaut comme marqueur de tour du token."
-            },
-            "animation": {
-              "label": "Animation",
-              "hint": "Le type d’animation à utiliser par défaut pour chaque marqueur de tour du token."
-            },
-            "disposition": {
-              "label": "Teinte de disposition",
-              "hint": "Appliquez une teinte au marqueur de tour en fonction de la disposition du token."
-            }
+          "animation": {
+            "label": "Animation",
+            "hint": "Le type d’animation à utiliser par défaut pour chaque marqueur de tour du token."
+          },
+          "disposition": {
+            "label": "Teinte de disposition",
+            "hint": "Appliquez une teinte au marqueur de tour en fonction de la disposition du token."
           }
         }
-    }
+      }
   }
+}
 },
 
 "COMBATANT": {
   "Status": "Statut du combattant",
   "UpdateNamed": "Mettre à jour le combattant : {name}",
-    "Unknown": "Inconnu",
-    "PanTo": "Centrer sur le combattant",
-    "Ping": "Ping token",
-    "ToggleVis": "Basculer la visibilité",
-  "ToggleDead": "Marquer comme vaincu",
+  "Unknown": "Combattant inconnu",
+  "PanTo": "Centrer sur le combattant",
+  "Ping": "Pointer le token",
+  "Hide": "Cacher",
+  "Show": "Afficher",  
+  "MarkDefeated": "Marquer comme vaincu",
+  "UnmarkDefeated": "Décocher comme vaincu",
   "MovementHistoryCleared": "Historique des déplacements effacé pour le token \"{name}\".",
   "WarnNonVisibleToken": "Ce combattant n'est pas visible pour vous.",
 
@@ -547,13 +553,13 @@
     "FilterDocuments": "Filtrer les documents par type",
     "ClearFilters": "Effacer les filtres",
     "Delete": {
-      "Option": "Supprimer le compendium",
+      "Option": "Supprimer",
       "Title": "Supprimer le compendium : {compendium}",
       "Warning": "Ce compendium sera définitivement supprimé et ne pourra pas être récupéré."
     },
     "DeleteEntry": "Supprimer l’entité",
     "Duplicate": {
-      "Option": "Dupliquer le compendium",
+      "Option": "Dupliquer",
       "Title": "Dupliquer le compendium : {compendium}",
       "Label": "Nouveau titre du compendium",
       "Hint": "Vous pouvez dupliquer ce compendium dans votre monde pour avoir une copie locale de son contenu qui peut être éditée en toute sécurité.",
@@ -578,8 +584,8 @@
     "Type": "Type de document",
     "TypeHint": "Chaque compendium ne porte qu’un type spécifique de document.",
     "ToggleLocked": {
-      "Option": "Basculer le verrouillage d’édition",
       "Title": "Basculer le verrouillage d’édition : {compendium}",
+      "Lock": "Verrouiller",
       "Unlock": "Déverrouiller",
       "Warning": "Vous essayez de déverrouiller pour éditer un compendium qui n’appartient pas à ce monde. Toutes les modifications que vous faites dans ce pack de compendium peuvent être perdues si le système ou le module qui le possède est mis à jour. Vous pouvez dupliquer le compendium vers votre monde à la place. Voulez-vous continuer ?"
     },
@@ -1472,15 +1478,19 @@
 "HUD": {
   "ChangeLevel": "Changer de niveau",
   "Elevation": "Élévation",
-    "OpenConfig": "Ouvrir la configuration",
-    "AssignStatusEffects": "Attribuer des effets d’état",
-    "SelectMovementAction": "Sélectionner un type de déplacement",
-    "ToggleTargetState": "Basculer l’état de cible",
-    "ToggleCombatState": "Basculer l’état de combat",
-    "ToggleVis": "Basculer la visibilité",
-    "ToggleLock": "Basculer le verrouillage",
-    "ToFrontOrBack": "Mettre au premier plan / Mettre à l’arrière-plan",
-    "TilePlay": "Jouer la vidéo",
+  "OpenConfig": "Ouvrir la configuration",
+  "AssignStatusEffects": "Attribuer des effets d’état",
+  "SelectMovementAction": "Sélectionner un type de déplacement",
+  "Target": "Cibler",
+  "Untarget": "Ne plus cibler",
+  "EnterCombat": "Entrer en combat",
+  "ExitCombat": "Quitter le combat",
+  "Hide": "Cacher",
+  "Show": "Afficher",
+  "Lock": "Verrouiller",
+  "Unlock": "Déverrouiller",    
+  "ToFrontOrBack": "Mettre au premier plan / à l’arrière-plan",
+  "TilePlay": "Jouer la vidéo",
   "TilePause": "Mettre en pause la vidéo",
   "WarningEffectNoActor": "Il n’est pas possible d’attribuer des effets d’état à un token qui n’a pas d’acteur associé."
 },
@@ -1895,166 +1905,164 @@
 "PLAYERS": {
   "Title": "Joueurs",
   "List": "Liste de joueurs",
-    "CharSelect": "Sélectionner un personnage",
-    "CharSelected": "Personnage sélectionné",
-    "CharRelease": "Libérer le personnage",
-    "ConfigTitle": "Configuration du joueur",
-    "PlayerColor": "Couleur du joueur",
-    "PlayerAvatar": "Avatar du joueur",
-    "PlayerPronouns": "Pronoms du joueur",
-    "PullToScene": "Amener à la scène",
-    "ViewAvatar": "Afficher l’avatar du joueur",
-    "Kick": "Ejecter le joueur",
-    "Ban": "Bannir le joueur",
-    "UnBan": "Enlever le bannissement du joueur",
+  "CharSelect": "Sélectionner un personnage",
+  "CharSelected": "Personnage sélectionné",
+  "CharRelease": "Libérer le personnage",
+  "ConfigTitle": "Configuration du joueur",
+  "PlayerColor": "Couleur du joueur",
+  "PlayerAvatar": "Avatar du joueur",
+  "PlayerPronouns": "Pronoms du joueur",
+  "PullToScene": "Amener à la scène",
+  "ViewAvatar": "Afficher l’avatar du joueur",
+  "Kick": "Ejecter le joueur",
+  "Ban": "Bannir le joueur",
+  "UnBan": "Enlever le bannissement du joueur",
   "LATENCY": "Latence",
   "FPS": "IPS"
 },
 
-"PLAYLIST.Delete": "Supprimer la playlist",
-"PLAYLIST.Edit": "Éditer la playlist",
 "PLAYLIST.DefaultChannel": "Canal de playlist audio",
-  "PLAYLIST.CurrentlyPlaying": "En cours de lecture",
-  "PLAYLIST.ModeDisabled": "Soundboard seulement",
-  "PLAYLIST.ModeSequential": "Jouer dans l’ordre",
-  "PLAYLIST.ModeShuffle": "Jouer aléatoirement",
-  "PLAYLIST.ModeSimultaneous": "Jouer en simultané",
-  "PLAYLIST.Play": "Jouer la playlist",
-  "PLAYLIST.Stop": "Stopper la playlist",
-  "PLAYLIST.Forward": "Suivant",
-  "PLAYLIST.Backward": "Précédent",
-  "PLAYLIST.VolPlaylist": "Playlists",
-  "PLAYLIST.VolAmbient": "Ambiance",
-  "PLAYLIST.VolInterface": "Interface",
-  "PLAYLIST.Update": "Mettre à jour la playlist",
-  "PLAYLIST.SortAlphabetical": "Par ordre alphabétique",
-  "PLAYLIST.SortManual": "Manuellement",
-  "PLAYLIST.SoundCreate": "Créer une piste",
-  "PLAYLIST.SoundEdit": "Éditer la piste",
-  "PLAYLIST.SoundDelete": "Effacer la piste",
-  "PLAYLIST.SoundLoop": "Jouer en boucle",
-  "PLAYLIST.SoundStreaming": "Streaming de fichier volumineux",
-  "PLAYLIST.SoundPlay": "Jouer la piste",
-  "PLAYLIST.SoundPause": "Pause",
-  "PLAYLIST.SoundPreload": "Précharger la piste",
-  "PLAYLIST.SoundResume": "Reprendre la lecture",
-  "PLAYLIST.SoundStop": "Couper le son de la piste",
-  "PLAYLIST.BulkImport": {
-    "Title": "Importer en masse des sons",
-    "Hint": "Sélectionner un dossier contenant les sons à importer.",
-    "Button": "Importer en masse",
-    "Warning": "Aucun son de playlist valide n’a été importé depuis le répertoire \"{path}\""
-  },
-  "PLAYLIST.PinToTop": "Épingler en haut",
-  "PLAYLIST.PinToBottom": "Épingler en bas",
-  "PLAYLIST.FIELDS": {
-    "name.label": "Nom de la Playlist",
-    "mode.label": "Mode de lecture",
-    "channel.label": "Canal audio",
-    "sorting.label": "Mode de tri",
-    "fade.label": "Durée du fondu",
-    "description.label": "Description de la playlist"
-  },
-  "PLAYLIST.VOLUME": {
-  "CONTROLS": "Contrôles de volume utilisateur",
-  "TOOLTIP": "Volume : {volume}%"
+"PLAYLIST.CurrentlyPlaying": "En cours de lecture",
+"PLAYLIST.ModeDisabled": "Soundboard seulement",
+"PLAYLIST.ModeSequential": "Jouer dans l’ordre",
+"PLAYLIST.ModeShuffle": "Jouer aléatoirement",
+"PLAYLIST.ModeSimultaneous": "Jouer en simultané",
+"PLAYLIST.Play": "Jouer la playlist",
+"PLAYLIST.Stop": "Stopper la playlist",
+"PLAYLIST.Forward": "Suivant",
+"PLAYLIST.Backward": "Précédent",
+"PLAYLIST.VolPlaylist": "Playlists",
+"PLAYLIST.VolAmbient": "Ambiance",
+"PLAYLIST.VolInterface": "Interface",
+"PLAYLIST.Update": "Mettre à jour la playlist",
+"PLAYLIST.SortAlphabetical": "Par ordre alphabétique",
+"PLAYLIST.SortManual": "Manuellement",
+"PLAYLIST.SoundAdd": "Ajouter un son",
+"PLAYLIST.SoundEdit": "Éditer un son",
+"PLAYLIST.SoundDelete": "Effacer un son",
+"PLAYLIST.SoundLoop": "Jouer en boucle",
+"PLAYLIST.SoundStreaming": "Streaming de fichier volumineux",
+"PLAYLIST.SoundPlay": "Jouer le son",
+"PLAYLIST.SoundPause": "Pause",
+"PLAYLIST.SoundPreload": "Précharger le son",
+"PLAYLIST.SoundResume": "Reprendre la lecture",
+"PLAYLIST.SoundStop": "Couper le son",
+"PLAYLIST.BulkImport": {
+  "Title": "Importer en masse des sons",
+  "Hint": "Sélectionner un dossier contenant les sons à importer.",
+  "Button": "Importer en masse",
+  "Warning": "Aucun son de playlist valide n’a été importé depuis le répertoire \"{path}\""
+},
+"PLAYLIST.PinToTop": "Épingler en haut",
+"PLAYLIST.PinToBottom": "Épingler en bas",
+"PLAYLIST.FIELDS": {
+  "name.label": "Nom de la Playlist",
+  "mode.label": "Mode de lecture",
+  "channel.label": "Canal audio",
+  "sorting.label": "Mode de tri",
+  "fade.label": "Durée du fondu",
+  "description.label": "Description de la playlist"
+},
+"PLAYLIST.VOLUME": {
+"CONTROLS": "Contrôles de volume utilisateur",
+"TOOLTIP": "Volume : {volume}%"
 },
 
-"PLAYLIST_SOUND.Update": "Mettre à jour les pistes",
+"PLAYLIST_SOUND.Create": "Créer un son",
+"PLAYLIST_SOUND.Update": "Mettre à jour le son",
 "PLAYLIST_SOUND.FIELDS": {
   "name.label": "Nom de la piste",
-    "path.label": "Source audio",
-    "channel.label": "Canal audio",
-    "volume.label": "Volume sonore",
-    "repeat.label": "Répéter",
-    "fade.label": "Durée du fondu",
-    "description.label": "Description du son"
-  },
+  "path.label": "Source audio",
+  "channel.label": "Canal audio",
+  "volume.label": "Volume sonore",
+  "repeat.label": "Répéter",
+  "fade.label": "Durée du fondu",
+  "description.label": "Description du son"
+},
   
-  "SCENE.Accessibility": "Restriction d’accès",
-  "SCENE.AccessibilityGM": "MJ Uniquement",
-  "SCENE.AccessibilityAll": "Tous les joueurs",
-  "SCENE.Activate": "Activer",
-  "SCENE.Audio": "Audio",
-  "SCENE.BackgroundScale": "Échelle de la scène",
-  "SCENE.BackgroundScaleHint": "Utilisez Maj + Molette de souris ou Maj + Flèche vers le haut et Maj + Flèche vers le bas pour ajuster la taille de la scène.",
-  "SCENE.CaptureInitialViewPosition": "Position du canevas capturée en tant que vue initiale dans le formulaire de configuration de la scène.",
-  "SCENE.Configure": "Configurer",
-  "SCENE.CurrentLevel": "Niveau actuel",
-  "SCENE.Darkness": "Obscurité",
-  "SCENE.Details": "Détails",
-  "SCENE.Dimensions": "Dimensions de la scène",
-  "SCENE.DimensionsHint": "Les dimensions de la scène sont automatiquement définies pour correspondre aux dimensions de l’image de fond lorsqu’une image de fond est configurée pour la première fois.",
-  "SCENE.DimensionChangeTitle": "Changer les dimensions de la scène ?",
-  "SCENE.DimensionChangeWarning": "Vous modifiez les dimensions sous-jacentes de cette scène, Si vous avez déjà placé des objets dans cette scène, cette opération peut entraîner le déplacement de la position de ces objets par rapport à l’image de fond.",
-  "SCENE.DimensionLinked": "Les dimensions de la scène sont actuellement liées : changer l’une changera l’autre pour maintenir le rapport d’aspect. Cliquez pour délier.",
-  "SCENE.DeterminingDimensions": "Détermination des dimensions de la scène.",
-  "SCENE.DimensionUnlinked": "Les dimensions de la scène sont actuellement dissociées, changer l’une ne changera pas l’autre. Cliquez pour lier.",
-  "SCENE.DistortedDimensionsTitle": "Dimensions de la scène déformée",
-  "SCENE.DistortedDimensionsWarning": "Vous avez choisi de nouvelles dimensions dont le rapport d’aspect est différent de celui de l’original. Souhaitez-vous repositionner automatiquement les objets placés, tels que les tokens ? Le résultat risque d’apparaître déformé.",
-  "SCENE.Environment.Base": "Environnement de base",
-  "SCENE.Environment.Dark": "Environnement sombre",
-  "SCENE.Environment.DarkHint": "Se comporte comme les paramètres environnementaux de base, mais s'applique à mesure que le niveau d'obscurité de la scène se rapproche de 1.",
-  "SCENE.Environment.Reset": "Réinitialiser les options par défaut",
-  "SCENE.FogOfWar": "Brouillard de guerre",
-  "SCENE.GenerateThumb": "Générer une image miniature",
-  "SCENE.GenerateThumbNoCanvas": "La miniature de la scène ne peut pas être générée lorsque le paramètre « Scène du jeu désactivée » est actif.",
-  "SCENE.GenerateThumbUploadDenied": "La miniature de la scène n’a pas pu être générée car l’utilisateur n’a pas la permission de télécharger des fichiers.",
-  "SCENE.GenerateThumbProgress": "Génération de la miniature pour la scène {name}.",
-  "SCENE.GenerateThumbSuccess": "Miniature générée pour la scène {name}.",
-  "SCENE.GlobalIllumination": "Illumination globale",
-  "SCENE.GridAppearance": "Apparence",
-  "SCENE.GridAppearanceHint": "Configurez l'apparence des lignes de la grille.",
-  "SCENE.GridConfigTool": "Outil de configuration de la grille",
-  "SCENE.GridConfigToolHint": "Configurez la position de la grille et de la scène à l’aide de la molette de la souris et des touches fléchées, ou en définissant manuellement les champs suivants.",
-  "SCENE.GridGridless": "Sans grille",
-  "SCENE.GridSquare": "Carrée",
-  "SCENE.GridHexOddR": "Lignes hexagonales - impaires",
-  "SCENE.GridHexEvenR": "Lignes hexagonales - paires",
-  "SCENE.GridHexOddQ": "Colonnes hexagonales - impaires",
-  "SCENE.GridHexEvenQ": "Colonnes hexagonales - paires",
-  "SCENE.GridMeasurement": "Mesure",
-  "SCENE.GridMechanics": "Mécaniques",
-  "SCENE.GridSizeError": "Ce redimensionnement réduirait la taille de la grille en dessous du minimum de 50px. Si vous souhaitez réduire la taille de votre grille à cette valeur, passez d’abord à la version sans grille et réinstallez une nouvelle grille après le redimensionnement.",
-  "SCENE.GridResizeHint": "Utilisez ALT + molette de la souris ou ALT + Flèche vers le haut et ALT + Flèche vers le bas pour ajuster la taille de la grille.",
-  "SCENE.GridPosition": "Décalage de la scène",
-  "SCENE.GridPositionHint": "Utilisez les touches fléchées pour ajuster le décalage de la scène.",
-  "SCENE.GridReset": "Annuler les modifications",
-  "SCENE.InheritedField": "La valeur de ce champ est héritée du niveau '{level}'. Cliquez ici pour le modifier directement.",
-  "SCENE.InitialLevel": "Niveau initial",
-  "SCENE.InitialView": "Position initiale de la vue",
-  "SCENE.InitialViewButton": "Capture la vue actuelle",
-  "SCENE.InitialViewHint": "Définit la position par défaut de la caméra lors de la première ouverture de la scène.",
-  "SCENE.InvalidDimension": "La dimension fournie résulterait en une valeur non entière pour l’autre dimension. Veuillez essayer une valeur différente ou dissocier les dimensions.",
-  "SCENE.Loading": "Chargement de {name}",
-  "SCENE.Notes": "Notes de la scène",
-  "SCENE.Perception": "Perception",
-  "SCENE.Preload": "Précharger la scène",
-  "SCENE.Presentation": "Présentation",
-  "SCENE.Properties": "Propriétés de la scène",
-  "SCENE.View": "Voir la scène",
-  "SCENE.ShiftBG": "Décalage de l’arrière-plan",
-  "SCENE.ToggleNav": "Basculer la navigation",
-  "SCENE.FogModeChangeMessage": "Le mode de brouillard de guerre a changé. Le brouillard de guerre va être rechargé et la vision réinitialisée.",
-  "SCENE.Transition": {
-    "Animation": "Animation de transition",
-    "Preview": "Prévisualisation",
-    "Config": "Configurer",
-    "Types": {
-      "fade": "Fondu",
-      "swirl": "Tourbillon",
-      "waterDrop": "Goutte d'eau",
-      "morph": "Morphe",
-      "crosshatch": "Tramage",
-      "wind": "Vent",
-      "waves": "Vagues",
-      "whiteNoise": "Bruit blanc",
-      "hologram": "Hologramme",
-      "hole": "Trou",
-      "holeSwirl": "Trou tourbillonnant",
-      "glitch": "Bogue",
-      "dots": "Points"
-    }
+"SCENE.Accessibility": "Restriction d’accès",
+"SCENE.AccessibilityGM": "MJ Uniquement",
+"SCENE.AccessibilityAll": "Tous les joueurs",
+"SCENE.Activate": "Activer",
+"SCENE.Audio": "Audio",
+"SCENE.BackgroundScale": "Échelle de la scène",
+"SCENE.BackgroundScaleHint": "Utilisez Maj + Molette de souris ou Maj + Flèche vers le haut et Maj + Flèche vers le bas pour ajuster la taille de la scène.",
+"SCENE.CaptureInitialViewPosition": "Position du canevas capturée en tant que vue initiale dans le formulaire de configuration de la scène.",
+"SCENE.CurrentLevel": "Niveau actuel",
+"SCENE.Darkness": "Obscurité",
+"SCENE.Details": "Détails",
+"SCENE.Dimensions": "Dimensions de la scène",
+"SCENE.DimensionsHint": "Les dimensions de la scène sont automatiquement définies pour correspondre aux dimensions de l’image de fond lorsqu’une image de fond est configurée pour la première fois.",
+"SCENE.DimensionChangeTitle": "Changer les dimensions de la scène ?",
+"SCENE.DimensionChangeWarning": "Vous modifiez les dimensions sous-jacentes de cette scène, Si vous avez déjà placé des objets dans cette scène, cette opération peut entraîner le déplacement de la position de ces objets par rapport à l’image de fond.",
+"SCENE.DimensionLinked": "Les dimensions de la scène sont actuellement liées : changer l’une changera l’autre pour maintenir le rapport d’aspect. Cliquez pour délier.",
+"SCENE.DeterminingDimensions": "Détermination des dimensions de la scène.",
+"SCENE.DimensionUnlinked": "Les dimensions de la scène sont actuellement dissociées, changer l’une ne changera pas l’autre. Cliquez pour lier.",
+"SCENE.DistortedDimensionsTitle": "Dimensions de la scène déformée",
+"SCENE.DistortedDimensionsWarning": "Vous avez choisi de nouvelles dimensions dont le rapport d’aspect est différent de celui de l’original. Souhaitez-vous repositionner automatiquement les objets placés, tels que les tokens ? Le résultat risque d’apparaître déformé.",
+"SCENE.Environment.Base": "Environnement de base",
+"SCENE.Environment.Dark": "Environnement sombre",
+"SCENE.Environment.DarkHint": "Se comporte comme les paramètres environnementaux de base, mais s'applique à mesure que le niveau d'obscurité de la scène se rapproche de 1.",
+"SCENE.Environment.Reset": "Réinitialiser les options par défaut",
+"SCENE.FogOfWar": "Brouillard de guerre",
+"SCENE.GenerateThumb": "Générer une image miniature",
+"SCENE.GenerateThumbNoCanvas": "La miniature de la scène ne peut pas être générée lorsque le paramètre « Scène du jeu désactivée » est actif.",
+"SCENE.GenerateThumbUploadDenied": "La miniature de la scène n’a pas pu être générée car l’utilisateur n’a pas la permission de télécharger des fichiers.",
+"SCENE.GenerateThumbProgress": "Génération de la miniature pour la scène {name}.",
+"SCENE.GenerateThumbSuccess": "Miniature générée pour la scène {name}.",
+"SCENE.GlobalIllumination": "Illumination globale",
+"SCENE.GridAppearance": "Apparence",
+"SCENE.GridAppearanceHint": "Configurez l'apparence des lignes de la grille.",
+"SCENE.GridConfigTool": "Outil de configuration de la grille",
+"SCENE.GridConfigToolHint": "Configurez la position de la grille et de la scène à l’aide de la molette de la souris et des touches fléchées, ou en définissant manuellement les champs suivants.",
+"SCENE.GridGridless": "Sans grille",
+"SCENE.GridSquare": "Carrée",
+"SCENE.GridHexOddR": "Lignes hexagonales - impaires",
+"SCENE.GridHexEvenR": "Lignes hexagonales - paires",
+"SCENE.GridHexOddQ": "Colonnes hexagonales - impaires",
+"SCENE.GridHexEvenQ": "Colonnes hexagonales - paires",
+"SCENE.GridMeasurement": "Mesure",
+"SCENE.GridMechanics": "Mécaniques",
+"SCENE.GridSizeError": "Ce redimensionnement réduirait la taille de la grille en dessous du minimum de 50px. Si vous souhaitez réduire la taille de votre grille à cette valeur, passez d’abord à la version sans grille et réinstallez une nouvelle grille après le redimensionnement.",
+"SCENE.GridResizeHint": "Utilisez ALT + molette de la souris ou ALT + Flèche vers le haut et ALT + Flèche vers le bas pour ajuster la taille de la grille.",
+"SCENE.GridPosition": "Décalage de la scène",
+"SCENE.GridPositionHint": "Utilisez les touches fléchées pour ajuster le décalage de la scène.",
+"SCENE.GridReset": "Annuler les modifications",
+"SCENE.InheritedField": "La valeur de ce champ est héritée du niveau '{level}'. Cliquez ici pour le modifier directement.",
+"SCENE.InitialLevel": "Niveau initial",
+"SCENE.InitialView": "Position initiale de la vue",
+"SCENE.InitialViewButton": "Capture la vue actuelle",
+"SCENE.InitialViewHint": "Définit la position par défaut de la caméra lors de la première ouverture de la scène.",
+"SCENE.InvalidDimension": "La dimension fournie résulterait en une valeur non entière pour l’autre dimension. Veuillez essayer une valeur différente ou dissocier les dimensions.",
+"SCENE.Loading": "Chargement de {name}",
+"SCENE.Notes": "Notes de la scène",
+"SCENE.Perception": "Perception",
+"SCENE.Preload": "Précharger la scène",
+"SCENE.Presentation": "Présentation",
+"SCENE.Properties": "Propriétés de la scène",
+"SCENE.View": "Voir",
+"SCENE.ShiftBG": "Décaler",
+"SCENE.ToggleNav": "Basculer la navigation",
+"SCENE.FogModeChangeMessage": "Le mode de brouillard de guerre a changé. Le brouillard de guerre va être rechargé et la vision réinitialisée.",
+"SCENE.Transition": {
+  "Animation": "Animation de transition",
+  "Preview": "Prévisualisation",
+  "Config": "Configurer",
+  "Types": {
+    "fade": "Fondu",
+    "swirl": "Tourbillon",
+    "waterDrop": "Goutte d'eau",
+    "morph": "Morphe",
+    "crosshatch": "Tramage",
+    "wind": "Vent",
+    "waves": "Vagues",
+    "whiteNoise": "Bruit blanc",
+    "hologram": "Hologramme",
+    "hole": "Trou",
+    "holeSwirl": "Trou tourbillonnant",
+    "glitch": "Bogue",
+    "dots": "Points"
+  }
   },
   "SCENE.FIELDS": {
     "initialLevel": {
@@ -2215,7 +2223,7 @@
       "visibility": "Visibilité",
       "environment": "Environnement",
       "misc": "Divers",
-    "levels": "Niveaux"
+      "levels": "Niveaux"
   }
 },
 
@@ -2225,11 +2233,9 @@
         "hint": "Les scènes prennent en charge plusieurs niveaux verticaux. Ajoutez un nouveau niveau pour convertir cette scène en une scène multi-niveaux.",
         "label": "Ajouter un niveau"
       },
-      "Down": "Descendre d'un niveau",
       "Edit": "Modifier le niveau",
-      "Remove": "Supprimer le niveau",
-      "Up": "Monter d'un niveau",
-      "View": "Voir le niveau"
+      "Delete": "Supprimer le niveau",
+      "View": "Voir"
     },
     "FIELDS": {
       "background": {
@@ -2279,7 +2285,8 @@
           "hint": "Configurez l'ensemble des autres niveaux qui sont entièrement ou partiellement visibles depuis celui-ci."
         }
       }
-    }
+    },
+    "CannotDeleteOnlyLevel": "Vous ne pouvez pas supprimer le seul niveau de cette scène."
   },
 
   "SCENE_NAVIGATION": {
@@ -2389,7 +2396,7 @@
     }
   },
 
-  "SETTINGS.CombatConfigL": "Suivi des rencontres",
+  "SETTINGS.CombatConfigL": "Suivi du combat",
   "SETTINGS.CombatConfigH": "Paramètres relatifs au combat et au suivi.",
   "SETTINGS.CombatThemeN": "Thème du combat",
   "SETTINGS.CombatThemeL": "L’ensemble des sons qui seront joués lorsque le combat commence, lorsque votre tour est le suivant, et pendant votre tour.",
@@ -3246,6 +3253,7 @@
 
 "PLACEABLE_PALETTE": {
   "Apply": "Appliquer",
+  "CannotApplyToLocked": "Vous ne pouvez pas appliquer la palette aux objets verrouillés.",
   "CloneSettings": "Cloner",
   "MultipleValues": "<Valeurs multiples>",
   "Selected": "Palette {document} [{count}]",
@@ -3282,7 +3290,11 @@
         "top": {
           "label": "Haut",
           "hint": "Le haut de la plage d’élévation."
-        }
+        },
+      "topInclusive": {
+        "label": "Haut inclusif",
+        "hint": "Le haut est-il inclus dans la plage d’élévation ?"
+      }
       },
       "attachment": {
         "token": {
@@ -3319,7 +3331,7 @@
       "create": "Créer une région",
       "update": "Mettre à jour la région",
       "delete": "Supprimer la région",
-      "behaviorCreate": "Créer un comportement",
+      "behaviorAdd": "Ajouter un comportement",
       "behaviorEdit": "Modifier le comportement",
       "behaviorDelete": "Supprimer le comportement",
       "behaviorEnable": "Activer le comportement",
@@ -3510,11 +3522,21 @@
         }
       },
       "changeLevel": {
+        "FIELDS": {
+        "movementActions": {
+          "label": "Actions de mouvement autorisées",
+          "hint": "Définit quelles actions de mouvement le token peut utiliser pour changer de niveau. Si aucune action n'est sélectionnée, toutes les actions de mouvement sont autorisées."
+        }
+      },
+      "Level": "Niveau de destination",
+      "MovementAction": "Action de mouvement",
         "Confirm": "Voulez-vous déplacer {token} vers {level} ?",
         "ConfirmSelect": "Sélectionnez le niveau vers lequel vous souhaitez déplacer {token}.",
+        "ConfirmDisabled": "{token} ne peut pas être déplacé vers un autre niveau depuis sa position actuelle.",
         "Move": "Déplacer",
         "MoveDown": "Déplacer vers le bas",
-        "MoveUp": "Déplacer vers le haut"
+        "MoveUp": "Déplacer vers le haut",
+        "DoNotMove": "Ne pas déplacer"
       },
       "defineSurface": {
         "FIELDS": {
@@ -3525,7 +3547,7 @@
           "sound.label": "Restreint le son",
           "occlusion": {
             "label": "Occlusion",
-            "hint": "Lorsqu'un token occultable se trouve sous la surface, les tuiles avec le mode d'occlusion défini sur Surface, ainsi que toutes les textures de niveau avant ou arrière à la même élévation ou plus haut, seront occultées."
+            "hint": "Lorsqu'un token contrôlé ou détecté se trouve sous une surface, les tuiles utilisant le mode d'occlusion \"Surface\" s'estompent si elles se trouvent à cette surface ou au-dessus, tout comme les textures de fond et de premier plan. Pour les surfaces situées en haut d'une région tridimensionnelle, l'estompage ne s'applique que si le token se trouve également à l'élévation inférieure de la région. Survoler la région ou appuyer sur le raccourci clavier \"Mettre en évidence les objets\" déclenche également cet effet."
           },
           "exposure": {
             "label": "Révéler la surface élevée",
@@ -3637,10 +3659,13 @@
           "relative.label": "Relatif"
         },
         "Confirm": "Voulez-vous téléporter {token} ?",
+        "ConfirmDisabled": "{token} ne peut pas être téléporté depuis sa position actuelle.",
         "ConfirmRevealed": "Voulez-vous téléporter {token} vers {region} dans {scene} ?",
         "ConfirmSelectSameScene": "Sélectionnez la destination dans {scene} vers laquelle vous voulez téléporter {token}.",
         "ConfirmSelectDifferentScene": "Sélectionnez la destination vers laquelle vous voulez téléporter {token}.",
-        "ConfirmSelectOption": "{region} dans {scene}"
+        "ConfirmSelectOption": "{region} dans {scene}",
+        "Teleport": "Téléporter",
+        "DoNotTeleport": "Ne pas téléporter"
       },
       "toggleBehavior": {
         "FIELDS": {
@@ -3667,7 +3692,7 @@
 "SIDEBAR.TabJournal": "Journaux",
 "SIDEBAR.TabCompendium": "Compendiums",
 "SIDEBAR.TabPlaceables": "Objets plaçables",
-"SIDEBAR.TabSettings": "Paramètres de la partie",
+"SIDEBAR.TabSettings": "Paramètres",
 "SIDEBAR.TabTables": "Tables aléatoires",
 "SIDEBAR.TokenArt": "Voir l’image du token",
 "SIDEBAR.SearchModeName": "Recherche par nom uniquement",
@@ -3679,6 +3704,7 @@
 "SIDEBAR.CollapseToggle": "Réduire ou développer",
 "SIDEBAR.Delete": "Supprimer",
 "SIDEBAR.DeleteWarning": "Ce document de type {type} sera définitivement supprimé et ne pourra pas être récupéré.",
+"SIDEBAR.DeleteManyWarning": "{count} {type} seront définitivement supprimés et ne pourront pas être récupérés.",
 "SIDEBAR.Duplicate": "Dupliquer",
 "SIDEBAR.Edit": "Modifier",
 "SIDEBAR.Export": "Exporter les données",
@@ -3691,14 +3717,14 @@
 "SIDEBAR.ACTIONS.CREATE": {
   "ActiveEffect": "Créer un effet actif",
   "Actor": "Créer un acteur",
-    "Adventure": "Créer une aventure",
-    "Cards": "Créer des cartes",
-    "Compendium": "Créer un compendium",
-    "Folder": "Créer un dossier",
-    "Item": "Créer un objet",
-    "JournalEntry": "Créer un journal",
-    "Macro": "Créer une macro",
-    "Playlist": "Créer une playlist",
+  "Adventure": "Créer une aventure",
+  "Cards": "Créer des cartes",
+  "Compendium": "Créer un compendium",
+  "Folder": "Créer un dossier",
+  "Item": "Créer un objet",
+  "JournalEntry": "Créer un journal",
+  "Macro": "Créer une macro",
+  "Playlist": "Créer une playlist",
   "RollTable": "Créer une table",
   "Scene": "Créer une scène"
 },
@@ -3712,9 +3738,6 @@
   "ACTIONS": {
     "ChangeLevel": "Changer de niveau",
       "Clear": "Effacer",
-      "Configure": "Configurer",
-      "Create": "Créer {name}",
-      "Delete": "Supprimer",
       "Hidden": "Caché",
       "Hide": "Cacher",
       "InLevel": "Inclus dans le niveau",
@@ -3757,7 +3780,8 @@
       "normal": "Murs normaux",
       "secret": "Portes secrètes",
       "terrain": "Murs de terrain",
-    "window": "Fenêtres"
+      "window": "Fenêtres",
+      "blank": "Murs vides"
   }
 },
 
@@ -4014,26 +4038,29 @@
 "TOKEN.Assign": "Assigner le token",
 "TOKEN.AssignWarn": "Vous devez sélectionner un token existant pour l’attribuer comme nouvelle configuration du prototype.",
 "TOKEN.AssignSuccess": "Mise à jour du prototype de configuration des tokens pour {name}",
-  "TOKEN.BarAttributes": "Barres d’attributs",
-  "TOKEN.BarValues": "Valeurs Individuelles",
-  "TOKEN.DeleteCombatantWarning": "Vous êtes en train de supprimer un token qui est en combat. Son combattant sera définitivement supprimé.",
-  "TOKEN.DeleteAttachedRegionWarning": "Vous êtes en train de supprimer un token auquel une région est attachée. La ou les régions attachées seront définitivement supprimées.",
-  "TOKEN.Size": "Taille",
-  "TOKEN.Anchor": "Ancre",
-  "TOKEN.AnchorHint": "L’ancre par défaut (0.5, 0.5) est le centre de l’image du token.",
-  "TOKEN.ImageAlts": "Alterner les tokens de l’acteur",
-  "TOKEN.Mirror": "Image miroir",
-  "TOKEN.MirrorX": "Symétrie horizontale",
-  "TOKEN.MirrorY": "Symétrie verticale",
-  "TOKEN.ResourceBar1D": "Valeur de la barre 1",
-  "TOKEN.ResourceBar2D": "Valeur de la barre 2",
-  "TOKEN.TitlePrototype": "Prototype du token",
-  "TOKEN.Update": "Mettre à jour le token",
-  "TOKEN.WarningNoActor": "Ce token référence un acteur qui n’existe plus dans ce monde.",
-  "TOKEN.WarningNoVision": "Vous ne possédez aucun token avec de la « vision » sur cette scène",
-  "TOKEN.PROTOTYPE": {
-    "OverridesWarning": "Ce champ est défini par les remplacements de prototype de token et ne peut pas être modifié directement."
-  },
+"TOKEN.BarAttributes": "Barres d’attributs",
+"TOKEN.BarValues": "Valeurs Individuelles",
+"TOKEN.DeleteCombatantWarning": "Vous êtes en train de supprimer un token qui est en combat. Son combattant sera définitivement supprimé.",
+"TOKEN.DeleteAttachedRegionWarning": "Vous êtes en train de supprimer un token auquel une région est attachée. La ou les régions attachées seront définitivement supprimées.",
+"TOKEN.Size": "Taille",
+"TOKEN.Anchor": "Ancre",
+"TOKEN.AnchorHint": "L’ancre par défaut (0.5, 0.5) est le centre de l’image du token.",
+"TOKEN.ImageAlts": "Alterner les tokens de l’acteur",
+"TOKEN.ImageCycleNext": "Image suivante du token",
+"TOKEN.ImageCyclePrev": "Image précédente du token",
+"TOKEN.ImagePreview": "Aperçu de l'image du token",
+"TOKEN.Mirror": "Image miroir",
+"TOKEN.MirrorX": "Symétrie horizontale",
+"TOKEN.MirrorY": "Symétrie verticale",
+"TOKEN.ResourceBar1D": "Valeur de la barre 1",
+"TOKEN.ResourceBar2D": "Valeur de la barre 2",
+"TOKEN.TitlePrototype": "Prototype du token",
+"TOKEN.Update": "Mettre à jour le token",
+"TOKEN.WarningNoActor": "Ce token référence un acteur qui n’existe plus dans ce monde.",
+"TOKEN.WarningNoVision": "Vous ne possédez aucun token avec de la « vision » sur cette scène",
+"TOKEN.PROTOTYPE": {
+  "OverridesWarning": "Ce champ est défini par les remplacements de prototype de token et ne peut pas être modifié directement."
+},
   "TOKEN.TABS": {
     "identity": "Identité",
     "appearance": "Apparence",
@@ -4433,24 +4460,24 @@
 "TOURS": {
   "Title": "Gestion des présentations",
   "NavLabel": "Onglets de configuration des présentations",
-    "ShowMeHow": "Montre-moi comment",
-    "TourCategories": "Catégories des présentations",
-    "AllTours": "Toutes les présentations",
-    "ResetAll": "Réinitialiser toutes les présentations",
-    "TourFilter": "Filtrer la présentation",
-    "TourName": "Nom de la présentation",
-    "Start": "Démarrer la présentation",
-    "Resume": "Recommencer la présentation",
-    "Restart": "Commencer la présentation depuis le début",
-    "Reset": "Réinitialiser l’avancement de la présentation",
-    "NotStarted": "Non commencée",
-    "InProgress": "En cours - {current}/{total}",
-    "Completed": "Complétée",
-    "ResetTitle": "Réinitialiser les présentations",
-    "ResetWarning": "Souhaitez-vous réinitialiser toutes les présentations ?",
-    "ResetSuccess": "Réinitialiser toutes les présentations.",
-    "SuggestedTitle": "Prochaine présentation suggérée",
-    "SuggestedDescription": "<p>Vous avez terminé la présentation <strong>{currentTitle}</strong>.</p><p>Nous vous proposons de poursuivre avec la présentation <strong>{nextTitle}</strong>. Souhaitez-vous poursuivre ? </p>"
+  "ShowMeHow": "Montre-moi comment",
+  "TourCategories": "Catégories des présentations",
+  "AllTours": "Toutes les présentations",
+  "ResetAll": "Réinitialiser toutes les présentations",
+  "TourFilter": "Filtrer la présentation",
+  "TourName": "Nom de la présentation",
+  "Start": "Démarrer la présentation",
+  "Resume": "Recommencer la présentation",
+  "Restart": "Commencer la présentation depuis le début",
+  "Reset": "Réinitialiser l’avancement de la présentation",
+  "NotStarted": "Non commencée",
+  "InProgress": "En cours - {current}/{total}",
+  "Completed": "Complétée",
+  "ResetTitle": "Réinitialiser les présentations",
+  "ResetWarning": "Souhaitez-vous réinitialiser toutes les présentations ?",
+  "ResetSuccess": "Réinitialiser toutes les présentations.",
+  "SuggestedTitle": "Prochaine présentation suggérée",
+  "SuggestedDescription": "<p>Vous avez terminé la présentation <strong>{currentTitle}</strong>.</p><p>Nous vous proposons de poursuivre avec la présentation <strong>{nextTitle}</strong>. Souhaitez-vous poursuivre ? </p>"
   },
 
   "USER": {
@@ -4878,14 +4905,5 @@
       "EmptyEnclosedArea": "La zone délimitée par les murs contrôlés est vide ! Assurez-vous que les murs extérieurs forment une boucle fermée et sont connectés point par point.",
       "NoControlledWalls": "Vous ne contrôlez aucun mur !"
   }
-  },
-
-  "FRCORE": {
-    "Settings": {
-      "AzertySupport": {
-        "Name": "Support clavier Azerty",
-        "Hint": "Ajoute des alias Azerty pour certains raccourcis core non modifiables (Ctrl+Q pour Tout sélectionner, Ctrl+W pour Annuler) tout en conservant les raccourcis d'origine."
-      }
-    }
-}
+  }
 }
