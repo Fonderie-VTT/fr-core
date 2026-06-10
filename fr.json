@@ -1,5 +1,4 @@
 {
-  "Foundry Virtual Tabletop": "Foundry Virtual Tabletop",
   "ADVENTURE": {
     "ImportSubmit": "Importer l’aventure",
     "ImportProgress": "En cours d’importation",
@@ -537,6 +536,7 @@
     "Confirm": "Confirmer",
     "Default": "Par défaut",
     "Delete": "Supprimer",
+    "FoundryVirtualTabletop": "Foundry Virtual Tabletop",
     "Invalid": "Invalide",
     "No": "Non",
     "None": "Aucun",
@@ -574,6 +574,10 @@
       "Start": "Importation de {number} documents de type {type} et {folderNumber} dossiers dans le dossier {folder}. Veuillez patienter.",
       "Finish": "Les {number} documents de type {type} et les {folderNumber} dossiers ont été importés avec succès dans le dossier {folder}."
     },
+    "ImportFolder": {
+      "InvalidDocument": "Vous ne pouvez pas importer un document de type {type} dans la collection de dossiers du compendium {collection}.",
+      "InvalidDocuments": "Vous ne pouvez importer que des documents de type Dossier dans la collection de dossiers du compendium {collection}."
+    },
     "ImportEntry": "Importer l’entité",
     "Locked": "{title} [Verrouillé]",
     "Migration": {
@@ -590,6 +594,8 @@
       "Warning": "Vous essayez de déverrouiller pour éditer un compendium qui n’appartient pas à ce monde. Toutes les modifications que vous faites dans ce pack de compendium peuvent être perdues si le système ou le module qui le possède est mis à jour. Vous pouvez dupliquer le compendium vers votre monde à la place. Voulez-vous continuer ?"
     },
     "CannotViewWarning": "Vous ne disposez pas d’autorisations suffisantes pour consulter ce compendium.",
+    "ModifyLocked": "Vous ne pouvez pas modifier le contenu de ce pack de compendium car il est verrouillé.",
+    "ModifyPermissionDenied": "Vous n'avez pas la permission de modifier ce pack de compendium.",
     "OwnershipInheritBelow": "Héritage de l’origine",
     "OwnershipReset": "Réinitialiser les valeurs par défaut",
     "ART": {
@@ -2141,8 +2147,8 @@
         "hint": "Contrôle le mode de brouillard de guerre : \"Aucun\" désactive l'exploration (les tokens ne voient que ce qu'ils peuvent actuellement voir), \"Individuel\" suit l'exploration séparément pour chaque utilisateur, et \"Partagé\" utilise un état d'exploration unique contribué par tous les utilisateurs."
       },
       "overlay": {
-        "label": "Image du brouillard",
-        "hint": "Un brouillard d’image de guerre optionnel dessiné au-dessus des parties inexplorées de la scène."
+        "label": "Image inexplorée",
+        "hint": "Une image de brouillard de guerre optionnelle à dessiner au-dessus des parties inexplorées de la scène. Si une couleur inexplorée est configurée, l'image est dessinée par-dessus."
       },
       "colors": {
         "explored": {
@@ -2265,9 +2271,8 @@
         "alphaThreshold.label": "Seuil alpha"
       },
       "fog": {
-        "label": "Brouillard",
-        "src.label": "Texture non explorée",
-        "tint.label": "Teinte de la texture"
+        "label": "Brouillard de guerre",
+        "src.label": "Image inexplorée"
       },
       "textures": {
         "label": "Positionnement",
@@ -3261,8 +3266,8 @@
   "CannotApplyToLocked": "Vous ne pouvez pas appliquer la palette aux objets verrouillés.",
   "CloneSettings": "Cloner",
   "MultipleValues": "<Valeurs multiples>",
-  "Selected": "Palette {document} [{count}]",
-  "Title": "Palette {document}"
+  "Selected": "Palette {document}: Modifier [{count}]",
+  "Title": "Palette {document}: préréglage"
 },
 
 "REGION": {
@@ -3776,7 +3781,8 @@
       "Title": "Filtre avancé",
       "Level": "Filtrer par niveau",
       "Tooltip": "Filtres avancés. Clic droit pour effacer.",
-      "Top": "Haut"
+      "Top": "Haut",
+      "Viewed": "Seulement les éléments vus"
     },
     "Search": {
       "placeholder": "Filtrer {name}"
@@ -3867,7 +3873,9 @@
   "AnimateSettingHint": "Un lancer sur une table aléatoire affiche une animation de style « roulette ».",
     "DrawFlavor": "Obtient un résultat sur la table {name}",
     "DrawFlavorPlural": "Obtient {number} résultats sur la table {name}",
+    "DrawMaximumIterations": "Échec de l'obtention d'une entrée disponible dans la table {name}, nombre maximum d'itérations atteint.",
     "NoAvailableResults": "Aucun résultat disponible ne peut être tiré sur cette table aléatoire.",
+    "NoPossibleResults": "Aucun résultat ne peut être tiré de cette table et de cette formule.",
     "Result": "Résultat",
     "ResultDescription": "Description du résultat",
     "SHEETS": {
@@ -4094,6 +4102,7 @@
     "depth.label": "Taille Z",
     "level.label": "Niveau",
     "movementAction.label": "Type de déplacement",
+    "movementAction.hint": "Lorsque 'Par défaut' est sélectionné, l'action de déplacement est automatiquement déterminée pour ce token.",
     "actorId.label": "Acteur représenté",
     "actorLink.label": "Lié à l’acteur",
     "displayName.label": "Afficher le nom",
