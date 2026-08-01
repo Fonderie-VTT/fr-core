@@ -600,7 +600,8 @@
     "OwnershipReset": "Réinitialiser les valeurs par défaut",
     "ART": {
       "CONFIG": {
-        "Hint": "Utilisez les flèches pour ajuster la priorité des sources d'illustrations. Lorsqu'un seul acteur a des illustrations fournies par plusieurs sources, c'est celle qui a la priorité la plus élevée qui sera utilisée.",
+        "Hint": "Utilisez les flèches pour ajuster la priorité des sources d'illustrations. Lorsqu'un seul document a des illustrations fournies par plusieurs sources, c'est celle qui a la priorité la plus élevée qui sera utilisée.",
+        "Items": "Objets",
         "Portraits": "Portraits",
         "PriorityDecrease": "Diminuer la priorité",
         "PriorityIncrease": "Augmenter la priorité",
@@ -1082,6 +1083,7 @@
     "StatusUpgrade": "Amélioré",
     "Submit": "Appliquer les changements",
     "CHANGES": {
+      "Unregistered": "Le type de changement \"{type}\" n’est pas enregistré.",
       "PHASES": {
         "initial": {
           "label": "Initial",
