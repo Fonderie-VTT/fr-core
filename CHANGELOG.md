@@ -1,3 +1,6 @@
+14.367.1
+- Mise à jour pour la version 14.367
+
 14.366.1
 - Mise à jour pour la version 14.366
 
