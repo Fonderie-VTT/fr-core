@@ -1473,6 +1473,7 @@
   "Empty": "Emplacement vide",
     "ToggleSheet": "Afficher {document}",
     "ClearConfirm": "Supprimer toutes les macros assignées de votre barre de raccourcis ?",
+    "IsLocked": "Vous ne pouvez pas effectuer cette action tant que la barre de raccourcis est verrouillée.",
     "ACTIONS": {
       "Clear": "Effacer la barre de raccourcis",
       "Mute": "Couper le son",
@@ -2330,6 +2331,16 @@
       "warning": "La modification de ces options de configuration entraînera l’arrêt du serveur et vous devrez le redémarrer. Souhaitez-vous continuer ?",
       "restart": "Les paramètres de configuration de l’application Foundry Virtual Tabletop ont été modifiés. Vous devez redémarrer votre serveur pour que les modifications prennent effet."
     },
+    "SSL": {
+      "Content": {
+        "Warning": "Un certificat auto-signé est un moyen pratique d’ajouter le chiffrement SSL à votre instance de Foundry Virtual Tabletop et vous permettra de profiter des API modernes des navigateurs. Cependant, les navigateurs ne font pas implicitement confiance aux certificats auto-signés et afficheront un message d’avertissement bien visible lorsque vous ou d’autres joueurs tenterez de vous connecter à votre instance.",
+        "Ignore": "Cet avertissement peut être ignoré sans risque, la connexion restera chiffrée.",
+        "DoNotShare": "Veillez à ne partager avec personne le fichier <code>fvtt-key.pem</code> généré.",
+        "Continue": "Souhaitez-vous continuer ?"
+      },
+      "Title": "Générer un certificat auto-signé",
+      "Tooltip": "(Re)générer automatiquement les certificats et clés SSL."
+    },
     "SSLCert": "Certificat SSL",
     "Telemetry": {
       "request1": "Si vous donnez l’autorisation, Foundry Virtual Tabletop partagera une petite quantité de données d’utilisation anonymes avec le site Web foundryvtt.com, ce qui permettra à notre équipe de mieux comprendre comment Foundry VTT est utilisé et nous aidera à améliorer le logiciel.",
@@ -2742,6 +2753,8 @@
   "PackageDependenciesCouldInstallSingular": "Une dépendance peut être installée automatiquement.",
   "PackageDependenciesCouldInstallPlural": "{number} dépendances peuvent être installées automatiquement.",
   "PackageDependenciesDecline": "Vous avez choisi de ne pas installer les dépendances requises par {title}, vous devrez les installer manuellement pour pouvoir l’utiliser.",
+  "PackageDependenciesUnavailable": "Ce monde ne peut pas être créé car les dépendances requises suivantes ne sont pas disponibles à l’installation :",
+  "PackageDependencyUnlisted": "Ce package n’est pas répertorié.",
   "PackageDependenciesSuccess": "Installation de {title} et de {number} dépendances réussie.",
   "PackageUpdateCoreUpdateNeeded": "Une mise à jour est disponible pour {title} mais ne peut être installée car elle nécessite la version de base du logiciel {vmin} et vous utilisez actuellement la version {vcur}.",
   "PackageUpdateCoreUnstable": "Une mise à jour est disponible pour {title} mais elle ne peut être installée car elle nécessite une version du logiciel de base {vmin} qui n’est pas encore stable.",
@@ -3176,6 +3189,7 @@
   "SelectUser": "Sélectionner un utilisateur",
   "UserKey": "Mot de passe",
   "AuthAdmin": "Vous êtes authentifié en tant qu’administrateur du serveur.",
+  "AuthRequired": "Vous devrez vous authentifier en tant qu’administrateur du serveur.",
   "ErrorMustSelectUser": "Vous devez sélectionner un utilisateur pour vous connecter.",
   "ErrorUserDoesNotExist": "Le joueur demandé, « {user} », n’existe pas.",
   "ErrorInvalidPassword": "Mot de passe invalide pour {user} !",
