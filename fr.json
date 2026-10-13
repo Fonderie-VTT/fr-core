@@ -70,6 +70,10 @@
         "hint": "Un nom optionnel pour aider à identifier la source de lumière.",
         "label": "Nom"
       },
+      "hidden": {
+        "label": "Cachée",
+        "hint": "Désactive temporairement cette source de lumière."
+      },
       "rotation": {
         "label": "Angle de rotation"
       },
@@ -969,6 +973,10 @@
       "width.label": "Largeur",
       "height.label": "Hauteur",
       "hidden.label": "Caché",
+      "locked": {
+        "label": "Verrouillé",
+        "hint": "Empêche la manipulation sur le canevas et les modifications via la palette."
+      },
       "elevation.label": "Élévation",
       "rotation.label": "Rotation",
       "sort": {
@@ -1011,6 +1019,10 @@
       "bezierFactor": {
         "label": "Facteur de lissage",
         "hint": "Pour le dessin à main levée, le facteur de lissage contrôle la quantité de lissage de la spline."
+      },
+      "hidden": {
+        "label": "Caché",
+        "hint": "Cache ce dessin à tous les joueurs, sauf à son auteur."
       },
       "fillAlpha.label": "Opacité du remplissage",
       "fillColor.label": "Couleur du remplissage",
@@ -1227,7 +1239,7 @@
     "NoWebGL": "Votre navigateur ne prend actuellement pas en charge le rendu WebGL, qui est requis par Foundry Virtual Tabletop. Le rendu matériel et WebGL doivent être activés dans le navigateur.",
     "NoWebGL2": "Votre navigateur ne prend pas actuellement en charge le rendu WebGL version 2, qui est essentiel au bon fonctionnement de Foundry Virtual Tabletop. Des erreurs ou des comportements graphiques anormaux peuvent survenir.",
     "BackgroundTextureSize": "L’image de fond de la scène mesure {width}&times;{height}px. L’une de ces dimensions ou les deux dépassent la taille maximale autorisée de {max}px.",
-    "InvalidAdminKey": "Le nom d’utilisateur ou le mot de passe administrateur du serveur fourni est invalide. Si vous avez oublié vos identifiants configurés, vous devrez supprimer manuellement le fichier <strong>Config/admin.txt</strong> du répertoire des données utilisateur.",
+    "InvalidAdminCredentials": "Le nom d’utilisateur ou le mot de passe administrateur du serveur fourni est invalide. Si vous avez oublié vos identifiants configurés, vous devrez supprimer manuellement le fichier <strong>Config/admin.txt</strong> du répertoire des données utilisateur.",
     "LoadPackages": "Impossible de se connecter au serveur de FoundryVTT pour lister les packages. Assurez-vous que votre application autorise les connexions sortantes.",
     "NoTargetUsersForWhisper": "Destinataire non reconnu pour ce chuchotement. Vérifiez l’orthographe ou essayez « /w [Nom d’utilisateur] » à la place.",
     "CantWhisper": "Vous n’avez pas la permission d’envoyer par Tchat des messages chuchotés à d’autres joueurs.",
@@ -1401,7 +1413,7 @@
     "TraverseBack": "Revenir en arrière",
     "NoResults": "Aucun résultat dans ce répertoire.",
     "Upload": "Télécharger",
-    "CannotUpload": "Le téléchargement vers ce dossier est interdit car le contenu peut être écrasé lors des mises à jour. Téléchargez plutôt dans votre dossier \"assets\" ou un autre emplacement autorisé.",
+    "CannotUpload": "Le téléchargement vers ce dossier est interdit. Téléchargez plutôt dans votre dossier \"assets\" ou un autre emplacement autorisé.",
     "Search": "Rechercher",
     "ErrorTooLarge": "Le fichier que vous avez tenté de télécharger est trop volumineux pour le serveur proxy.",
     "ErrorSomethingWrong": "Il y a eu un problème avec la demande de téléchargement de fichiers.",
@@ -1452,6 +1464,7 @@
 "GAME.ReturnSetup": "Retour à l’accueil",
 "GAME.ReturnSetupActiveUser": "Un autre utilisateur est actuellement actif dans ce monde et sera déconnecté. Souhaitez-vous continuer ?",
 "GAME.ReturnSetupActiveUsers": "Il y a {number} autres utilisateurs actuellement actifs dans ce monde et ils seront déconnectés. Souhaitez-vous continuer ?",
+"GAME.WorldShuttingDown": "Le monde est en cours d’arrêt et vous allez être renvoyé vers la page d’accueil du serveur.",
 
 "INFO.SceneViewCanvasDisabled": "La scène « {name} » est actuellement sélectionnée, mais elle ne s'affiche pas car le canevas de jeu est désactivé.",
 
@@ -2333,13 +2346,30 @@
     },
     "SSL": {
       "Content": {
-        "Warning": "Un certificat auto-signé est un moyen pratique d’ajouter le chiffrement SSL à votre instance de Foundry Virtual Tabletop et vous permettra de profiter des API modernes des navigateurs. Cependant, les navigateurs ne font pas implicitement confiance aux certificats auto-signés et afficheront un message d’avertissement bien visible lorsque vous ou d’autres joueurs tenterez de vous connecter à votre instance.",
-        "Ignore": "Cet avertissement peut être ignoré sans risque, la connexion restera chiffrée.",
-        "DoNotShare": "Veillez à ne partager avec personne le fichier <code>fvtt-key.pem</code> généré.",
-        "Continue": "Souhaitez-vous continuer ?"
+        "Attempt": "Foundry Virtual Tabletop tentera d’abord d’obtenir un certificat auprès du service tiers Let’s Encrypt. Les navigateurs font automatiquement confiance à ces certificats : c’est donc la méthode à privilégier pour activer le SSL sur votre serveur. L’obtention de ces certificats nécessite que votre instance soit accessible publiquement sur le port 80, ce qui n’est pas toujours possible.",
+        "Fallback": "Si un certificat de confiance ne peut pas être obtenu, un certificat auto-signé sera émis à la place. La connexion reste chiffrée et les API modernes des navigateurs restent disponibles, mais les navigateurs ne font pas implicitement confiance à ces certificats et afficheront un avertissement bien visible pour vous et vos joueurs. Cet avertissement peut être ignoré sans risque.",
+        "DoNotShare": "Veillez à ne partager avec personne le fichier de clé privée généré (se terminant par <code>-key.pem</code>) dans votre dossier Config.",
+        "Terms": "Pour demander un certificat à Let’s Encrypt, vous devez accepter leur <a href=\"https://letsencrypt.org/repository/\">Contrat d’abonné</a> (Subscriber Agreement). Souhaitez-vous continuer ?"
       },
-      "Title": "Générer un certificat auto-signé",
-      "Tooltip": "(Re)générer automatiquement les certificats et clés SSL."
+      "ERRORS": {
+        "CertificateGenerationFailed": "La génération du certificat a échoué, consultez les journaux du serveur pour plus de détails.",
+        "CouldNotBind": "Impossible de répondre au défi de l’autorité de certification car la demande d’écoute sur le port 80 a été refusée.",
+        "NoCandidates": "Aucune adresse candidate n’a pu être trouvée pour la génération du certificat.",
+        "NoChallenge": "Let’s Encrypt n’a proposé aucun défi http-01 pour l’adresse fournie.",
+        "PortUnreachable": "Le port 80 n’est pas accessible publiquement.",
+        "ProxySSL": "Cette instance n’a pas besoin de certificat SSL car elle se trouve déjà derrière un proxy inverse qui gère le SSL."
+      },
+      "RenewalFailed": "Échec du renouvellement du certificat SSL géré : {error}",
+      "RenewalFailedInGame": "Échec du renouvellement du certificat SSL géré. Cela ne devrait pas poser de problème immédiat, mais vous devrez revenir à l’accueil dès que possible pour tenter de générer un nouveau certificat, ou contacter la personne qui gère votre instance de Foundry Virtual Tabletop.",
+      "SelfSigned": "Aucun certificat n’a pu être obtenu auprès de Let’s Encrypt, un certificat auto-signé a donc été émis à la place : {error}",
+      "Title": "Générer automatiquement un certificat",
+      "Tooltip": "(Re)générer automatiquement les certificats et clés SSL.",
+      "Trusted": "Un certificat de confiance a été obtenu et sera renouvelé automatiquement. Sauvegardez vos paramètres et redémarrez le serveur pour l’appliquer.",
+      "Unlock": {
+        "Title": "Arrêter le renouvellement automatique",
+        "Tooltip": "Ne plus gérer ce certificat automatiquement.",
+        "Warning": "Foundry Virtual Tabletop gère actuellement ce certificat et le renouvelle automatiquement avant son expiration. Si vous continuez, le certificat sera supprimé et le renouvellement automatique s’arrêtera, ce qui vous permettra de gérer vous-même vos certificats SSL. Souhaitez-vous continuer ?"
+      }
     },
     "SSLCert": "Certificat SSL",
     "Telemetry": {
@@ -2415,7 +2445,7 @@
       },
       "sslCert": {
         "label": "Certificat",
-        "hint": "Vous pouvez exécuter le serveur en utilisant le cryptage sécurisé de la couche de socket (SSL) en fournissant les chemins vers les fichiers de certificats et de clés. Les chemins sont absolus ou relatifs au sous-répertoire Config dans les données utilisateur."
+        "hint": "Le SSL (Secure Socket Layer) doit être configuré pour utiliser certaines fonctionnalités modernes des navigateurs, comme WebRTC (pour l’audio et la vidéo) ou WebBluetooth (pour les dés Bluetooth). Vous pouvez générer vous-même votre certificat et votre fichier de clé pour activer le SSL, ou en faire créer un automatiquement. Les chemins sont absolus ou relatifs au sous-répertoire Config dans les données utilisateur. Consultez l’article <a href=\"https://foundryvtt.com/article/ssl/\" target=\"_blank\">SSL Certificates</a> (en anglais) pour plus de détails."
       },
       "sslKey.label": "Clé",
       "awsConfig": {
@@ -2606,7 +2636,7 @@
   "Modules": "Modules",
   "Systems": "Systèmes",
   "GettingStarted": "Pour commencer",
-  "NoSystemsMessage": "Afin de créer votre premier monde, vous devez d’abord installer un <a class=\"system-install\" data-query=\"\" title=\"Game System\">Système de Jeu</a>. Prenez le temps de parcourir les systèmes disponibles afin d’en choisir un et l’installer. Si vous ne savez pas quel système vous voulez, ou si votre système préféré n’est pas disponible, nous vous recommandons dans un premier temps d’installer le système <a class=\"system-install\" data-query=\"Simple Worldbuilding\" title=\"Simple Worldbuilding\">Simple Worldbuilding</a>. ",
+  "NoSystemsMessage": "Afin de créer votre premier monde, vous devez d’abord installer un <a class=\"system-install\" data-query=\"\" title=\"Game System\">Système de Jeu</a>. Prenez le temps de parcourir les systèmes disponibles afin d’en choisir un et l’installer.",
   "NoWorldsMessage": "Maintenant que vous avez un système de jeu qui vous fournit des règles pour jouer, vous allez devoir créer un monde. Les mondes sont des espaces qui contiennent tous les personnages, feuilles, journaux et cartes utilisés pour jouer à un jeu, qu’il s’agisse d’un one-shot ou d’une campagne complète.",
   "NueWorldDescription": "<p>Pour plus d’infos sur la configuration de mondes, consultez la documentation (en Anglais) <a href=\"https://foundryvtt.com/article/game-worlds/\" target=\"_blank\">World</a>.</p>",
   "SeeTutorial": "Pour un guide plus approfondi sur la prise en main de Foundry Virtual Tabletop, vous pouvez consulter la série <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\" title=\"Gamemaster Tutorial\">Gamemaster Tutorial</a> (en anglais) dans notre <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\" title=\"Knowledge Base\">Knowledge Base</a>. Pour vous orienter dans vos premiers pas en français, vous pouvez également consulter <a href=\"https://foundryvtt.wiki/fr/home\" target=\"_blank\" title=\"le wiki fr\">le wiki FR</a> et <a href=\"https://discord.gg/pPSDNJk\" target=\"_blank\" title=\"le discord fr\">le discord FR</a> (<a href=\"https://discord.gg/pPSDNJk\" target=\"_blank\" title=\"La Fonderie\">La Fonderie</a>).",
@@ -2912,6 +2942,7 @@
       "RestoreBackupTitle": "Restauration de la sauvegarde pour {title}",
       "RestoreBackupFailure": "Échec de la restauration de la sauvegarde pour {title}. Voir la console (F12) pour plus de détails.",
       "RestoreBackupComplete": "Restauration réussie de {title} avec la sauvegarde effectuée le {date}",
+      "RestoreBackupConfirmCodeInvalid": "Vous devez saisir le code exact pour confirmer la demande de restauration de la sauvegarde.",
       "RestoringSnapshot": "Restauration d’un instantané",
       "RestoreSnapshotFailure": "Échec de la restauration de l’instantané. Voir la console (F12) pour plus de détails.",
       "RestoreSnapshotComplete": "Restauration réussie de l’instantané pris le {date}.",
@@ -2919,6 +2950,7 @@
       "RestoreSnapshotWarning": "La restauration d’un instantané réinitialise l’état de votre installation Foundry VTT à l’état dans lequel l’instantané a été pris. Toutes les versions et tous les états du monde seront rétablis. Ce processus ne peut pas être annulé.",
       "RestoreSnapshotUnchangedPackages": "<strong>1</strong> package a été ajouté après la prise de l’instantané et restera inchangé après la restauration de l’instantané.",
       "RestoreSnapshotUnchangedPackagesPl": "<strong>{count}</strong> packages ont été ajoutés après la prise de l’instantané et resteront inchangés après la restauration de l’instantané.",
+      "RestoreSnapshotConfirmCodeInvalid": "Vous devez saisir le code exact pour confirmer la demande de restauration de l’instantané.",
       "SelectAll": "Tout sélectionner",
       "Snapshot": "Instantané",
       "TakeBackup": "Créer une sauvegarde",
@@ -3406,6 +3438,14 @@
         "label": "Visibilité",
         "hint": "Configurer la visibilité de la région."
       },
+      "hidden": {
+        "label": "Cachée",
+        "hint": "Cache la région aux joueurs et désactive ses comportements."
+      },
+      "locked": {
+        "label": "Verrouillée",
+        "hint": "Empêche les interactions sur le canevas et les modifications via la palette, et cache la région lorsque la visibilité est réglée pour n’afficher que les régions déverrouillées."
+      },
       "highlightMode": {
         "label": "Mode de surlignage",
         "hint": "Configurer si les formes réelles ou les cases de la grille couvertes par la région doivent être surlignées."
@@ -3854,6 +3894,9 @@
       "ACTIONS": {
         "Clear": "Effacer"
       },
+      "Any": "Tous",
+      "Yes": "Oui",
+      "No": "Non",
       "Bottom": "Bas",
       "Title": "Filtre avancé",
       "Level": "Filtrer par niveau",
@@ -4001,7 +4044,8 @@
       "img.label": "Icône de résultat",
       "documentUuid.label": "Document référencé",
       "weight.label": "Poids",
-    "range.label": "Plage"
+    "range.label": "Plage",
+      "description.label": "Description"
   }
 },
 
@@ -4031,6 +4075,10 @@
     "video": "Video"
   },
   "TILE.FIELDS": {
+    "hidden": {
+      "label": "Cachée",
+      "hint": "Cache cette tuile aux joueurs."
+    },
     "sort.label": "Trier",
     "texture": {
       "src.label": "Image ou vidéo",
@@ -4173,6 +4221,14 @@
   },
   "TOKEN.FIELDS": {
     "name.label": "Nom du token",
+    "hidden": {
+      "label": "Caché",
+      "hint": "Cache ce token aux joueurs."
+    },
+    "locked": {
+      "label": "Verrouillé",
+      "hint": "Empêche le déplacement de ce token sur le canevas."
+    },
     "sort.label": "Trier",
     "width.label": "Taille X",
     "height.label": "Taille Y",

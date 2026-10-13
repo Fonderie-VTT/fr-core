@@ -1,3 +1,7 @@
+14.369.1
+- Mise à jour pour la version 14.369
+- Correction de la clé InvalidAdminCredentials (renommée en 14.366)
+
 14.368.1
 - Mise à jour pour la version 14.368
 
