@@ -642,7 +642,7 @@
   "DrawingRect": "Rectangle",
   "DrawingEllipse": "Ellipse",
   "DrawingPoly": "Polygone",
-  "DrawingPolyP": "<span class=\"reference\">Cliquez + glissez</span> pour commencer puis <span class=\"reference\">Cliquez</span> pour ajouter des points. <span class=\"reference\">Double-cliquez</span> pour terminer.",
+  "DrawingPolyP": "<span class=\"reference\">Cliquez + glissez</span> pour commencer puis <span class=\"reference\">Cliquez</span> pour ajouter des points. <span class=\"reference\">Clic droit</span> pour retirer le dernier point. <span class=\"reference\">Double-cliquez</span> pour terminer.",
   "DrawingFree": "Main levée",
   "DrawingText": "Texte",
   "DrawingClear": "Supprimer tous les dessins",
@@ -711,6 +711,8 @@
   "RegionCone": "Dessiner un cône",
   "RegionLine": "Dessiner une ligne",
   "RegionPolygon": "Dessiner un polygone",
+  "RegionGrid": "Dessiner des cases de grille",
+  "RegionGridP": "<span class=\"reference\">Cliquez</span> pour ajouter des cases de grille. <span class=\"reference\">Clic droit</span> pour retirer la dernière case. <span class=\"reference\">Double-cliquez</span> pour terminer.",
   "RegionHole": "Créer des trous",
   "RegionHoleP": "Si actif, toute forme que vous dessinez sur une région avec l’un des outils de forme créera un trou où les comportements de la région ne s’appliqueront pas.",
   "RegionSnap": "Si actif, toute forme que vous dessinez sur une région avec l’un des outils de forme sera alignée sur la grille.",
@@ -1468,16 +1470,19 @@
 
 "INFO.SceneViewCanvasDisabled": "La scène « {name} » est actuellement sélectionnée, mais elle ne s'affiche pas car le canevas de jeu est désactivé.",
 
-"INVITATIONS.Copied": "Le lien d’invitation a été copié dans le presse-papier",
-"INVITATIONS.Instructions": "Partager les liens d’invitation ci-dessous avec les utilisateurs. Le lien d’invitation local est destiné aux utilisateurs de votre réseau local tandis que le lien « Internet » permet de se connecter sur le port configuré depuis l’exterieur de votre réseau.",
-"INVITATIONS.Internet": "Internet",
-"INVITATIONS.InternetV6": "Internet (IPv6)",
-"INVITATIONS.Local": "Réseau local",
-"INVITATIONS.Title": "Liens d’invitations à la partie",
-"INVITATIONS.OpenConnection": "Votre connexion semble être ouverte",
-"INVITATIONS.ClosedConnection": "Votre connexion semble être fermée",
-"INVITATIONS.UnknownConnection": "Nous n’avons pas pu déterminer l’état de votre connexion",
-"INVITATIONS.DiscoveryFailed": "Notre service de détection d’IP n’a pas réussi à identifier correctement votre adresse IP, vous utilisez IPv6 ou vous n’êtes pas connecté à l’internet.",
+"INVITATIONS": {
+  "Copied": "Le lien d’invitation a été copié dans le presse-papier",
+  "Instructions": "Partager les liens d’invitation ci-dessous avec les utilisateurs. Le lien d’invitation local est destiné aux utilisateurs de votre réseau local tandis que le lien « Internet » permet de se connecter sur le port configuré depuis l’exterieur de votre réseau.",
+  "Internet": "Internet (IPv4)",
+  "InternetV6": "Internet (IPv6)",
+  "Local": "Réseau local",
+  "Recheck": "Revérifier la connectivité",
+  "Title": "Liens d’invitations à la partie",
+  "OpenConnection": "Votre connexion semble être ouverte",
+  "ClosedConnection": "Votre connexion semble être fermée",
+  "UnknownConnection": "Nous n’avons pas pu déterminer l’état de votre connexion",
+  "DiscoveryFailed": "Notre service de détection d’IP n’a pas réussi à identifier correctement votre adresse IP, vous utilisez IPv6 ou vous n’êtes pas connecté à l’internet."
+},
 
 "ITEM.ViewArt": "Voir l’image de l’objet",
 
@@ -2364,7 +2369,7 @@
       "SelfSigned": "Aucun certificat n’a pu être obtenu auprès de Let’s Encrypt, un certificat auto-signé a donc été émis à la place : {error}",
       "Title": "Générer automatiquement un certificat",
       "Tooltip": "(Re)générer automatiquement les certificats et clés SSL.",
-      "Trusted": "Un certificat de confiance a été obtenu et sera renouvelé automatiquement. Sauvegardez vos paramètres et redémarrez le serveur pour l’appliquer.",
+      "Trusted": "Un certificat de confiance a été obtenu et sera renouvelé automatiquement. Redémarrez le serveur pour l’appliquer.",
       "Unlock": {
         "Title": "Arrêter le renouvellement automatique",
         "Tooltip": "Ne plus gérer ce certificat automatiquement.",
@@ -3861,7 +3866,7 @@
 },
 
 "SIDEBAR.COMPENDIUM.LABELS": {
-  "Ownership": "Propriété non par défaut",
+  "Ownership": "Masqué aux joueurs",
   "Locked": "Verrouillé"
 },
 
@@ -3881,6 +3886,8 @@
       "Visible": "Visible"
     },
     "Categories": {
+      "Player": "Possédé par un joueur",
+      "Gamemaster": "Possédé par le MJ",
       "NoAuthor": "Pas d'auteur",
       "NoLevel": "Pas de niveau"
     },
@@ -4653,22 +4660,35 @@
       "character": {
         "label": "Personnage du joueur",
         "hint": "Sélectionnez un acteur parmi ceux sur lesquels vous avez au moins la permission d’OBSERVATEUR et qui représente le personnage principal de cet utilisateur."
+      },
+      "password": {
+        "label": "Mot de passe du joueur",
+        "hint": "Modifier le mot de passe de cet utilisateur déconnectera les sessions en cours qui lui sont associées."
       }
     },
     "SHEET": {
       "HEADERS": {
         "INFO": "Informations sur le joueur",
-        "CHAR": "Personnage du joueur"
+        "CHAR": "Personnage du joueur",
+        "PASS": "Changement de mot de passe"
       },
-      "BUTTONS": {
-        "SAVE": "Enregistrer la configuration du joueur",
-        "RELEASE": "Libérer le personnage"
-      }
+      "PASSWORD": {
+        "Current": "Mot de passe (actuel)",
+        "New": "Mot de passe (nouveau)",
+        "Wipe": {
+          "label": "Effacer",
+          "hint": "Effacer le mot de passe actuel au lieu d’en définir un nouveau."
+        }
+      },
+      "Submit": "Enregistrer la configuration du joueur"
     },
     "MESSAGES": {
       "KICKED": "L’utilisateur {user} a été <strong>expulsé</strong> du monde.",
       "BANNED": "L’utilisateur {user} a été <strong>banni</strong> du monde.",
       "UNBANNED": "L’utilisateur {user} a été <strong>débanni</strong> du monde."
+    },
+    "ACTIONS": {
+      "releaseCharacter": "Libérer le personnage"
     },
     "RoleNone": "Aucun",
     "RolePlayer": "Joueur",

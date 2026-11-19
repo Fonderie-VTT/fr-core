@@ -1,0 +1,3 @@
+# Fin de ligne LF partout — dépôt et working tree, quel que soit l'OS/client git
+# (le même répertoire /mnt/c est vu par git-WSL et git-Windows : on force LF pour éviter tout churn)
+* text=auto eol=lf
